@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>CodeMon</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="System/ UI">
+            <object-folder name="Sky">
+                <object-type name="Sky" sid="321183545196670">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809956041555718" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\free-sky-with-clouds-background-pixel-art-set\Clouds\Clouds 1\4.png">
+                                <collision-poly>
+                                    <point x="0.392361" y="0.697531" />
+                                    <point x="0.5" y="0.138889" />
+                                    <point x="0.703125" y="0.527778" />
+                                    <point x="0.699653" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.407986" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Music">
+                <object-type name="MusicPlayer" sid="749060699714902">
+                    <plugin id="Audio" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Input">
+                <object-type name="Mouse" sid="886802210054862">
+                    <plugin id="Mouse" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Font">
+                <object-type name="Font" sid="510417563026680">
+                    <plugin id="Spritefont2" />
+                    <texture />
+                </object-type>
+            </object-folder>
+            <object-folder name="Button">
+                <object-type name="Button" sid="283348191248205">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655006055650975" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\ChoiceBox.png">
+                                <collision-poly>
+                                    <point x="0.015625" y="0.05" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.984375" y="0.05" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.984375" y="0.95" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.015625" y="0.95" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="World">
+            <object-folder name="My house">
+                <object-folder name="Tilesets">
+                    <object-type name="Floors" sid="348324028411995">
+                        <plugin id="Tilemap" />
+                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Walls" sid="744372856415659">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="908414787838721">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Objects" sid="249343456013818">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="994245160540321">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\Elements.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="decorations" sid="122194517886921">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="202537265712647">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                        <tiles />
+                    </object-type>
+                </object-folder>
+                <object-folder name="TP_Sprites" />
+            </object-folder>
+        </object-folder>
+        <object-folder name="Characters">
+            <object-folder name="Protagonist">
+                <object-type name="PlayerAnimation" sid="981208279384184">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="601744333654289">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation-folder name="Idle">
+                            <animation framecount="1" loop="0" name="IdleTop" pingpong="0" repeatcount="1" repeatto="0" sid="479716060334768" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="1" loop="0" name="IdleLeft" pingpong="0" repeatcount="1" repeatto="0" sid="249369095372239" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="1" loop="0" name="IdleRigth" pingpong="0" repeatcount="1" repeatto="0" sid="129024504132471" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="1" loop="0" name="IdleDown" pingpong="0" repeatcount="1" repeatto="0" sid="520943511410334" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                        <animation-folder name="Walk">
+                            <animation framecount="4" loop="0" name="WalkTop" pingpong="0" repeatcount="1" repeatto="0" sid="933657301275748" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="4" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="935161063070662" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="4" loop="0" name="WalkLeft" pingpong="0" repeatcount="1" repeatto="0" sid="862159247109037" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                            <animation framecount="4" loop="0" name="WalkRight" pingpong="0" repeatcount="1" repeatto="0" sid="356036789736979" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Player" sid="513425514113677">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="DirectionName" sid="595018900294659" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="ScrollTo" sid="146820832850104">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                        <behavior-type name="8Direction" sid="581442045498858">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="786644189827673">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554372701827389" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="Menu">
+            <layout>Main Menu Layout.xml</layout>
+        </layout-folder>
+        <layout-folder name="World">
+            <layout-folder name="My house">
+                <layout>Second Floor.xml</layout>
+            </layout-folder>
+        </layout-folder>
+    </layout-folder>
+    <event-folder>
+        <event-folder name="Menu">
+            <event-sheet>Main Menu Sheet.xml</event-sheet>
+        </event-folder>
+        <event-folder name="World">
+            <event-folder name="My house">
+                <event-sheet>My House Sheet.xml</event-sheet>
+            </event-folder>
+        </event-folder>
+        <event-folder name="New folder">
+            <event-folder name="Global Sheets">
+                <event-sheet>Global Events.xml</event-sheet>
+            </event-folder>
+        </event-folder>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="MusicPlayer" uid="5">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <music-folder name="Main Menu">
+            <file name="1 - Adventure Begin.ogg" />
+        </music-folder>
+        <music-folder name="House">
+            <file name="22 - Dream.ogg" />
+        </music-folder>
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

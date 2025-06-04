@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Second Floor</layout>
+        <event-sheet active="1" order="2">My House Sheet</event-sheet>
+        <event-sheet order="3">Global Events</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/System/ UI/" />
+        <folder expanded="1" path="object-folder/System/ UI/Sky/" />
+        <folder expanded="1" path="object-folder/System/ UI/Music/" />
+        <folder expanded="1" path="object-folder/System/ UI/Input/" />
+        <folder expanded="1" path="object-folder/System/ UI/Font/" />
+        <folder expanded="1" path="object-folder/System/ UI/Button/" />
+        <folder expanded="1" path="object-folder/World/" />
+        <folder expanded="1" path="object-folder/World/My house/" />
+        <folder expanded="1" path="object-folder/World/My house/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/My house/TP_Sprites/" />
+        <folder expanded="1" path="object-folder/Characters/" />
+        <folder expanded="1" path="object-folder/Characters/Protagonist/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Menu/" />
+        <folder expanded="1" path="layout-folder/World/" />
+        <folder expanded="1" path="layout-folder/World/My house/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Menu/" />
+        <folder expanded="1" path="event-folder/World/" />
+        <folder expanded="1" path="event-folder/World/My house/" />
+        <folder expanded="1" path="event-folder/New folder/" />
+        <folder expanded="1" path="event-folder/New folder/Global Sheets/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="music-folder/Main Menu/" />
+        <folder expanded="1" path="music-folder/House/" />
+        <folder expanded="1" path="animation-folder/Sky/" />
+        <folder expanded="1" path="animation-folder/Button/" />
+        <folder expanded="1" path="animation-folder/PlayerAnimation/" />
+        <folder expanded="1" path="animation-folder/PlayerAnimation/Idle/" />
+        <folder expanded="1" path="animation-folder/PlayerAnimation/Walk/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+    </folders-expanded>
+</c2uistate>

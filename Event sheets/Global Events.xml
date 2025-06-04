@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global Events</name>
+    <events>
+        <event-block sid="217230387909117">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="481738878372486" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="766069357581400" type="PlayerAnimation">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="535642658415653" type="PlayerAnimation">
+                    <param id="0" name="Pin to">Player</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="512966134545295" title="Movimiento del juegador">
+            <sub-events>
+                <event-block sid="359781310239633">
+                    <conditions>
+                        <condition id="-13" name="Is between angles" sid="441056454145426" type="Player">
+                            <param id="0" name="First angle">-45</param>
+                            <param id="1" name="Second angle">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="558177732442898" type="Player">
+                            <param id="0" name="Instance variable">DirectionName</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="630229367940781">
+                    <conditions>
+                        <condition id="-13" name="Is between angles" sid="762392774136674" type="Player">
+                            <param id="0" name="First angle">45</param>
+                            <param id="1" name="Second angle">135</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="386545313150959" type="Player">
+                            <param id="0" name="Instance variable">DirectionName</param>
+                            <param id="1" name="Value">&quot;Down&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532787024888985">
+                    <conditions>
+                        <condition id="-13" name="Is between angles" sid="442438495979910" type="Player">
+                            <param id="0" name="First angle">135</param>
+                            <param id="1" name="Second angle">225</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="500498370131339" type="Player">
+                            <param id="0" name="Instance variable">DirectionName</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="852511882418413">
+                    <conditions>
+                        <condition id="-13" name="Is between angles" sid="792085552261438" type="Player">
+                            <param id="0" name="First angle">225</param>
+                            <param id="1" name="Second angle">315</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="355159732796163" type="Player">
+                            <param id="0" name="Instance variable">DirectionName</param>
+                            <param id="1" name="Value">&quot;Top&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="491312303883588">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="188815962043830" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="509397855035889" type="PlayerAnimation">
+                            <param id="0" name="Animation">&quot;Walk&quot; &amp; Player.DirectionName</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="496061299299645">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="271613047583590" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="155336137054749" type="PlayerAnimation" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
