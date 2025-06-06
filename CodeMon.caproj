@@ -148,6 +148,30 @@
                 </object-folder>
                 <object-folder name="TP_Sprites" />
             </object-folder>
+            <object-folder name="Laboratory">
+                <object-folder name="Tilesets">
+                    <object-type name="WallsLab" sid="246323233014785">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="427566093211841">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Tilemap" sid="975053851658833">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Tilemap2" sid="153075144425887">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                        <tiles />
+                    </object-type>
+                </object-folder>
+            </object-folder>
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
@@ -235,6 +259,9 @@
             <layout-folder name="My house">
                 <layout>Second Floor.xml</layout>
             </layout-folder>
+            <layout-folder name="Laboratory">
+                <layout>Laboratory.xml</layout>
+            </layout-folder>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -244,6 +271,9 @@
         <event-folder name="World">
             <event-folder name="My house">
                 <event-sheet>My House Sheet.xml</event-sheet>
+            </event-folder>
+            <event-folder name="Laboratory">
+                <event-sheet>Laboratory Sheet.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="New folder">
@@ -276,6 +306,9 @@
         </music-folder>
         <music-folder name="House">
             <file name="22 - Dream.ogg" />
+        </music-folder>
+        <music-folder name="Laboratory">
+            <file name="27 - Chill.ogg" />
         </music-folder>
     </music-folder>
     <files-folder>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Laboratory Sheet</name>
+    <events>
+        <event-block sid="519871871229357">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="622835542115462" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="956831593481903" type="MusicPlayer">
+                    <param id="0" name="Audio file">27 - Chill</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="774270241232038">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="692859717160855" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="728296732801517" type="MusicPlayer">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
