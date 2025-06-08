@@ -40,13 +40,6 @@
                         <tile-y-spacing>0</tile-y-spacing>
                         <seamless-mode>On</seamless-mode>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -290,11 +283,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>310.543457031</x>
-                        <y>249.182632446</y>
+                        <x>301.662353516</x>
+                        <y>250.890197754</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -315,8 +308,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>311.90802002</x>
-                        <y>249.86491394</y>
+                        <x>302.34362793</x>
+                        <y>279.234649658</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>

@@ -111,11 +111,6 @@
             <object-folder name="StartHouse">
                 <object-type name="TilemapFloors" sid="710524809434173">
                     <plugin id="Tilemap" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="909948365431130">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
                     <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
                     <tiles />
                 </object-type>

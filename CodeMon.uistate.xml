@@ -13,7 +13,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Main Menu Layout</layout>
         <layout active="1" order="2">SecondFloor</layout>
         <event-sheet order="1">Main Menu Sheet</event-sheet>
-        <event-sheet order="3">SecondFloor</event-sheet>
+        <event-sheet order="3">Global Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -32,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/System/ UI/Button/" />
         <folder expanded="1" path="object-folder/World/" />
         <folder expanded="1" path="object-folder/World/StartHouse/" />
-        <folder expanded="0" path="object-folder/Characters/" />
+        <folder expanded="1" path="object-folder/Characters/" />
         <folder expanded="1" path="object-folder/Characters/Protagonist/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Menu/" />
