@@ -3,28 +3,748 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Laboratory Sheet</name>
     <events>
-        <event-block sid="519871871229357">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="622835542115462" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="956831593481903" type="MusicPlayer">
-                    <param id="0" name="Audio file">27 - Chill</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="774270241232038">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="692859717160855" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="728296732801517" type="MusicPlayer">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <include>Global Events</include>
+        <event-group description="Musica del Layout" sid="554386280799504" title="Music">
+            <sub-events>
+                <event-block sid="519871871229357">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="622835542115462" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="956831593481903" type="MusicPlayer">
+                            <param id="0" name="Audio file">27 - Chill</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="774270241232038">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="692859717160855" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="728296732801517" type="MusicPlayer">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Movimientos de los personajes para tener un entorno mas vivo" sid="450317140801048" title="Character Movements">
+            <sub-events>
+                <event-block sid="217262517621922">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="235588227221250" type="Scientist1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="352294656142982" type="Scientist1">
+                            <param id="0" name="Animation">&quot;scientist1move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="863999569578109">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="330956651531788" type="Scientist2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="591409434195977" type="Scientist2">
+                            <param id="0" name="Animation">&quot;scientist2move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231211097255232">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="379188815518456" type="Scientist3" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="820193210012109" type="Scientist3">
+                            <param id="0" name="Animation">&quot;scientist3move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="157726548248056">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="140835370208540" type="Scientist4" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="839812498930115" type="Scientist4">
+                            <param id="0" name="Animation">&quot;scientist4move&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Acciones de sprites que activan eventos: collision con puerta, interaccion con personajes y asignacion de Codemon" sid="159021752813359" title="Actions">
+            <sub-events>
+                <event-group description="" sid="127888420842695" title="Actions Election Codemon">
+                    <sub-events>
+                        <event-block sid="495410473048674">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="372342309753207" type="Player">
+                                    <param id="0" name="Object">Option1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="623713212546859" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="214565696799391" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="0" name="Set text" sid="241776150965397" type="Text">
+                                    <param id="0" name="Text">&quot;Seguro que quieres elegir a &apos;election1&apos; ?&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="115793950633656" type="CodemonFrame">
+                                    <param id="0" name="X">324</param>
+                                    <param id="1" name="Y">231</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="183428521043733" type="Election1">
+                                    <param id="0" name="X">277</param>
+                                    <param id="1" name="Y">183</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="780765249632069">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="803269277189383" type="Player">
+                                    <param id="0" name="Object">Option2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="747712186853225" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="115182355226861" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="0" name="Set text" sid="652965006991271" type="Text">
+                                    <param id="0" name="Text">&quot;Seguro que quieres elegir a &apos;election2&apos; ?&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="109500376888073" type="CodemonFrame">
+                                    <param id="0" name="X">324</param>
+                                    <param id="1" name="Y">231</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="978972837897624" type="Election2">
+                                    <param id="0" name="X">277</param>
+                                    <param id="1" name="Y">183</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="855870653831169">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="595064212723178" type="Player">
+                                    <param id="0" name="Object">Option3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="295107339922769" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="218152468433860" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="0" name="Set text" sid="902097033593236" type="Text">
+                                    <param id="0" name="Text">&quot;Seguro que quieres elegir a &apos;election3&apos; ?&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="868379530540023" type="CodemonFrame">
+                                    <param id="0" name="X">324</param>
+                                    <param id="1" name="Y">231</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="773920417881370" type="Election3">
+                                    <param id="0" name="X">277</param>
+                                    <param id="1" name="Y">183</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="511505479188337" title="Actions Scientist 1">
+                    <sub-events>
+                        <event-block sid="301262732168059">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="670321742634664" type="Player">
+                                    <param id="0" name="Object">Scientist1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="869654065739771" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="655754299702293" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="446075576478936" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">&quot;scientist1&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="649259905267487" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="586668429224885" title="Actions Scientist 2">
+                    <sub-events>
+                        <event-block sid="869144128081446">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="227872226083658" type="Player">
+                                    <param id="0" name="Object">Scientist2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="415459064129009" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="495582592811968" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="874150491312000" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">&quot;scientist2&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="548269062287199" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="903277018522403" title="Actions Scientist 3">
+                    <sub-events>
+                        <event-block sid="198481984977201">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="222641585990734" type="Player">
+                                    <param id="0" name="Object">Scientist3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="705331046842629" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="639944563393122" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="301026616634149" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">&quot;scientist3&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="817395394045873" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="204823896234709" title="Actions Scientist 4">
+                    <sub-events>
+                        <event-block sid="744098400791996">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="454355886805713" type="Player">
+                                    <param id="0" name="Object">Scientist4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="127404700182145" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="493716542921738" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="531453391303406" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">&quot;scientist4&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="838250188858605" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="728150249696818" title="Actions Dialog">
+                    <sub-events>
+                        <event-block sid="451078725936868">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="508377902709008" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="976576638739761" type="Text">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="X co-ordinate">41</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="936139571948096" type="Text">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Y co-ordinate">400</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="597396576400230" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">Text.counter_dialog+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="602809519048812" title="Actions Door">
+                    <sub-events>
+                        <event-block sid="664836254018875">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="952986608954755" type="Door">
+                                    <param id="0" name="Object">PlayerAnimation</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="668588887981332" type="System">
+                                    <param id="0" name="Layout">&quot;Second Floor&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="790535177459699" title="Actions Profesor">
+                    <sub-events>
+                        <event-block sid="352294010463485">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="383427988651324" type="Player">
+                                    <param id="0" name="Object">ProfesorScientist</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="899135756102431" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">416</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="329299068300572" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="837610707588522" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Value">&quot;profesor&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="128869622562688" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Dialogos de personajes" sid="341814093283852" title="Dialogs">
+            <sub-events>
+                <event-group description="" sid="559325429377272" title="Dialogo Profesor">
+                    <sub-events>
+                        <comment>comentarios de profesor</comment>
+                        <event-block sid="457821504693441">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="248412626009444" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="329793530581468" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="761559944801993" type="Text">
+                                    <param id="0" name="Text">&quot;Hola soy el Profesor, bienvenido al laboratorio codemon&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="515884917035033">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="760872005204631" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="938720091444836" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="192045890097414" type="Text">
+                                    <param id="0" name="Text">&quot;Eres el nuevo del pueblo, es hora de que elijas a tu codemon, adelante toma uno&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Si no hay mas comentarios, esconde Dialogo y resetea el Text</comment>
+                        <event-block sid="415307151776328">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="572053359080395" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="434654341820494" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="597546362619450" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="105961938288568" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="479244818011682" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="728683901619123" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="282227991449793" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="978418880129894" title="Dialog Scientist 1">
+                    <sub-events>
+                        <comment>comentarios de cientifico 1</comment>
+                        <event-block sid="840461897360693">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="739767833108335" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="486679746262622" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="545362663232167" type="Text">
+                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="260817872298243">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="111782570860732" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="180044836461043" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="295821807231507" type="Text">
+                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 1, bienvenido al laboratorio codemon&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Si no hay mas comentarios, esconde Dialogo y resetea el Text</comment>
+                        <event-block sid="978342821480884">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="717903435051067" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="545551279575183" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="352761646946951" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="981497300759730" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="328624761310411" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="276372937086619" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="765101316049708" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="115600925155723" title="Dialog Scientist 2">
+                    <sub-events>
+                        <comment>comentarios de cientifico 2</comment>
+                        <event-block sid="819109543960006">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="247828772999288" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="684569039173370" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="832509900481321" type="Text">
+                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="677485180771528">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="870638256646167" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="371094510042976" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="620759662071251" type="Text">
+                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 2, bienvenido al laboratorio codemon&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Si no hay mas comentarios, esconde Dialogo y resetea el Text</comment>
+                        <event-block sid="522864399816362">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="515765794760757" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="164073592855962" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="560812773737604" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="716962672844544" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="886515353479504" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="695826618166597" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="502568335830724" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="901643823048978" title="Dialog Scientist 3">
+                    <sub-events>
+                        <comment>comentarios de cientifico 1</comment>
+                        <event-block sid="833268268040369">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="427545120475677" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="510269084755248" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="325545822734703" type="Text">
+                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="410993791704162">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="373198522246469" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="998216845563447" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="472786296999382" type="Text">
+                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 3, bienvenido al laboratorio codemon&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Si no hay mas comentarios, esconde Dialogo y resetea el Text</comment>
+                        <event-block sid="436295014792865">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="942680610695185" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="254107261042726" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="861920051430959" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="267905884849627" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="871178735726591" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="654363309056388" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="883937313547517" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="224405180112626" title="Dialog Scientist 4">
+                    <sub-events>
+                        <comment>comentarios de cientifico 1</comment>
+                        <event-block sid="339709783940034">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="774085442488112" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="121031367911028" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="911385467597722" type="Text">
+                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="168944474209648">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="350495900474978" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="273393610830430" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="630647724802894" type="Text">
+                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 4, bienvenido al laboratorio codemon&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Si no hay mas comentarios, esconde Dialogo, resetea el Text y habilita el movimiento del jugador</comment>
+                        <event-block sid="728284603319457">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="942468067904446" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="394402291594097" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="532480392329444" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="168317512233996" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="733984141258662" type="DialogBar">
+                                    <param id="0" name="X">321</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="795144180207805" type="Text">
+                                    <param id="0" name="X">41</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="921646535413637" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
