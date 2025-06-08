@@ -11,11 +11,9 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -80,9 +78,6 @@
                 <object-type name="Mouse" sid="886802210054862">
                     <plugin id="Mouse" />
                 </object-type>
-                <object-type name="Keyboard" sid="420872250459549">
-                    <plugin id="Keyboard" />
-                </object-type>
             </object-folder>
             <object-folder name="Font">
                 <object-type name="Font" sid="510417563026680">
@@ -109,59 +104,6 @@
                             </frame>
                         </animation>
                     </animation-folder>
-                </object-type>
-            </object-folder>
-            <object-folder name="Dialogs">
-                <object-type name="DialogBar" sid="366074830544837">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="532749760672113" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\DialogBox.png">
-                                <collision-poly>
-                                    <point x="0.01" y="0.0517241" />
-                                    <point x="0.5" y="0.137931" />
-                                    <point x="0.973333" y="0.137931" />
-                                    <point x="1" y="0.5" />
-                                    <point x="0.993333" y="0.965517" />
-                                    <point x="0.5" y="1" />
-                                    <point x="0.00666667" y="0.965517" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Text" sid="939733440803496">
-                    <plugin id="Text" />
-                    <instance-variables>
-                        <instance-variable name="counter_dialog" sid="106470961286119" type="number" />
-                        <instance-variable name="character" sid="553353872774889" type="string" />
-                    </instance-variables>
-                </object-type>
-            </object-folder>
-            <object-folder name="Election">
-                <object-type name="CodemonFrame" sid="262902150138984">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760195309381439" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\FacesetBox.png">
-                                <collision-poly>
-                                    <point x="0.0208333" y="0.0208333" />
-                                    <point x="0.5" y="0" />
-                                    <point x="0.979167" y="0.0208333" />
-                                    <point x="1" y="0.5" />
-                                    <point x="0.979167" y="0.979167" />
-                                    <point x="0.5" y="1" />
-                                    <point x="0.0208333" y="0.979167" />
-                                    <point x="0" y="0.5" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Election3" sid="357541420433472">
-                    <plugin id="Tilemap" />
-                    <texture original-source="C:\Users\denni\Downloads\Faceset(2).png" />
-                    <tiles />
                 </object-type>
             </object-folder>
         </object-folder>
@@ -211,7 +153,7 @@
                     <object-type name="WallsLab" sid="246323233014785">
                         <plugin id="Tilemap" />
                         <behaviors>
-                            <behavior-type name="Solid" sid="162867364648380">
+                            <behavior-type name="Solid" sid="427566093211841">
                                 <behavior id="solid" />
                             </behavior-type>
                         </behaviors>
@@ -225,49 +167,10 @@
                     </object-type>
                     <object-type name="Tilemap2" sid="153075144425887">
                         <plugin id="Tilemap" />
-                        <behaviors>
-                            <behavior-type name="Solid" sid="209343624369269">
-                                <behavior id="solid" />
-                            </behavior-type>
-                        </behaviors>
                         <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
                         <tiles />
                     </object-type>
                 </object-folder>
-                <object-type name="Door" sid="427895140125112">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972285702351278" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png">
-                                <collision-poly>
-                                    <point x="0.0664063" y="0.4" />
-                                    <point x="0.933594" y="0.408333" />
-                                    <point x="0.9375" y="0.05" />
-                                    <point x="0.0664063" y="0.05" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Option" sid="703915423496607">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="notEmpty" pingpong="0" repeatcount="1" repeatto="0" sid="185666326293253" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
-                        </animation>
-                        <animation framecount="1" loop="0" name="empty" pingpong="0" repeatcount="1" repeatto="0" sid="650795763689660" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="OptionEmpty" sid="479447773367486">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286163114587398" speed="5">
-                            <frame duration="1" hotspotX="0.0555556" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
             </object-folder>
             <object-folder name="TownVijava">
                 <object-type name="TilemapNature" sid="653391029801599">
@@ -377,291 +280,6 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder name="Profesor">
-                <object-type name="ProfesorScientist" sid="321228408439689">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="884020867680752">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762638081886050" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldMan\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0703125" y="0.863281" />
-                                    <point x="0.0664063" y="0.246094" />
-                                    <point x="0.265625" y="0.0605469" />
-                                    <point x="0.734375" y="0.0703125" />
-                                    <point x="0.945313" y="0.253906" />
-                                    <point x="0.941406" y="0.869141" />
-                                    <point x="0.882813" y="0.933594" />
-                                    <point x="0.125" y="0.941406" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-            </object-folder>
-            <object-folder name="Scientists">
-                <object-type name="Scientist1" sid="327524277889306">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="804791609833462">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782596378064622" speed="10">
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldWoman\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.227941" />
-                                    <point x="0.297794" y="0.0588235" />
-                                    <point x="0.759191" y="0.0588235" />
-                                    <point x="0.940257" y="0.229779" />
-                                    <point x="0.941176" y="0.941176" />
-                                    <point x="0.0588235" y="0.9375" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="4" loop="1" name="scientist1move" pingpong="0" repeatcount="1" repeatto="0" sid="451419108992391" speed="1">
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldWoman\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0514706" y="0.0514706" />
-                                    <point x="0.948529" y="0.0514706" />
-                                    <point x="0.941176" y="0.944853" />
-                                    <point x="0.0588235" y="0.944853" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldWoman\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0661765" y="0.0514706" />
-                                    <point x="0.922794" y="0.0477941" />
-                                    <point x="0.944853" y="0.933823" />
-                                    <point x="0.0625" y="0.9375" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldWoman\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.0661765" />
-                                    <point x="0.948529" y="0.0661765" />
-                                    <point x="0.948529" y="0.933823" />
-                                    <point x="0.0625" y="0.933823" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldWoman\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.0625" />
-                                    <point x="0.952206" y="0.055147" />
-                                    <point x="0.944853" y="0.948529" />
-                                    <point x="0.0735294" y="0.941176" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Scientist2" sid="753287643612099">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="890993215885021">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245665980478776" speed="1">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.253906" y="0.0625" />
-                                    <point x="0.753906" y="0.0664063" />
-                                    <point x="0.941406" y="0.257813" />
-                                    <point x="0.9375" y="0.925781" />
-                                    <point x="0.0585938" y="0.933594" />
-                                    <point x="0.0742188" y="0.257813" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="4" loop="1" name="scientist2move" pingpong="0" repeatcount="1" repeatto="0" sid="497549695768704" speed="1">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0585938" y="0.269531" />
-                                    <point x="0.25" y="0.0625" />
-                                    <point x="0.75" y="0.0625" />
-                                    <point x="0.949219" y="0.261719" />
-                                    <point x="0.941406" y="0.621094" />
-                                    <point x="0.757813" y="0.933594" />
-                                    <point x="0.285156" y="0.910156" />
-                                    <point x="0.0546875" y="0.601563" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.078125" y="0.25" />
-                                    <point x="0.238281" y="0.0742188" />
-                                    <point x="0.753906" y="0.0546875" />
-                                    <point x="0.941406" y="0.273438" />
-                                    <point x="0.941406" y="0.613281" />
-                                    <point x="0.691406" y="0.941406" />
-                                    <point x="0.253906" y="0.941406" />
-                                    <point x="0.0664063" y="0.617188" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.261719" y="0.0507813" />
-                                    <point x="0.730469" y="0.0546875" />
-                                    <point x="0.933594" y="0.273438" />
-                                    <point x="0.933594" y="0.925781" />
-                                    <point x="0.0625" y="0.921875" />
-                                    <point x="0.0742188" y="0.253906" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0820313" y="0.25" />
-                                    <point x="0.234375" y="0.0585938" />
-                                    <point x="0.761719" y="0.0546875" />
-                                    <point x="0.929688" y="0.246094" />
-                                    <point x="0.9375" y="0.929688" />
-                                    <point x="0.0742188" y="0.921875" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Scientist3" sid="903578539377800">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="156089474744136">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143771132898177" speed="5">
-                            <frame duration="1" hotspotX="0.444444" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager3\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.116319" y="0.222426" />
-                                    <point x="0.28125" y="0.0496323" />
-                                    <point x="0.730903" y="0.0569853" />
-                                    <point x="0.892361" y="0.240809" />
-                                    <point x="0.951389" y="0.941176" />
-                                    <point x="0.0590278" y="0.9375" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="4" loop="1" name="scientist3move" pingpong="0" repeatcount="1" repeatto="0" sid="348249045901214" speed="1">
-                            <frame duration="1" hotspotX="0.4375" hotspotY="0.411765" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager3\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0507813" y="0.235294" />
-                                    <point x="0.242188" y="0.055147" />
-                                    <point x="0.769531" y="0.0441176" />
-                                    <point x="0.945313" y="0.231618" />
-                                    <point x="0.941406" y="0.580882" />
-                                    <point x="0.855469" y="0.930147" />
-                                    <point x="0.121094" y="0.944853" />
-                                    <point x="0.0429688" y="0.650735" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.444444" hotspotY="0.411765" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager3\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0694444" y="0.055147" />
-                                    <point x="0.934028" y="0.0441176" />
-                                    <point x="0.951389" y="0.941176" />
-                                    <point x="0.0520833" y="0.933823" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.444444" hotspotY="0.411765">
-                                <collision-poly>
-                                    <point x="0.0729166" y="0.0588235" />
-                                    <point x="0.920139" y="0.0588235" />
-                                    <point x="0.947917" y="0.930147" />
-                                    <point x="0.0555556" y="0.948529" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.4375" hotspotY="0.411765">
-                                <collision-poly>
-                                    <point x="0.0507813" y="0.242647" />
-                                    <point x="0.257813" y="0.0588235" />
-                                    <point x="0.734375" y="0.0661765" />
-                                    <point x="0.9375" y="0.25" />
-                                    <point x="0.933594" y="0.941177" />
-                                    <point x="0.046875" y="0.944853" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Scientist4" sid="745673913534571">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="652517557390212">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923282352011989" speed="5">
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.242647" y="0.0606618" />
-                                    <point x="0.705882" y="0.0551471" />
-                                    <point x="0.9375" y="0.117647" />
-                                    <point x="0.939338" y="0.463235" />
-                                    <point x="0.884191" y="0.935662" />
-                                    <point x="0.0606618" y="0.9375" />
-                                    <point x="0.0661765" y="0.229779" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="4" loop="1" name="scientist4move" pingpong="0" repeatcount="1" repeatto="0" sid="202308539277927" speed="1">
-                            <frame duration="1" hotspotX="0.411765" hotspotY="0.444444" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.21875" />
-                                    <point x="0.238971" y="0.0555556" />
-                                    <point x="0.944853" y="0.0555556" />
-                                    <point x="0.948529" y="0.427083" />
-                                    <point x="0.878676" y="0.878472" />
-                                    <point x="0.705882" y="0.9375" />
-                                    <point x="0.246324" y="0.944444" />
-                                    <point x="0.0588235" y="0.826389" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.470588" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0698529" y="0.224265" />
-                                    <point x="0.238971" y="0.0625" />
-                                    <point x="0.933823" y="0.0551471" />
-                                    <point x="0.941176" y="0.459559" />
-                                    <point x="0.882353" y="0.647059" />
-                                    <point x="0.875" y="0.941176" />
-                                    <point x="0.0514706" y="0.952206" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.470588" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.176471" />
-                                    <point x="0.378906" y="0.0514706" />
-                                    <point x="0.9375" y="0.0588235" />
-                                    <point x="0.945313" y="0.694853" />
-                                    <point x="0.695313" y="0.933824" />
-                                    <point x="0.25" y="0.9375" />
-                                    <point x="0.0546875" y="0.647059" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.4375" hotspotY="0.411765" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
-                                <collision-poly>
-                                    <point x="0.0625" y="0.683824" />
-                                    <point x="0.0664063" y="0.0514706" />
-                                    <point x="0.621094" y="0.0514706" />
-                                    <point x="0.945313" y="0.227941" />
-                                    <point x="0.9375" y="0.639706" />
-                                    <point x="0.824219" y="0.878676" />
-                                    <point x="0.746094" y="0.948529" />
-                                    <point x="0.324219" y="0.948529" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-            </object-folder>
         </object-folder>
     </object-folder>
     <families />
@@ -718,7 +336,6 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="21" />
     </global-instances>
     <sounds-folder />
     <music-folder>
@@ -730,10 +347,6 @@
         </music-folder>
         <music-folder name="Laboratory">
             <file name="27 - Chill.ogg" />
-            <file name="LevelUp3.m4a" />
-            <file name="LevelUp3.ogg" />
-            <file name="Move5.m4a" />
-            <file name="Move5.ogg" />
         </music-folder>
         <music-folder name="TownVijava">
             <file name="33 - Calm Village.ogg" />
