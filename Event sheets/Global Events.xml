@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global Events</name>
     <events>
+        <variable comment="variable que indica si el codemon fue elegido" constant="0" name="election" sid="756756354536737" static="0" type="number">0</variable>
         <event-block sid="217230387909117">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="481738878372486" type="System" />
