@@ -12,6 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Laboratory</layout>
         <event-sheet active="1" order="1">Laboratory Sheet</event-sheet>
+        <event-sheet order="2">Global Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -21,8 +22,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/System/ UI/" />
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="object-folder/System/ UI/" />
         <folder expanded="0" path="object-folder/System/ UI/Sky/" />
         <folder expanded="0" path="object-folder/System/ UI/Music/" />
         <folder expanded="0" path="object-folder/System/ UI/Input/" />
@@ -35,7 +36,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/World/My house/Tilesets/" />
         <folder expanded="1" path="object-folder/World/My house/TP_Sprites/" />
         <folder expanded="1" path="object-folder/World/Laboratory/" />
-        <folder expanded="0" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
         <folder expanded="0" path="object-folder/Characters/" />
         <folder expanded="0" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Profesor/" />
@@ -64,9 +65,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/DialogBar/" />
         <folder expanded="1" path="animation-folder/CodemonFrame/" />
         <folder expanded="1" path="animation-folder/Door/" />
-        <folder expanded="1" path="animation-folder/Option1/" />
-        <folder expanded="1" path="animation-folder/Option2/" />
-        <folder expanded="1" path="animation-folder/Option3/" />
+        <folder expanded="1" path="animation-folder/Option/" />
+        <folder expanded="1" path="animation-folder/OptionEmpty/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/Idle/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/Walk/" />

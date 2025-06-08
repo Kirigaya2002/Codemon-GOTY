@@ -158,16 +158,6 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Election1" sid="732807681413791">
-                    <plugin id="Tilemap" />
-                    <texture original-source="C:\Users\denni\Downloads\Faceset.png" />
-                    <tiles />
-                </object-type>
-                <object-type name="Election2" sid="507475836073387">
-                    <plugin id="Tilemap" />
-                    <texture original-source="C:\Users\denni\Downloads\Faceset(1).png" />
-                    <tiles />
-                </object-type>
                 <object-type name="Election3" sid="357541420433472">
                     <plugin id="Tilemap" />
                     <texture original-source="C:\Users\denni\Downloads\Faceset(2).png" />
@@ -259,27 +249,22 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Option1" sid="703915423496607">
+                <object-type name="Option" sid="703915423496607">
                     <plugin id="Sprite" />
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185666326293253" speed="5">
-                            <frame duration="1" hotspotX="0.944444" hotspotY="0.428571" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
+                        <animation framecount="1" loop="0" name="notEmpty" pingpong="0" repeatcount="1" repeatto="0" sid="185666326293253" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="empty" pingpong="0" repeatcount="1" repeatto="0" sid="650795763689660" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.4375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Option2" sid="978114727513820">
+                <object-type name="OptionEmpty" sid="479447773367486">
                     <plugin id="Sprite" />
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361383898545141" speed="5">
-                            <frame duration="1" hotspotX="0.944444" hotspotY="0.428571" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Option3" sid="567219861686877">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441013432141899" speed="5">
-                            <frame duration="1" hotspotX="0.944444" hotspotY="0.428571" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286163114587398" speed="5">
+                            <frame duration="1" hotspotX="0.0555556" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Items\Treasure\BigTreasureChest.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -707,6 +692,10 @@
         </music-folder>
         <music-folder name="Laboratory">
             <file name="27 - Chill.ogg" />
+            <file name="LevelUp3.m4a" />
+            <file name="LevelUp3.ogg" />
+            <file name="Move5.m4a" />
+            <file name="Move5.ogg" />
         </music-folder>
     </music-folder>
     <files-folder>

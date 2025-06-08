@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>73.8235</position-y>
-        <position-z>75.1313</position-z>
+        <position-y>327.213</position-y>
+        <position-z>82.6444</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>73.8235</lookat-y>
+        <lookat-y>327.213</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
