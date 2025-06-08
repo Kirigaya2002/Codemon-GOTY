@@ -269,6 +269,37 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Routes">
+                <object-type name="Nature" sid="554701770636356">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                    <tiles>
+                        <tile id="51">
+                            <collision-poly>
+                                <point x="0.03125" y="0.101563" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </tile>
+                    </tiles>
+                </object-type>
+                <object-type name="Ground" sid="448894659165919">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="House" sid="138955920271121">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="Water" sid="764240265372811">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                    <tiles />
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
@@ -644,6 +675,9 @@
             <layout-folder name="Laboratory">
                 <layout>Laboratory.xml</layout>
             </layout-folder>
+            <layout-folder name="Routes">
+                <layout>Route-1.xml</layout>
+            </layout-folder>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -663,6 +697,7 @@
                 <event-sheet>Global Events.xml</event-sheet>
             </event-folder>
         </event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1" />
