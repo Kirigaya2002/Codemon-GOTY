@@ -108,45 +108,325 @@
             </object-folder>
         </object-folder>
         <object-folder name="World">
-            <object-folder name="My house">
-                <object-folder name="Tilesets">
-                    <object-type name="Floors" sid="348324028411995">
+            <object-folder name="StartHouse">
+                <object-folder name="Tilemaps">
+                    <object-type name="TilemapDecoration" sid="793679442135556">
                         <plugin id="Tilemap" />
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                        <tiles>
+                            <tile id="293">
+                                <collision-poly>
+                                    <point x="0.125" y="0.3125" />
+                                    <point x="1" y="0.3125" />
+                                    <point x="1" y="1" />
+                                    <point x="0.125" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="294">
+                                <collision-poly>
+                                    <point x="0" y="0.3125" />
+                                    <point x="0.875" y="0.3125" />
+                                    <point x="0.875" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="326">
+                                <collision-poly>
+                                    <point x="0.125" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.6875" />
+                                    <point x="0.125" y="0.6875" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="327">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.875" y="0" />
+                                    <point x="0.875" y="0.6875" />
+                                    <point x="0" y="0.6875" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="445">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.9375" />
+                                    <point x="0" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="446">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.9375" />
+                                    <point x="0" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="447">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.9375" />
+                                    <point x="0" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="TilemapFloors" sid="710524809434173">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
                         <tiles />
                     </object-type>
-                    <object-type name="Walls" sid="744372856415659">
+                    <object-type name="TilemapColisionFurniture" sid="492526690950231">
                         <plugin id="Tilemap" />
                         <behaviors>
-                            <behavior-type name="Solid" sid="908414787838721">
+                            <behavior-type name="Solid" sid="832544063614842">
                                 <behavior id="solid" />
                             </behavior-type>
                         </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
-                        <tiles />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                        <tiles>
+                            <tile id="43">
+                                <collision-poly>
+                                    <point x="0.3125" y="0.4375" />
+                                    <point x="0.6875" y="0.4375" />
+                                    <point x="0.6875" y="0.75" />
+                                    <point x="1" y="0.75" />
+                                    <point x="1" y="1" />
+                                    <point x="0.3125" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="44">
+                                <collision-poly>
+                                    <point x="0" y="0.75" />
+                                    <point x="1" y="0.75" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="45">
+                                <collision-poly>
+                                    <point x="0" y="0.75" />
+                                    <point x="0.375" y="0.75" />
+                                    <point x="0.375" y="0.4375" />
+                                    <point x="0.75" y="0.4375" />
+                                    <point x="0.75" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="46">
+                                <collision-poly>
+                                    <point x="0" y="0.5625" />
+                                    <point x="1" y="0.5625" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="47">
+                                <collision-poly>
+                                    <point x="0" y="0.5625" />
+                                    <point x="1" y="0.5625" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="52">
+                                <collision-poly>
+                                    <point x="0.5625" y="0.75" />
+                                    <point x="1" y="0.75" />
+                                    <point x="1" y="1" />
+                                    <point x="0.5625" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="53">
+                                <collision-poly>
+                                    <point x="0" y="0.75" />
+                                    <point x="0.4375" y="0.75" />
+                                    <point x="0.4375" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="54">
+                                <collision-poly>
+                                    <point x="0.0625" y="0" />
+                                    <point x="0.9375" y="0" />
+                                    <point x="0.9375" y="1" />
+                                    <point x="0.0625" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="59">
+                                <collision-poly>
+                                    <point x="0.375" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.8125" />
+                                    <point x="0.375" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="60">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.800781" />
+                                    <point x="0" y="0.800781" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="61">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.685547" y="0" />
+                                    <point x="0.685547" y="0.8125" />
+                                    <point x="0" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="62">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.875" />
+                                    <point x="0" y="0.875" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="63">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.875" />
+                                    <point x="0" y="0.875" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="68">
+                                <collision-poly>
+                                    <point x="0.1875" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.1875" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="69">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.875" y="0" />
+                                    <point x="0.875" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="70">
+                                <collision-poly>
+                                    <point x="0.25" y="0" />
+                                    <point x="0.75" y="0" />
+                                    <point x="0.75" y="0.8125" />
+                                    <point x="0.25" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="112">
+                                <collision-poly>
+                                    <point x="0" y="0.5" />
+                                    <point x="0.8125" y="0.5" />
+                                    <point x="0.875" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="114">
+                                <collision-poly>
+                                    <point x="0" y="0.5" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="128">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.9375" y="0" />
+                                    <point x="0.9375" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="144">
+                                <collision-poly>
+                                    <point x="0.431641" y="0.1875" />
+                                    <point x="0.9375" y="0.1875" />
+                                    <point x="0.9375" y="0.871094" />
+                                    <point x="0.4375" y="0.871094" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="152">
+                                <collision-poly>
+                                    <point x="0.5" y="0.125" />
+                                    <point x="1" y="0.125" />
+                                    <point x="1" y="0.8125" />
+                                    <point x="0.5" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="153">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.8125" />
+                                    <point x="0" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="154">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.5" y="0.8125" />
+                                    <point x="0" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="162">
+                                <collision-poly>
+                                    <point x="0.0625" y="0.125" />
+                                    <point x="1" y="0.125" />
+                                    <point x="1" y="0.9375" />
+                                    <point x="0.0625" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="164">
+                                <collision-poly>
+                                    <point x="0" y="0.125" />
+                                    <point x="0.875" y="0.125" />
+                                    <point x="0.875" y="0.9375" />
+                                    <point x="0" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
                     </object-type>
-                    <object-type name="Objects" sid="249343456013818">
+                    <object-type name="TilemapWalls" sid="708520850873577">
                         <plugin id="Tilemap" />
                         <behaviors>
-                            <behavior-type name="Solid" sid="994245160540321">
+                            <behavior-type name="Solid" sid="528165690496929">
                                 <behavior id="solid" />
                             </behavior-type>
                         </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\Elements.png" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
                         <tiles />
                     </object-type>
-                    <object-type name="decorations" sid="122194517886921">
+                    <object-type name="TilemapColisionDecoration" sid="156696694377843">
                         <plugin id="Tilemap" />
                         <behaviors>
-                            <behavior-type name="Solid" sid="202537265712647">
+                            <behavior-type name="Solid" sid="952846801789495">
                                 <behavior id="solid" />
                             </behavior-type>
                         </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                        <tiles>
+                            <tile id="100">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.9375" />
+                                    <point x="0" y="0.9375" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="TilemapFurniture" sid="493823021573761">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
                         <tiles />
                     </object-type>
                 </object-folder>
-                <object-folder name="TP_Sprites" />
             </object-folder>
             <object-folder name="Laboratory">
                 <object-folder name="Tilesets">
@@ -238,6 +518,28 @@
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
+                <object-type name="Player" sid="513425514113677">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="DirectionName" sid="595018900294659" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="ScrollTo" sid="146820832850104">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                        <behavior-type name="8Direction" sid="581442045498858">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="786644189827673">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554372701827389" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
                 <object-type name="PlayerAnimation" sid="981208279384184">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -288,24 +590,31 @@
                         </animation-folder>
                     </animation-folder>
                 </object-type>
-                <object-type name="Player" sid="513425514113677">
+            </object-folder>
+            <object-folder name="Mom">
+                <object-type name="MomAnimation" sid="797177910311651">
                     <plugin id="Sprite" />
-                    <instance-variables>
-                        <instance-variable name="DirectionName" sid="595018900294659" type="string" />
-                    </instance-variables>
-                    <behaviors>
-                        <behavior-type name="ScrollTo" sid="146820832850104">
-                            <behavior id="scrollto" />
-                        </behavior-type>
-                        <behavior-type name="8Direction" sid="581442045498858">
-                            <behavior id="EightDir" />
-                        </behavior-type>
-                        <behavior-type name="BoundToLayout" sid="786644189827673">
-                            <behavior id="bound" />
-                        </behavior-type>
-                    </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554372701827389" speed="5">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525817146264444" speed="5">
+                            <frame duration="1" hotspotX="2" hotspotY="3.66964">
+                                <collision-poly>
+                                    <point x="0.1875" y="0.133333" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="0.133333" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="1" />
+                                    <point x="0.0625" y="1" />
+                                    <point x="0.0625" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Mom" sid="235094269700175">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911488932893258" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
@@ -319,8 +628,9 @@
             <layout>Main Menu Layout.xml</layout>
         </layout-folder>
         <layout-folder name="World">
-            <layout-folder name="My house">
-                <layout>Second Floor.xml</layout>
+            <layout-folder name="StartHouse">
+                <layout>SecondFloor.xml</layout>
+                <layout>FirstFloor.xml</layout>
             </layout-folder>
             <layout-folder name="Laboratory">
                 <layout>Laboratory.xml</layout>
@@ -335,8 +645,9 @@
             <event-sheet>Main Menu Sheet.xml</event-sheet>
         </event-folder>
         <event-folder name="World">
-            <event-folder name="My house">
-                <event-sheet>My House Sheet.xml</event-sheet>
+            <event-folder name="StartHouse">
+                <event-sheet>SecondFloor.xml</event-sheet>
+                <event-sheet>FirstFloor.xml</event-sheet>
             </event-folder>
             <event-folder name="Laboratory">
                 <event-sheet>Laboratory Sheet.xml</event-sheet>
