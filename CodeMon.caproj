@@ -108,49 +108,68 @@
             </object-folder>
         </object-folder>
         <object-folder name="World">
-            <object-folder name="My house">
-                <object-folder name="Tilesets">
-                    <object-type name="Floors" sid="348324028411995">
-                        <plugin id="Tilemap" />
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
-                        <tiles />
-                    </object-type>
-                    <object-type name="Walls" sid="744372856415659">
-                        <plugin id="Tilemap" />
-                        <behaviors>
-                            <behavior-type name="Solid" sid="908414787838721">
-                                <behavior id="solid" />
-                            </behavior-type>
-                        </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
-                        <tiles />
-                    </object-type>
-                    <object-type name="Objects" sid="249343456013818">
-                        <plugin id="Tilemap" />
-                        <behaviors>
-                            <behavior-type name="Solid" sid="994245160540321">
-                                <behavior id="solid" />
-                            </behavior-type>
-                        </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\Elements.png" />
-                        <tiles />
-                    </object-type>
-                    <object-type name="decorations" sid="122194517886921">
-                        <plugin id="Tilemap" />
-                        <behaviors>
-                            <behavior-type name="Solid" sid="202537265712647">
-                                <behavior id="solid" />
-                            </behavior-type>
-                        </behaviors>
-                        <texture original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
-                        <tiles />
-                    </object-type>
-                </object-folder>
-                <object-folder name="TP_Sprites" />
+            <object-folder name="StartHouse">
+                <object-type name="TilemapFloors" sid="710524809434173">
+                    <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="909948365431130">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInteriorFloor.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapWalls" sid="708520850873577">
+                    <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="528165690496929">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapFurniture" sid="492526690950231">
+                    <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="832544063614842">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapDecoration" sid="793679442135556">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                    <tiles />
+                </object-type>
             </object-folder>
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
+                <object-type name="Player" sid="513425514113677">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="DirectionName" sid="595018900294659" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="ScrollTo" sid="146820832850104">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                        <behavior-type name="8Direction" sid="581442045498858">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="786644189827673">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554372701827389" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
                 <object-type name="PlayerAnimation" sid="981208279384184">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -201,28 +220,6 @@
                         </animation-folder>
                     </animation-folder>
                 </object-type>
-                <object-type name="Player" sid="513425514113677">
-                    <plugin id="Sprite" />
-                    <instance-variables>
-                        <instance-variable name="DirectionName" sid="595018900294659" type="string" />
-                    </instance-variables>
-                    <behaviors>
-                        <behavior-type name="ScrollTo" sid="146820832850104">
-                            <behavior id="scrollto" />
-                        </behavior-type>
-                        <behavior-type name="8Direction" sid="581442045498858">
-                            <behavior id="EightDir" />
-                        </behavior-type>
-                        <behavior-type name="BoundToLayout" sid="786644189827673">
-                            <behavior id="bound" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554372701827389" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
             </object-folder>
         </object-folder>
     </object-folder>
@@ -232,8 +229,8 @@
             <layout>Main Menu Layout.xml</layout>
         </layout-folder>
         <layout-folder name="World">
-            <layout-folder name="My house">
-                <layout>Second Floor.xml</layout>
+            <layout-folder name="StartHouse">
+                <layout>SecondFloor.xml</layout>
             </layout-folder>
         </layout-folder>
     </layout-folder>
@@ -242,8 +239,8 @@
             <event-sheet>Main Menu Sheet.xml</event-sheet>
         </event-folder>
         <event-folder name="World">
-            <event-folder name="My house">
-                <event-sheet>My House Sheet.xml</event-sheet>
+            <event-folder name="StartHouse">
+                <event-sheet>SecondFloor.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="New folder">
