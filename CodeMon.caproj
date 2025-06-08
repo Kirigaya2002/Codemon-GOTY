@@ -172,6 +172,38 @@
                     </object-type>
                 </object-folder>
             </object-folder>
+            <object-folder name="TownVijava">
+                <object-type name="TilemapNature" sid="653391029801599">
+                    <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="271872783012382">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapFloor" sid="426212325931100">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapHouses" sid="453119663168318">
+                    <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="524246368683467">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapWater" sid="610408604668318">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                    <tiles />
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
@@ -262,6 +294,9 @@
             <layout-folder name="Laboratory">
                 <layout>Laboratory.xml</layout>
             </layout-folder>
+            <layout-folder name="TownVijava">
+                <layout>TownVijava.xml</layout>
+            </layout-folder>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -274,6 +309,9 @@
             </event-folder>
             <event-folder name="Laboratory">
                 <event-sheet>Laboratory Sheet.xml</event-sheet>
+            </event-folder>
+            <event-folder name="TownVillava">
+                <event-sheet>TownVillava Sheet.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="New folder">
@@ -309,6 +347,9 @@
         </music-folder>
         <music-folder name="Laboratory">
             <file name="27 - Chill.ogg" />
+        </music-folder>
+        <music-folder name="TownVijava">
+            <file name="33 - Calm Village.ogg" />
         </music-folder>
     </music-folder>
     <files-folder>
