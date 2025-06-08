@@ -493,7 +493,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="761559944801993" type="Text">
-                                    <param id="0" name="Text">&quot;Hola soy el Profesor, bienvenido al laboratorio codemon&quot;</param>
+                                    <param id="0" name="Text">&quot;Profesor: Mira quién llegó al fin...&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -512,7 +512,74 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="192045890097414" type="Text">
-                                    <param id="0" name="Text">&quot;Eres el nuevo del pueblo, es hora de que elijas a tu codemon, adelante toma uno&quot;</param>
+                                    <param id="0" name="Text">&quot;Profesor: Todos los estudiantes eligieron su Codemon.... Pero no te preocupes, aún queda uno sobre la mesa&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="597240608110850">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="410961003647973" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="171641337193410" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="890467273847929" type="System">
+                                    <param id="0" name="Variable">election</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="749266044272831" type="Text">
+                                    <param id="0" name="Text">&quot;Profesor: Bien, ahora sí. Toma a tu compañero de programación... tu primer Codemon.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="303493880425025">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="268705134098272" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="485818815082794" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="809908622822749" type="System">
+                                    <param id="0" name="Variable">election</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="836893700658908" type="Text">
+                                    <param id="0" name="Text">&quot;Profesor: ¡¿Eh?! ¡Ya lo agarraste! Supongo que no tienes mucha paciencia&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="570132149454406">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="332683991939750" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="290738249915781" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;profesor&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="160018227069822" type="Text">
+                                    <param id="0" name="Text">&quot;Profesor: Y antes de irte, te recomiendo hablar con los demás científicos del laboratorio. Cada uno tiene algo útil que enseñarte sobre programación.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -522,7 +589,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="572053359080395" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="434654341820494" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -561,7 +628,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="739767833108335" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="486679746262622" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -571,26 +638,83 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="545362663232167" type="Text">
-                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                    <param id="0" name="Text">&quot;Científica: ¡Hola! Antes de seguir tu aventura, necesitas entender algo muy importante&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="260817872298243">
+                        <event-block sid="180646096640420">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="111782570860732" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="155936753136043" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="180044836461043" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="572310736052598" type="Text">
                                     <param id="0" name="Instance variable">character</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;scientist1&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="295821807231507" type="Text">
-                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 1, bienvenido al laboratorio codemon&quot;</param>
+                                <action id="0" name="Set text" sid="179710003951978" type="Text">
+                                    <param id="0" name="Text">&quot;Científica: En este mundo las batallas se miden por conocimiento de programación&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="495816984092751">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="694943975742257" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="582742011850957" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="859163052252354" type="Text">
+                                    <param id="0" name="Text">&quot;Científica: ¿Sabías que existen tipos de datos en Java?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="782029626857266">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="562574523228807" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="817245283560481" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="906297187540743" type="Text">
+                                    <param id="0" name="Text">&quot;Científica: Uno de estos tipos de datos es el int, es para números enteros como el 5 y 100 o  -20&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555782509337140">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="202432574088787" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="337834825220078" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="760523658499236" type="Text">
+                                    <param id="0" name="Text">&quot;Científica: Si quieres saber mas de los tipos básicos que existen en Java, animate a hablar con mis otros compañeros&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -600,7 +724,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="717903435051067" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">4</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="545551279575183" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -639,7 +763,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="247828772999288" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="684569039173370" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -649,26 +773,64 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="832509900481321" type="Text">
-                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                    <param id="0" name="Text">&quot;Científico: ¡Buenas! Espero que hayas hablado con la científica, o no entenderás lo que te explicaré&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="677485180771528">
+                        <event-block sid="701299630393320">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="870638256646167" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="114532753304254" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="371094510042976" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="893870055549815" type="Text">
                                     <param id="0" name="Instance variable">character</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;scientist2&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="620759662071251" type="Text">
-                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 2, bienvenido al laboratorio codemon&quot;</param>
+                                <action id="0" name="Set text" sid="180617710502576" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: ¿Sabías que existen otros tipos de datos en Java además de los dichos por su persona?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="262670000163419">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="869506758091249" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="584353388744281" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="541370517403095" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: double es para números decimales, como el 3.14 o -0.5&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="383130535121057">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="233738000679237" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="285666512856871" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="700535027028187" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: Guarde este conocimiento será útil para la aventura&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -678,7 +840,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="515765794760757" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="164073592855962" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -717,7 +879,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="427545120475677" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="510269084755248" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -727,7 +889,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="325545822734703" type="Text">
-                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                    <param id="0" name="Text">&quot;Científico: Vienes tarde como siempre...&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -736,7 +898,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="373198522246469" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="998216845563447" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -746,7 +908,45 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="472786296999382" type="Text">
-                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 3, bienvenido al laboratorio codemon&quot;</param>
+                                    <param id="0" name="Text">&quot;Científico: Espero que hayas hablado con mis compañeros, no quiero explicar desde un principio&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="693885977861861">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="915833630701394" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="362165436029894" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="407179671707231" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: char, este es otro tipo de dato encontrado en Java&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629489185180523">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="973131492013309" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="356799969881911" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="524617881503616" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: Básicamente... guarda una sola letra,  solo una. Como &apos;A&apos;, &apos;b&apos;, o &apos;Z&apos;.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -756,7 +956,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="942680610695185" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="254107261042726" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -795,7 +995,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="774085442488112" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="121031367911028" type="Text">
                                     <param id="0" name="Instance variable">character</param>
@@ -805,26 +1005,64 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="911385467597722" type="Text">
-                                    <param id="0" name="Text">&quot;Ve con el profesor&quot;</param>
+                                    <param id="0" name="Text">&quot;Científico: ¡Hola extraño! ¿Sabías que tengo tipo de dato en Java favorito?&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="168944474209648">
+                        <event-block sid="722717904046168">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="350495900474978" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="606568677943907" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="273393610830430" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="466542741210568" type="Text">
                                     <param id="0" name="Instance variable">character</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">&quot;scientist4&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="630647724802894" type="Text">
-                                    <param id="0" name="Text">&quot;Hola soy el Scientifico 4, bienvenido al laboratorio codemon&quot;</param>
+                                <action id="0" name="Set text" sid="148174543539536" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: Es uno de los mas simples pero es super útil&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="392806008129099">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="659669909840529" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="216027634574040" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="521581186192366" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: Es súper simple, pero poderoso. Solo tiene dos opciones: true, que significa verdadero y false, que significa falso&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="810613350015997">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="902444449125819" type="Text">
+                                    <param id="0" name="Instance variable">counter_dialog</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="980977243849726" type="Text">
+                                    <param id="0" name="Instance variable">character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;scientist4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="400781096498709" type="Text">
+                                    <param id="0" name="Text">&quot;Científico: Es como una pregunta de sí o no ¿Estas listo para tu aventura? Espero que sea un true.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -834,7 +1072,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="942468067904446" type="Text">
                                     <param id="0" name="Instance variable">counter_dialog</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="394402291594097" type="Text">
                                     <param id="0" name="Instance variable">character</param>
