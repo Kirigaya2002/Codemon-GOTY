@@ -2,5 +2,19 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>SecondFloor</name>
-    <events />
+    <events>
+        <include>Global Events</include>
+        <event-block sid="737916601184799">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="944298772158031" type="Player">
+                    <param id="0" name="Object">TilemapColisionDecoration</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="911484026351766" type="System">
+                    <param id="0" name="Layout">FirstFloor</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
