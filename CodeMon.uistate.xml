@@ -12,7 +12,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Laboratory</layout>
         <event-sheet active="1" order="1">Laboratory Sheet</event-sheet>
-        <event-sheet order="2">Global Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
