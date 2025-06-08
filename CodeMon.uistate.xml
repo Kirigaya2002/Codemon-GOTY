@@ -21,7 +21,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/ UI/" />
         <folder expanded="0" path="object-folder/System/ UI/Sky/" />
         <folder expanded="0" path="object-folder/System/ UI/Music/" />
@@ -30,32 +30,34 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Dialogs/" />
         <folder expanded="1" path="object-folder/System/ UI/Election/" />
-        <folder expanded="0" path="object-folder/World/" />
-        <folder expanded="0" path="object-folder/World/My house/" />
+        <folder expanded="1" path="object-folder/World/" />
+        <folder expanded="1" path="object-folder/World/My house/" />
         <folder expanded="1" path="object-folder/World/My house/Tilesets/" />
         <folder expanded="1" path="object-folder/World/My house/TP_Sprites/" />
-        <folder expanded="1" path="object-folder/World/Laboratory/" />
-        <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="0" path="object-folder/World/Laboratory/" />
+        <folder expanded="0" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/Routes/" />
         <folder expanded="0" path="object-folder/Characters/" />
         <folder expanded="0" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Profesor/" />
         <folder expanded="0" path="object-folder/Characters/Scientists/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/Menu/" />
-        <folder expanded="0" path="layout-folder/World/" />
+        <folder expanded="1" path="layout-folder/World/" />
         <folder expanded="0" path="layout-folder/World/My house/" />
         <folder expanded="0" path="layout-folder/World/Laboratory/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="layout-folder/World/Routes/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Menu/" />
         <folder expanded="0" path="event-folder/World/" />
         <folder expanded="0" path="event-folder/World/My house/" />
         <folder expanded="1" path="event-folder/World/Laboratory/" />
-        <folder expanded="1" path="event-folder/New folder/" />
-        <folder expanded="1" path="event-folder/New folder/Global Sheets/" />
+        <folder expanded="0" path="event-folder/New folder/" />
+        <folder expanded="0" path="event-folder/New folder/Global Sheets/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
-        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="music-folder/Main Menu/" />
         <folder expanded="1" path="music-folder/House/" />
         <folder expanded="1" path="music-folder/Laboratory/" />
