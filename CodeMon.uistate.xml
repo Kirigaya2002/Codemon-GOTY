@@ -10,7 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Laboratory</layout>
+        <layout order="0">Laboratory</layout>
+        <layout active="1" order="2">TownVijava</layout>
+        <event-sheet order="1">TownVillava Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -29,31 +31,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Election/" />
         <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
-        <folder expanded="0" path="object-folder/World/" />
+        <folder expanded="1" path="object-folder/World/" />
         <folder expanded="0" path="object-folder/World/StartHouse/" />
         <folder expanded="1" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="1" path="object-folder/World/Laboratory/" />
         <folder expanded="0" path="object-folder/World/Laboratory/Tilesets/" />
-        <folder expanded="0" path="object-folder/World/TownVijava/" />
+        <folder expanded="1" path="object-folder/World/TownVijava/" />
         <folder expanded="0" path="object-folder/World/Routes/" />
         <folder expanded="0" path="object-folder/Characters/" />
         <folder expanded="0" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Mom/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/Menu/" />
-        <folder expanded="0" path="layout-folder/World/" />
+        <folder expanded="1" path="layout-folder/World/" />
         <folder expanded="1" path="layout-folder/World/StartHouse/" />
         <folder expanded="1" path="layout-folder/World/Laboratory/" />
         <folder expanded="1" path="layout-folder/World/TownVijava/" />
         <folder expanded="0" path="layout-folder/World/Routes/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/Menu/" />
-        <folder expanded="0" path="event-folder/World/" />
+        <folder expanded="1" path="event-folder/World/" />
         <folder expanded="1" path="event-folder/World/StartHouse/" />
         <folder expanded="1" path="event-folder/World/Laboratory/" />
-        <folder expanded="0" path="event-folder/World/TownVillava/" />
-        <folder expanded="1" path="event-folder/New folder/" />
+        <folder expanded="1" path="event-folder/World/TownVillava/" />
+        <folder expanded="0" path="event-folder/New folder/" />
         <folder expanded="1" path="event-folder/New folder/Global Sheets/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
@@ -71,6 +73,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/EmptyOption/" />
         <folder expanded="1" path="animation-folder/Option/" />
         <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/DoorToLab/" />
+        <folder expanded="1" path="animation-folder/DoorToRoute1/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/Idle/" />

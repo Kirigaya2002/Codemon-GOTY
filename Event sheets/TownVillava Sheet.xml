@@ -17,5 +17,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="386742651164691">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="611733177314102" type="Player">
+                    <param id="0" name="Object">DoorToLab</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="338605813572357" type="System">
+                    <param id="0" name="Layout">FirstFloor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="216408929275961">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="211348927766798" type="Player">
+                    <param id="0" name="Object">DoorToRoute1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="841480830097476" type="System">
+                    <param id="0" name="Layout">Route-1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
