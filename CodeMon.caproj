@@ -484,7 +484,7 @@
                     <tiles />
                 </object-type>
             </object-folder>
-            <object-folder name="Routes">
+             <object-folder name="Routes">
                 <object-type name="Nature" sid="554701770636356">
                     <plugin id="Tilemap" />
                     <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
@@ -637,6 +637,9 @@
             </layout-folder>
             <layout-folder name="TownVijava">
                 <layout>TownVijava.xml</layout>
+            </layout-folder>
+            <layout-folder name="Routes">
+                <layout>Route-1.xml</layout>
             </layout-folder>
         </layout-folder>
     </layout-folder>
