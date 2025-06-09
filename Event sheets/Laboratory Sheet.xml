@@ -3,28 +3,75 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Laboratory Sheet</name>
     <events>
-        <event-block sid="519871871229357">
+        <include>Global Events</include>
+        <event-group description="" sid="522559930873598" title="Music">
+            <sub-events>
+                <event-group description="" sid="670009047279066" title="Musica Ambiente">
+                    <sub-events>
+                        <event-block sid="519871871229357">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="622835542115462" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="956831593481903" type="MusicPlayer">
+                                    <param id="0" name="Audio file">27 - Chill</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="774270241232038">
+                            <conditions>
+                                <condition id="-3" name="On end of layout" sid="692859717160855" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="728296732801517" type="MusicPlayer">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="867866480886848" title="Sonidos Ambiente">
+                    <sub-events>
+                        <event-block sid="740964416543308">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="633315830428518" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="645617147865645" type="MusicPlayer">
+                                    <param id="0" name="Audio file">Move5</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="503301339377458" title="Movimento de Personajes" />
+        <event-block sid="239684083511317">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="622835542115462" type="System" />
+                <condition id="-2" name="On start of layout" sid="663112020578530" type="System" />
             </conditions>
-            <actions>
-                <action id="0" name="Play" sid="956831593481903" type="MusicPlayer">
-                    <param id="0" name="Audio file">27 - Chill</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
-        <event-block sid="774270241232038">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="692859717160855" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="728296732801517" type="MusicPlayer">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="127302301697559" title="Acciones" />
+        <event-group description="" sid="545355728517115" title="Dialogos">
+            <sub-events>
+                <event-group description="" sid="977412363633625" title="Dialogo Cofre" />
+                <event-group description="" sid="867699496308729" title="Dialogo Cofre Vacio" />
+                <event-group description="" sid="380135304287041" title="Dialogo Cientifico 1" />
+                <event-group description="" sid="481138054430884" title="Dialogo Cientifico 2" />
+                <event-group description="" sid="742162420715308" title="Dialogo Cientifico 3" />
+                <event-group description="" sid="118828128326882" title="Dialogo Cientifico 4" />
+                <event-group description="" sid="256575674855568" title="Dialogo Profesor" />
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
