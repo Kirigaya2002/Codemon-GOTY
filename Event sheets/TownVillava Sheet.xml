@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TownVillava Sheet</name>
+    <events>
+        <include>Global Events</include>
+        <event-block sid="855873633198698">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="327927809171922" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="579857411726701" type="MusicPlayer">
+                    <param id="0" name="Audio file">33 - Calm Village</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">50</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
