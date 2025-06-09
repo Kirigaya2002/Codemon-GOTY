@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -635,6 +636,11 @@
             <object-folder name="Routes">
                 <object-type name="Nature" sid="554701770636356">
                     <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="476991752806279">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
                     <tiles>
                         <tile id="51">
@@ -654,6 +660,11 @@
                 </object-type>
                 <object-type name="House" sid="138955920271121">
                     <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="673170874753103">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
                     <tiles />
                 </object-type>
@@ -661,6 +672,10 @@
                     <plugin id="Tilemap" />
                     <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
                     <tiles />
+                </object-type>
+                <object-type name="DoorToTown" sid="376401458162772">
+                    <plugin id="TiledBg" />
+                    <texture />
                 </object-type>
             </object-folder>
         </object-folder>
@@ -1038,13 +1053,15 @@
             <event-folder name="TownVillava">
                 <event-sheet>TownVillava Sheet.xml</event-sheet>
             </event-folder>
+            <event-folder name="Routes">
+                <event-sheet>Route-1.xml</event-sheet>
+            </event-folder>
         </event-folder>
         <event-folder name="New folder">
             <event-folder name="Global Sheets">
                 <event-sheet>Global Events.xml</event-sheet>
             </event-folder>
         </event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="30" />

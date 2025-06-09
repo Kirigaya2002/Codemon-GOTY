@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Route-1</name>
+    <events>
+        <include>Global Events</include>
+        <event-block sid="823856343933469">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="886780291038799" type="Player">
+                    <param id="0" name="Object">DoorToTown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="952363780025709" type="System">
+                    <param id="0" name="Layout">TownVijava</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="749813230207899">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="547076377738394" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="897281290637797" type="MusicPlayer">
+                    <param id="0" name="Audio file">27 - Chill</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128566547491561">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="313882410161582" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="571819016087602" type="MusicPlayer">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
