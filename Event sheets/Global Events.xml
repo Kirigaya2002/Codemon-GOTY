@@ -16,6 +16,10 @@
                     <param id="0" name="Pin to">Player</param>
                     <param id="1" name="Mode">1</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="203335820617415" type="DisplayArrow">
+                    <param id="0" name="Pin to">PlayerAnimation</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="512966134545295" title="Movimiento del juegador">
@@ -93,6 +97,58 @@
                     </conditions>
                     <actions>
                         <action id="2" name="Stop" sid="155336137054749" type="PlayerAnimation" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="410893429838361" title="Visualizacion Personaje">
+            <sub-events>
+                <event-block sid="713539438475650">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="359189561329708" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="772042659156481" type="DisplayArrow">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="746162946127605">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="748502035311640" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="384163532493236" type="DisplayArrow">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="328318871009105">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="858675908440576" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="454280467149223" type="DisplayArrow">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="966309233121865">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="937212379847903" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="188142422661829" type="DisplayArrow">
+                            <param id="0" name="Angle">90</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
