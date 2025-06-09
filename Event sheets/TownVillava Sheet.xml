@@ -7,6 +7,7 @@
         <event-block sid="855873633198698">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="327927809171922" type="System" />
+                <condition id="4" inverted="1" name="Is any playing" sid="576503777848670" type="MusicPlayer" />
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="579857411726701" type="MusicPlayer">
@@ -38,6 +39,16 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="841480830097476" type="System">
                     <param id="0" name="Layout">Route-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="407775722945414">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="890115039755085" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="866523642267709" type="MusicPlayer">
+                    <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
