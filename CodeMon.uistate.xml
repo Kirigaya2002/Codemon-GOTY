@@ -34,6 +34,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="1" path="object-folder/World/Laboratory/" />
         <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/Routes/" />
         <folder expanded="1" path="object-folder/World/TownVijava/" />
         <folder expanded="1" path="object-folder/Characters/" />
         <folder expanded="1" path="object-folder/Characters/Protagonist/" />
@@ -42,6 +43,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/Menu/" />
         <folder expanded="1" path="layout-folder/World/" />
         <folder expanded="1" path="layout-folder/World/My house/" />
+        <folder expanded="0" path="layout-folder/World/Routes/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Menu/" />
         <folder expanded="1" path="event-folder/World/" />
