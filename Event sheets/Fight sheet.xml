@@ -102,6 +102,7 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="33" name="Stop all" sid="643905927958669" type="MusicPlayer" />
                                 <action id="-2" name="Go to layout" sid="327517644367150" type="System">
                                     <param id="0" name="Layout">Route-1</param>
                                 </action>

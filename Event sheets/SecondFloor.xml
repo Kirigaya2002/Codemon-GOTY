@@ -4,25 +4,29 @@
     <name>SecondFloor</name>
     <events>
         <include>Global Events</include>
-        <event-block sid="737916601184799">
+        <event-block sid="987400259706620">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="944298772158031" type="Player">
-                    <param id="0" name="Object">TilemapColisionDecoration</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="906040585434884" type="System" />
+                <condition id="4" inverted="1" name="Is any playing" sid="402502199041038" type="MusicPlayer" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="911484026351766" type="System">
-                    <param id="0" name="Layout">FirstFloor</param>
+                <action id="0" name="Play" sid="681295351303815" type="MusicPlayer">
+                    <param id="0" name="Audio file">22 - Dream</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="471510180047464">
+        <event-block sid="198368314561697">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="350116018741382" type="System" />
+                <condition id="0" name="On collision with another object" sid="819658206501336" type="Player">
+                    <param id="0" name="Object">SpriteDoorFirstFloor</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-20" name="Set layout scale" sid="765926214425717" type="System">
-                    <param id="0" name="Scale">2.0</param>
+                <action id="-2" name="Go to layout" sid="892337381337612" type="System">
+                    <param id="0" name="Layout">FirstFloor</param>
                 </action>
             </actions>
         </event-block>

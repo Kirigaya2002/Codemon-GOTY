@@ -484,12 +484,100 @@
                                     <point x="0" y="0.9375" />
                                 </collision-poly>
                             </tile>
+                            <tile id="293">
+                                <collision-poly>
+                                    <point x="0.125" y="0.3125" />
+                                    <point x="1" y="0.3125" />
+                                    <point x="1" y="1" />
+                                    <point x="0.125" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="294">
+                                <collision-poly>
+                                    <point x="0" y="0.3125" />
+                                    <point x="0.875" y="0.3125" />
+                                    <point x="0.875" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="296">
+                                <collision-poly>
+                                    <point x="0.0625" y="0" />
+                                    <point x="0.9375" y="0" />
+                                    <point x="0.9375" y="1" />
+                                    <point x="0.0625" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="326">
+                                <collision-poly>
+                                    <point x="0.125" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.6875" />
+                                    <point x="0.125" y="0.6875" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="327">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.875" y="0" />
+                                    <point x="0.875" y="0.6875" />
+                                    <point x="0" y="0.6875" />
+                                </collision-poly>
+                            </tile>
                         </tiles>
                     </object-type>
                     <object-type name="TilemapFurniture" sid="493823021573761">
                         <plugin id="Tilemap" />
                         <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
                         <tiles />
+                    </object-type>
+                </object-folder>
+                <object-folder name="Sprites">
+                    <object-type name="SpriteDoorSecondFloor" sid="872903116978014">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="357756371242914">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952964314891904" speed="5">
+                                <frame duration="1" hotspotX="16.5" hotspotY="12.2667" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="SpriteDoorOutside" sid="240483204932600">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="747045887368395">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="726390790282682" speed="5">
+                                <frame duration="1" hotspotX="-13.7222" hotspotY="-9.88235" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png">
+                                    <collision-poly>
+                                        <point x="1" y="1" />
+                                        <point x="0" y="1" />
+                                        <point x="0" y="0" />
+                                        <point x="1" y="0" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="SpriteDoorFirstFloor" sid="125238298415936">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="750020310692297">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242469196880287" speed="5">
+                                <frame duration="1" hotspotX="16.5" hotspotY="12.2667" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                            </animation>
+                        </animation-folder>
                     </object-type>
                 </object-folder>
             </object-folder>
@@ -709,7 +797,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type global="1" name="PlayerAnimation" sid="981208279384184">
+                <object-type name="PlayerAnimation" sid="981208279384184">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Pin" sid="601744333654289">
@@ -1246,7 +1334,7 @@
                 <event-sheet>Route-1.xml</event-sheet>
             </event-folder>
         </event-folder>
-        <event-folder name="New folder">
+        <event-folder name="Global">
             <event-folder name="Global Sheets">
                 <event-sheet>Global Events.xml</event-sheet>
             </event-folder>
