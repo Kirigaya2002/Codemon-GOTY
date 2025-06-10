@@ -57,7 +57,7 @@
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809956041555718" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\free-sky-with-clouds-background-pixel-art-set\Clouds\Clouds 1\4.png">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Construct 2 Proyecto\Sprites\free-sky-with-clouds-background-pixel-art-set\Clouds\Clouds 1\4.png">
                                 <collision-poly>
                                     <point x="0.392361" y="0.697531" />
                                     <point x="0.5" y="0.138889" />
@@ -70,6 +70,10 @@
                             </frame>
                         </animation>
                     </animation-folder>
+                </object-type>
+                <object-type name="SkyTiled" sid="878515205835594">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Construct 2 Proyecto\Sprites\free-sky-with-clouds-background-pixel-art-set\Clouds\Clouds 1\4.png" />
                 </object-type>
             </object-folder>
             <object-folder name="Music">
@@ -685,6 +689,8 @@
                     <plugin id="Sprite" />
                     <instance-variables>
                         <instance-variable name="DirectionName" sid="595018900294659" type="string" />
+                        <instance-variable name="XBeforeFight" sid="290785182553720" type="number" />
+                        <instance-variable name="YBeforeFight" sid="774290322888587" type="number" />
                     </instance-variables>
                     <behaviors>
                         <behavior-type name="ScrollTo" sid="146820832850104">
@@ -703,7 +709,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="PlayerAnimation" sid="981208279384184">
+                <object-type global="1" name="PlayerAnimation" sid="981208279384184">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Pin" sid="601744333654289">
@@ -771,8 +777,8 @@
                 <object-type name="MomAnimation" sid="797177910311651">
                     <plugin id="Sprite" />
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525817146264444" speed="5">
-                            <frame duration="1" hotspotX="2" hotspotY="3.66964">
+                        <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525817146264444" speed="5">
+                            <frame duration="1" hotspotX="2" hotspotY="3.6875">
                                 <collision-poly>
                                     <point x="0.1875" y="0.133333" />
                                     <point x="1" y="1" />
@@ -784,6 +790,33 @@
                                     <point x="0.0625" y="1" />
                                 </collision-poly>
                             </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -1015,6 +1048,159 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Codemon">
+                <object-type name="Codemon" sid="379473574659234">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="Life" sid="808973612432453" type="number" />
+                        <instance-variable name="BaseAttack" sid="592578467461452" type="number" />
+                        <instance-variable name="MaxAttack" sid="385923955154950" type="number" />
+                        <instance-variable name="Type" sid="117946045261116" type="string" />
+                        <instance-variable name="PositionX" sid="683548655276412" type="number" />
+                        <instance-variable name="PositionY" sid="534195024002048" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466854204409025" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Enemy">
+                <object-type name="firstEnemy" sid="404525666715824">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="Life" sid="861962564267793" type="number" />
+                        <instance-variable name="BaseAttack" sid="375381535623735" type="number" />
+                        <instance-variable name="MaxAttack" sid="816402444938020" type="number" />
+                        <instance-variable name="Type" sid="186904337260287" type="string" />
+                        <instance-variable name="PositionX" sid="522746067765348" type="number" />
+                        <instance-variable name="PositionY" sid="744551440279517" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700395079214420" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Fight">
+            <object-folder name="Buttons">
+                <object-type name="AttackBtn" sid="813267263246584">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712290156908671" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\ChoiceBox.png">
+                                <collision-poly>
+                                    <point x="0.015625" y="0.05" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.984375" y="0.05" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.984375" y="0.95" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.015625" y="0.95" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="DefendBtn" sid="305783229098829">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640324222324169" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\ChoiceBox.png">
+                                <collision-poly>
+                                    <point x="0.015625" y="0.05" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.984375" y="0.05" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.984375" y="0.95" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.015625" y="0.95" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SkillBtn" sid="920941269900505">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651743089557111" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\ChoiceBox.png">
+                                <collision-poly>
+                                    <point x="0.015625" y="0.05" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.984375" y="0.05" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.984375" y="0.95" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.015625" y="0.95" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="RunBtn" sid="722676663639502">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309368813958237" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\ChoiceBox.png">
+                                <collision-poly>
+                                    <point x="0.015625" y="0.05" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.984375" y="0.05" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.984375" y="0.95" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.015625" y="0.95" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="UI">
+                <object-type name="lifeBox" sid="939900770688740">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978035852230709" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2 Proyecto\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\DialogueBoxSimple.png">
+                                <collision-poly>
+                                    <point x="0.00632911" y="0.0333333" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.993671" y="0.0333333" />
+                                    <point x="0.993671" y="0.966667" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.00632911" y="0.966667" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="lifeCodemon" sid="635108992021416">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="lifeEnemy" sid="885559774614845">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="ActionsText" sid="199804529524616">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-type name="Font2" sid="497998190068351">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="Tilemap3" sid="991960096048411">
+                <plugin id="Tilemap" />
+                <texture />
+                <tiles />
+            </object-type>
         </object-folder>
     </object-folder>
     <families />
@@ -1036,6 +1222,9 @@
             <layout-folder name="Routes">
                 <layout>Route-1.xml</layout>
             </layout-folder>
+        </layout-folder>
+        <layout-folder name="Fights">
+            <layout>Fight Layout.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -1062,6 +1251,9 @@
                 <event-sheet>Global Events.xml</event-sheet>
             </event-folder>
         </event-folder>
+        <event-folder name="Fights">
+            <event-sheet>Fight sheet.xml</event-sheet>
+        </event-folder>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="30" />
@@ -1081,7 +1273,18 @@
         </global-instance>
         <global-instance type="Keyboard" uid="34" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <sound-folder name="Fight Sounds">
+            <file name="Bonus.m4a" />
+            <file name="Bonus.ogg" />
+            <file name="Impact2.m4a" />
+            <file name="Impact2.ogg" />
+            <file name="Success4.m4a" />
+            <file name="Success4.ogg" />
+            <file name="Alert6.m4a" />
+            <file name="Alert6.ogg" />
+        </sound-folder>
+    </sounds-folder>
     <music-folder>
         <music-folder name="Main Menu">
             <file name="1 - Adventure Begin.ogg" />
@@ -1098,6 +1301,12 @@
         </music-folder>
         <music-folder name="TownVijava">
             <file name="33 - Calm Village.ogg" />
+        </music-folder>
+        <music-folder name="Route 1">
+            <file name="23 - Road.ogg" />
+        </music-folder>
+        <music-folder name="Fight">
+            <file name="17 - Fight.ogg" />
         </music-folder>
     </music-folder>
     <files-folder>

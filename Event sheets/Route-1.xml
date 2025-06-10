@@ -16,16 +16,58 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="352413021772479">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="661559560268665" type="Player">
+                    <param id="0" name="Instance variable">XBeforeFight</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="803374448692901" type="Player">
+                    <param id="0" name="Instance variable">YBeforeFight</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="486181460837307" type="Player">
+                    <param id="0" name="X">Player.XBeforeFight</param>
+                    <param id="1" name="Y">Player.YBeforeFight</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="749813230207899">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="547076377738394" type="System" />
             </conditions>
             <actions>
+                <action id="-18" name="Set layer opacity" sid="854118496354771" type="System">
+                    <param id="0" name="Layer">&quot;foreground&quot;</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="895798019487439" type="System">
+                    <param id="0" name="Layer">&quot;background&quot;</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-15" name="Set visible" sid="701546131868358" type="PlayerAnimation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
                 <action id="0" name="Play" sid="897281290637797" type="MusicPlayer">
                     <param id="0" name="Audio file">27 - Chill</param>
-                    <param id="2" name="Loop">0</param>
+                    <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-12" name="Set group active" sid="136563874475835" type="System">
+                    <param id="0" name="Group name">&quot;Random Fights&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="513211041673718" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="822489193380716" type="System">
+                    <param id="0" name="Group name">&quot;Random Fights&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -39,5 +81,62 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" inactive="1" sid="866094834699903" title="Random Fights">
+            <sub-events>
+                <event-block sid="277800497382094">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="891278778783578" type="System">
+                            <param id="0" name="Interval (seconds)">5.0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="575772341603265" type="System">
+                            <param id="0" name="First value">int(Player.X) % 2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="918005265143509" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Set layer opacity" sid="281819057268534" type="System">
+                            <param id="0" name="Layer">&quot;foreground&quot;</param>
+                            <param id="1" name="Opacity">25</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="944019293173741" type="System">
+                            <param id="0" name="Layer">&quot;background&quot;</param>
+                            <param id="1" name="Opacity">25</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="594962837523586" type="PlayerAnimation">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="177161904302433" type="Player">
+                            <param id="0" name="Instance variable">XBeforeFight</param>
+                            <param id="1" name="Value">Player.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="623548050502564" type="Player">
+                            <param id="0" name="Instance variable">YBeforeFight</param>
+                            <param id="1" name="Value">Player.Y</param>
+                        </action>
+                        <action id="6" name="Stop" sid="535010479080363" type="MusicPlayer">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="229493061251499" type="MusicPlayer">
+                            <param id="0" name="Audio file">Bonus</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="906946583769464" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="682939490170756" type="System">
+                            <param id="0" name="Group name">&quot;Random Fights&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="745053269194417" type="System">
+                            <param id="0" name="Layout">Fight Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

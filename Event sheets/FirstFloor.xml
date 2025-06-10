@@ -4,5 +4,15 @@
     <name>FirstFloor</name>
     <events>
         <include>Global Events</include>
+        <event-block sid="267035529494563">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="665992347183440" type="System" />
+            </conditions>
+            <actions>
+                <action id="-20" name="Set layout scale" sid="850034652355925" type="System">
+                    <param id="0" name="Scale">2.0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
