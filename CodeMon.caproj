@@ -724,6 +724,14 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="DoorToHouse" sid="836310557726794">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920654822193930" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="Routes">
                 <object-type name="Nature" sid="554701770636356">
