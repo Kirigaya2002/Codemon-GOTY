@@ -734,49 +734,152 @@
                 </object-type>
             </object-folder>
             <object-folder name="Routes">
-                <object-type name="Nature" sid="554701770636356">
-                    <plugin id="Tilemap" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="476991752806279">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
-                    <tiles>
-                        <tile id="51">
-                            <collision-poly>
-                                <point x="0.03125" y="0.101563" />
-                                <point x="1" y="0" />
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                            </collision-poly>
-                        </tile>
-                    </tiles>
-                </object-type>
-                <object-type name="Ground" sid="448894659165919">
-                    <plugin id="Tilemap" />
-                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
-                    <tiles />
-                </object-type>
-                <object-type name="House" sid="138955920271121">
-                    <plugin id="Tilemap" />
-                    <behaviors>
-                        <behavior-type name="Solid" sid="673170874753103">
-                            <behavior id="solid" />
-                        </behavior-type>
-                    </behaviors>
-                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
-                    <tiles />
-                </object-type>
-                <object-type name="Water" sid="764240265372811">
-                    <plugin id="Tilemap" />
-                    <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
-                    <tiles />
-                </object-type>
-                <object-type name="DoorToTown" sid="376401458162772">
-                    <plugin id="TiledBg" />
-                    <texture />
-                </object-type>
+                <object-folder name="Route-1">
+                    <object-type name="DoorToTown" sid="376401458162772">
+                        <plugin id="TiledBg" />
+                        <texture />
+                    </object-type>
+                    <object-type name="Ground" sid="448894659165919">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="House" sid="138955920271121">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="673170874753103">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Nature" sid="554701770636356">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="476991752806279">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                        <tiles>
+                            <tile id="51">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.101563" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="Water" sid="764240265372811">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                        <tiles />
+                    </object-type>
+                </object-folder>
+                <object-folder name="Route-3">
+                    <object-type name="DoorToTown3" sid="957537041325244">
+                        <plugin id="TiledBg" />
+                        <texture />
+                    </object-type>
+                    <object-type name="Ground3" sid="379314510746539">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="House3" sid="536331396895592">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="237805930484518">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Nature3" sid="457717479108048">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="995567889881946">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                        <tiles>
+                            <tile id="51">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.101563" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="Flag" sid="539167279293959">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="6" loop="1" name="Flag" pingpong="0" repeatcount="1" repeatto="0" sid="485620540693871" speed="3">
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.9375" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Animated\Flag\FlagRed16x16.png">
+                                    <collision-poly>
+                                        <point x="1" y="0.59375" />
+                                        <point x="1" y="0.5" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0" y="0.90625" />
+                                        <point x="1" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.928571">
+                                    <collision-poly>
+                                        <point x="1" y="0.535714" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="0" y="0.892857" />
+                                        <point x="1" y="0.428571" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.928571">
+                                    <collision-poly>
+                                        <point x="0" y="0.535714" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="0" y="0.892857" />
+                                        <point x="0.357143" y="0.428571" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.9375">
+                                    <collision-poly>
+                                        <point x="0" y="0.59375" />
+                                        <point x="0.34127" y="0.5" />
+                                        <point x="0.81746" y="0.5" />
+                                        <point x="0" y="0.90625" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.928571">
+                                    <collision-poly>
+                                        <point x="0" y="0.535714" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="0" y="0.892857" />
+                                        <point x="0.357143" y="0.428571" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.142857" hotspotY="0.928571">
+                                    <collision-poly>
+                                        <point x="1" y="0.535714" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="1" y="0.428571" />
+                                        <point x="0" y="0.892857" />
+                                        <point x="1" y="0.428571" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
             </object-folder>
         </object-folder>
         <object-folder name="Characters">
@@ -1319,6 +1422,7 @@
             </layout-folder>
             <layout-folder name="Routes">
                 <layout>Route-1.xml</layout>
+                <layout>Route-3.xml</layout>
             </layout-folder>
         </layout-folder>
         <layout-folder name="Fights">
@@ -1342,6 +1446,7 @@
             </event-folder>
             <event-folder name="Routes">
                 <event-sheet>Route-1.xml</event-sheet>
+                <event-sheet>Route-3.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="Global">
