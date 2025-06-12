@@ -43,5 +43,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="321011326839869">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="356104316525023" type="System" />
+            </conditions>
+            <actions>
+                <action id="-20" name="Set layout scale" sid="808240441112392" type="System">
+                    <param id="0" name="Scale">2.0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

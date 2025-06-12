@@ -17,12 +17,12 @@
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-7" name="Set size" sid="582696609009130" type="Player">
-                    <param id="0" name="Width">14</param>
-                    <param id="1" name="Height">14</param>
+                    <param id="0" name="Width">10</param>
+                    <param id="1" name="Height">10</param>
                 </action>
                 <action id="-7" name="Set size" sid="277824510237342" type="PlayerAnimation">
-                    <param id="0" name="Width">24</param>
-                    <param id="1" name="Height">24</param>
+                    <param id="0" name="Width">20</param>
+                    <param id="1" name="Height">20</param>
                 </action>
             </actions>
         </event-block>
@@ -69,6 +69,16 @@
             <actions>
                 <action id="6" name="Stop" sid="866523642267709" type="MusicPlayer">
                     <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="461469836731853">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="531211589159159" type="System" />
+            </conditions>
+            <actions>
+                <action id="-20" name="Set layout scale" sid="577242753930657" type="System">
+                    <param id="0" name="Scale">2.0</param>
                 </action>
             </actions>
         </event-block>

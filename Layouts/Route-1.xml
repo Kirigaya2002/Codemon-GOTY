@@ -132,10 +132,10 @@
                         </behavior-instance>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
+                                <max-speed>100</max-speed>
+                                <acceleration>99999</acceleration>
+                                <deceleration>99999</deceleration>
+                                <directions>4 directions</directions>
                                 <set-angle>360 degree (smooth)</set-angle>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
@@ -258,7 +258,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>40</width>
+                        <width>54</width>
                         <height>30</height>
                         <max-width>54</max-width>
                         <max-height>30</max-height>

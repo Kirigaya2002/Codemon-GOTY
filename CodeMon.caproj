@@ -1154,6 +1154,8 @@
                         <instance-variable name="Type" sid="117946045261116" type="string" />
                         <instance-variable name="PositionX" sid="683548655276412" type="number" />
                         <instance-variable name="PositionY" sid="534195024002048" type="number" />
+                        <instance-variable name="MinDefense" sid="249226826402581" type="number" />
+                        <instance-variable name="MaxDefense" sid="317363766418253" type="number" />
                     </instance-variables>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466854204409025" speed="5">
