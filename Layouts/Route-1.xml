@@ -207,6 +207,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="DoorToTown3" uid="88">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>464.323486328</x>
+                        <y>234.897949219</y>
+                        <z>0</z>
+                        <width>374.236297607</width>
+                        <height>423.802398682</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -258,7 +278,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>54</width>
+                        <width>40</width>
                         <height>30</height>
                         <max-width>54</max-width>
                         <max-height>30</max-height>
