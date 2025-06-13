@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">FirstFloor</layout>
+        <layout active="1" order="0">FirstFloor</layout>
         <layout order="3">Route-1</layout>
-        <event-sheet active="1" order="1">FirstFloor</event-sheet>
+        <event-sheet order="1">FirstFloor</event-sheet>
         <event-sheet order="2">Route-1</event-sheet>
         <event-sheet order="4">Global Events</event-sheet>
     </open-tabs>
@@ -45,10 +45,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/World/Routes/Route-3/" />
         <folder expanded="1" path="object-folder/Characters/" />
         <folder expanded="1" path="object-folder/Characters/Protagonist/" />
-        <folder expanded="1" path="object-folder/Characters/Mom/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
         <folder expanded="0" path="object-folder/Characters/Codemon/" />
         <folder expanded="0" path="object-folder/Characters/Enemy/" />
+        <folder expanded="1" path="object-folder/Characters/Mom/" />
         <folder expanded="0" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
@@ -108,6 +108,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Cientifico4/" />
         <folder expanded="1" path="animation-folder/Codemon/" />
         <folder expanded="1" path="animation-folder/firstEnemy/" />
+        <folder expanded="1" path="animation-folder/Mom/" />
         <folder expanded="1" path="animation-folder/AttackBtn/" />
         <folder expanded="1" path="animation-folder/DefendBtn/" />
         <folder expanded="1" path="animation-folder/SkillBtn/" />

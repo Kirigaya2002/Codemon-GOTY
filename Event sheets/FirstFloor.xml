@@ -53,5 +53,194 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="836088632978359" title="InteractionMom">
+            <sub-events>
+                <event-block sid="389625551636858">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="950486037627708" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="880721232235933" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="478602496594239" title="Dialog">
+                    <sub-events>
+                        <event-block sid="726646839872752">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="941072893798959" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="890949338787355" type="DisplayArrow">
+                                    <param id="0" name="Object">Mom</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="186591795537101" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="184279943540400" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="817449610119413" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;Mom&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="531145613069761" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="592449330827108">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="355611590912398" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="807774285501407" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="356410068949020" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">Text.contador+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367261378012736">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="124633916652137" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="358795135618512" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="311183340796078" type="Text">
+                                    <param id="0" name="Text">&quot;Okasan:&#x0D;&#x0A;Hola hijo!..&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="121735037081998">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="862458329039947" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="382321943828407" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="723629231486807" type="Text">
+                                    <param id="0" name="Text">&quot;Okasan:&#x0D;&#x0A;Como te ha ido estudiando la programación orientada a objetos?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="376993858486172">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="676653801982278" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="264984914314137" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="550893199489761" type="Text">
+                                    <param id="0" name="Text">&quot;Okasan:&#x0D;&#x0A;Si necesitas ayuda puedes visitar el Laboratorio!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="188875406965727">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="905412873166109" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="333967361850454" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="766297575838960" type="Text">
+                                    <param id="0" name="Text">&quot;Okasan:&#x0D;&#x0A;Esta en la parte superior del pueblo, habla con los cientificos para que te ayuden 🤓☝️&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="780909267374403">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="564521626028087" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="609373905759381" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="176549362612816" type="Text">
+                                    <param id="0" name="Text">&quot;Okasan:&#x0D;&#x0A;Te quiero hijo! ❤️&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="189018839477227">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="990957464419503" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Mom&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="539253681106309" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="599027835051838" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="638811037358064" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="998841831998698" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="295569558283299" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="833032290106157" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

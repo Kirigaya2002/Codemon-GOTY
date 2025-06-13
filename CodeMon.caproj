@@ -977,62 +977,6 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder name="Mom">
-                <object-type name="MomAnimation" sid="797177910311651">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525817146264444" speed="5">
-                            <frame duration="1" hotspotX="2" hotspotY="3.6875">
-                                <collision-poly>
-                                    <point x="0.1875" y="0.133333" />
-                                    <point x="1" y="1" />
-                                    <point x="1" y="0.133333" />
-                                    <point x="1" y="1" />
-                                    <point x="1" y="1" />
-                                    <point x="1" y="1" />
-                                    <point x="0.0625" y="1" />
-                                    <point x="0.0625" y="1" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Mom" sid="235094269700175">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911488932893258" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-            </object-folder>
             <object-folder name="Cientificos">
                 <object-type name="Cientifica1" sid="400847670760956">
                     <plugin id="Sprite" />
@@ -1286,6 +1230,21 @@
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700395079214420" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Mom">
+                <object-type name="Mom" sid="465388149471446">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="326396224912880">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324059682136891" speed="5">
+                            <frame duration="1" hotspotX="2" hotspotY="3.13333" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Woman\SpriteSheet.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
