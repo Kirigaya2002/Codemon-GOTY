@@ -13,7 +13,7 @@
                 <action id="0" name="Play" sid="579857411726701" type="MusicPlayer">
                     <param id="0" name="Audio file">33 - Calm Village</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">50</param>
+                    <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-7" name="Set size" sid="582696609009130" type="Player">
