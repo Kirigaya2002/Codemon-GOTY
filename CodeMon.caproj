@@ -1055,7 +1055,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Cientifico2" sid="102267024718824">
+                <object-type name="test" sid="102267024718824">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="231670364066637">
@@ -1403,6 +1403,105 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-type name="Sprite" sid="385326450690059">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="690669858650619">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421798466632883" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Monkey\SeparateAnim\Dead.png">
+                        <collision-poly>
+                            <point x="0.0113636" y="0.0163043" />
+                            <point x="0.994318" y="0.00815217" />
+                            <point x="0.998106" y="0.5" />
+                            <point x="0.967803" y="0.953804" />
+                            <point x="0.5" y="0.913043" />
+                            <point x="0.0340909" y="0.951087" />
+                            <point x="0.0094697" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="923362986659215">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364627595540117" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Cavegirl\Faceset.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NPC1" sid="636448202415874">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="308772294215395">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186425096897679" speed="5">
+                    <frame duration="1" hotspotX="1.94118" hotspotY="0.5" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Cavegirl\SeparateAnim\Idle.png">
+                        <collision-poly>
+                            <point x="0.176471" y="0.166667" />
+                            <point x="1" y="0.277778" />
+                            <point x="1" y="0.222222" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.722222" />
+                            <point x="1" y="0.5" />
+                            <point x="0.117647" y="0.888889" />
+                            <point x="0.0588235" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="421193594297702">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="391193511477338">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218696939447990" speed="5">
+                    <frame duration="1" hotspotX="2" hotspotY="2" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager3\SeparateAnim\Walk.png">
+                        <collision-poly>
+                            <point x="0.25" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.0625" y="1" />
+                            <point x="0.125" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NPC2" sid="435878977895351">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="403589990307698">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111685631261908" speed="5">
+                    <frame duration="1" hotspotX="2" hotspotY="0.5" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Shaman\SeparateAnim\Idle.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="1" y="0.1875" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.8125" />
+                            <point x="0" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

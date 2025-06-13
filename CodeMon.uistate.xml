@@ -10,8 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Route-3</layout>
-        <event-sheet order="1">Route-3</event-sheet>
+        <layout order="0">Route-1</layout>
+        <layout order="3">Laboratory</layout>
+        <event-sheet active="1" order="1">Route-1</event-sheet>
+        <event-sheet order="2">Laboratory Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -24,39 +26,39 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/System/ UI/" />
         <folder expanded="1" path="object-folder/System/ UI/Sky/" />
-        <folder expanded="0" path="object-folder/System/ UI/Music/" />
+        <folder expanded="1" path="object-folder/System/ UI/Music/" />
         <folder expanded="0" path="object-folder/System/ UI/Input/" />
         <folder expanded="0" path="object-folder/System/ UI/Font/" />
-        <folder expanded="1" path="object-folder/System/ UI/Button/" />
+        <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Election/" />
-        <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
+        <folder expanded="0" path="object-folder/System/ UI/Dialog/" />
         <folder expanded="1" path="object-folder/World/" />
         <folder expanded="0" path="object-folder/World/StartHouse/" />
         <folder expanded="1" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="1" path="object-folder/World/StartHouse/Sprites/" />
-        <folder expanded="0" path="object-folder/World/Laboratory/" />
-        <folder expanded="0" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/Laboratory/" />
+        <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
         <folder expanded="0" path="object-folder/World/TownVijava/" />
         <folder expanded="1" path="object-folder/World/Routes/" />
-        <folder expanded="0" path="object-folder/World/Routes/Route-1/" />
-        <folder expanded="1" path="object-folder/World/Routes/Route-3/" />
-        <folder expanded="0" path="object-folder/Characters/" />
-        <folder expanded="0" path="object-folder/Characters/Protagonist/" />
+        <folder expanded="1" path="object-folder/World/Routes/Route-1/" />
+        <folder expanded="0" path="object-folder/World/Routes/Route-3/" />
+        <folder expanded="1" path="object-folder/Characters/" />
+        <folder expanded="1" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Mom/" />
-        <folder expanded="0" path="object-folder/Characters/Cientificos/" />
+        <folder expanded="1" path="object-folder/Characters/Cientificos/" />
         <folder expanded="0" path="object-folder/Characters/Codemon/" />
         <folder expanded="0" path="object-folder/Characters/Enemy/" />
         <folder expanded="0" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/Menu/" />
-        <folder expanded="0" path="layout-folder/World/" />
-        <folder expanded="1" path="layout-folder/World/StartHouse/" />
+        <folder expanded="1" path="layout-folder/World/" />
+        <folder expanded="0" path="layout-folder/World/StartHouse/" />
         <folder expanded="1" path="layout-folder/World/Laboratory/" />
-        <folder expanded="1" path="layout-folder/World/TownVijava/" />
+        <folder expanded="0" path="layout-folder/World/TownVijava/" />
         <folder expanded="1" path="layout-folder/World/Routes/" />
-        <folder expanded="1" path="layout-folder/Fights/" />
+        <folder expanded="0" path="layout-folder/Fights/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Menu/" />
         <folder expanded="0" path="event-folder/World/" />
@@ -76,7 +78,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="music-folder/House/" />
         <folder expanded="0" path="music-folder/Laboratory/" />
         <folder expanded="0" path="music-folder/TownVijava/" />
-        <folder expanded="0" path="music-folder/Route 1/" />
+        <folder expanded="1" path="music-folder/Route 1/" />
         <folder expanded="0" path="music-folder/Fight/" />
         <folder expanded="1" path="animation-folder/Sky/" />
         <folder expanded="1" path="animation-folder/Button/" />
@@ -101,7 +103,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MomAnimation/" />
         <folder expanded="1" path="animation-folder/Mom/" />
         <folder expanded="1" path="animation-folder/Cientifica1/" />
-        <folder expanded="1" path="animation-folder/Cientifico2/" />
+        <folder expanded="1" path="animation-folder/test/" />
         <folder expanded="1" path="animation-folder/Cientifico3/" />
         <folder expanded="1" path="animation-folder/Profesor/" />
         <folder expanded="1" path="animation-folder/Cientifico4/" />
@@ -112,5 +114,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SkillBtn/" />
         <folder expanded="1" path="animation-folder/RunBtn/" />
         <folder expanded="1" path="animation-folder/lifeBox/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/NPC1/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/NPC2/" />
     </folders-expanded>
 </c2uistate>

@@ -65,7 +65,7 @@
                             <param id="0" name="Animation">&quot;scientist1move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="161677483595391" type="Cientifico2">
+                        <action id="4" name="Set animation" sid="161677483595391" type="test">
                             <param id="0" name="Animation">&quot;scientist2move&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -232,7 +232,7 @@
                                             <param id="0" name="Key">90</param>
                                         </condition>
                                         <condition id="1" name="Is overlapping another object" sid="966105356877941" type="DisplayArrow">
-                                            <param id="0" name="Object">Cientifico2</param>
+                                            <param id="0" name="Object">test</param>
                                         </condition>
                                     </conditions>
                                     <actions>

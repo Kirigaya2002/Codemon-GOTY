@@ -50,7 +50,7 @@
                     <param id="1" name="Height">14</param>
                 </action>
                 <action id="-20" name="Set layout scale" sid="109220116331400" type="System">
-                    <param id="0" name="Scale">2.0</param>
+                    <param id="0" name="Scale">1.0</param>
                 </action>
                 <action id="-18" name="Set layer opacity" sid="854118496354771" type="System">
                     <param id="0" name="Layer">&quot;foreground&quot;</param>
@@ -144,6 +144,376 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="745053269194417" type="System">
                             <param id="0" name="Layout">Fight Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="660187009898909" title="Sonido" />
+        <event-block sid="843296429671869">
+            <conditions>
+                <condition id="3" name="On key released" sid="886799233469709" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="831336985443924" type="MusicPlayer">
+                    <param id="0" name="Audio file">Move5</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="499382583602286" title="Acciones NPC">
+            <sub-events>
+                <event-group description="" sid="775025963760429" title="Dialogo2">
+                    <sub-events>
+                        <event-block sid="337837346784798">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="915529698101922" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="541606023153472" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="962999600583821" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">Text.contador+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="531835452921168" title="NPC1">
+                    <sub-events>
+                        <event-block sid="323621802967923">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="996928885681990" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="102016166991619" type="DisplayArrow">
+                                    <param id="0" name="Object">NPC1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="535996955175101" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="764214444044007" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="986646607325213" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;npc1&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="357907393646800" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="430850397331044" title="NPC2">
+                    <sub-events>
+                        <event-block sid="161852673533377">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="833424980084073" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="788132286420521" type="DisplayArrow">
+                                    <param id="0" name="Object">NPC2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="320073444549706" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="903550223193159" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="926126560606982" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;npc2&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="915003306517731" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="486269914102271" title="Dialogo NPC2">
+            <sub-events>
+                <event-block sid="724169090081339">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="161111850646917" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="595236528090182" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="360613591306507" type="Text">
+                            <param id="0" name="Text">&quot;Tadeo: ¡Oye tú! En Java hay palabras que no se pueden usar como nombres. Son reservadas y el lenguaje las necesita para funcionar correctamente.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="664024823738534">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="205949397159365" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="583664522965865" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="845539494727991" type="Text">
+                            <param id="0" name="Text">&quot;Tadeo: Palabras como class, public y void son instrucciones clave. Java ya sabe qué hacen, así que no puedes usarlas como nombres de variables.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="298364340946446">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="184193874622113" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="853935853775094" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="289171134328255" type="Text">
+                            <param id="0" name="Text">&quot;Tadeo: Existen más de 50 palabras reservadas en Java. ¡No son muchas, pero dominarlas te da el poder de escribir código limpio y funcional!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231182526458627">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="650051335218386" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="830026246999415" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="168275916200761" type="Text">
+                            <param id="0" name="Text">&quot;Tadeo: Algunas como final, static o abstract cambian el comportamiento del código. ¡Entenderlas bien es clave para ser un buen desarrollador!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="896467342767855">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="883106015185854" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="508290648333269" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="575201745210836" type="Text">
+                            <param id="0" name="Text">&quot;Tadeo: Ya te conté lo básico. Sigue explorando, joven aprendiz. Las palabras importan, ¡y en Java, aún más! Nos vemos en otro sendero del conocimiento.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="774061083052886">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="495776067563432" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc2&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="393389655737193" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="106041435191038" type="Text">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="738942339916259" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="790491969320525" type="Text">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="431286977718087" type="Dialog">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="462184823038056" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="781839579438509" title="Dialogo NPC1">
+            <sub-events>
+                <event-block sid="958926223903517">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="853080166671065" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="300063976067153" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="913409077850210" type="Text">
+                            <param id="0" name="Text">&quot;Lina: ¡Hola viajero! En Java, todo parte de una clase. Es como un plano: define cómo serán los objetos, qué datos tendrán y qué pueden hacer. ¡Es la base de la programación orientada a objetos!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="769690048394648">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="854307803916325" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="632015594564126" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="429829987546931" type="Text">
+                            <param id="0" name="Text">&quot;Lina: Los objetos son instancias reales de una clase. Tienen atributos que representan su estado y métodos que definen su comportamiento. ¡Todo en Java gira en torno a ellos!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Si no ha elegido tira este comentario</comment>
+                <event-block sid="703134092917714">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="883356399375653" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="647039092285697" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="780001767264155" type="System">
+                            <param id="0" name="Variable">elegido</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="483830713707782" type="Text">
+                            <param id="0" name="Text">&quot;Lina: La encapsulación permite proteger los datos de un objeto. Solo se accede a ellos a través de métodos. ¡Así evitas errores y mantienes tu código limpio y seguro!&#x0D;&#x0A;&#x0D;&#x0A;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Si eligio tira el comentario</comment>
+                <event-block sid="683964050271517">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="653474859033607" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="297879930239954" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="728941641871679" type="System">
+                            <param id="0" name="Variable">elegido</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="530595112175154" type="Text">
+                            <param id="0" name="Text">&quot;Lina: La herencia te permite crear nuevas clases basadas en otras. Así puedes reutilizar código y construir jerarquías lógicas. ¡Como una evolución entre clases!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="455820986468122">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="900112724815355" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="324995083611632" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="331517852468117" type="Text">
+                            <param id="0" name="Text">&quot;Lina: ¡Ha sido un gusto compartir contigo sobre Java! Sigue explorando y aprendiendo, joven programador. ¡Ten cuidado en tu camino, podrian aparecer codemones! &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="742094881190684">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="560195599607540" type="Text">
+                            <param id="0" name="Instance variable">personaje</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;npc1&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="606410310483234" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="588159120445327" type="Text">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="232005061749027" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="118367990856847" type="Text">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="727946755121574" type="Dialog">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="503021806355249" type="Player">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
