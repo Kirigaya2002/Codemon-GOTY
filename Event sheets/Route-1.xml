@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Route-1</name>
     <events>
+        <variable constant="0" name="randomBattle" sid="597332000643717" static="0" type="number">0</variable>
         <include>Global Events</include>
         <event-block sid="823856343933469">
             <conditions>
@@ -16,31 +17,18 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="352413021772479">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="661559560268665" type="Player">
-                    <param id="0" name="Instance variable">XBeforeFight</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-7" name="Compare instance variable" sid="803374448692901" type="Player">
-                    <param id="0" name="Instance variable">YBeforeFight</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="486181460837307" type="Player">
-                    <param id="0" name="X">Player.XBeforeFight</param>
-                    <param id="1" name="Y">Player.YBeforeFight</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="749813230207899">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="547076377738394" type="System" />
             </conditions>
             <actions>
+                <action id="-3" name="Set position" sid="161440991085299" type="Player">
+                    <param id="0" name="X">Player.XBeforeFight</param>
+                    <param id="1" name="Y">Player.YBeforeFight</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="698029499325149" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
                 <action id="-7" name="Set size" sid="906180418983426" type="Player">
                     <param id="0" name="Width">14</param>
                     <param id="1" name="Height">14</param>
@@ -50,7 +38,7 @@
                     <param id="1" name="Height">14</param>
                 </action>
                 <action id="-20" name="Set layout scale" sid="109220116331400" type="System">
-                    <param id="0" name="Scale">1.0</param>
+                    <param id="0" name="Scale">2.0</param>
                 </action>
                 <action id="-18" name="Set layer opacity" sid="854118496354771" type="System">
                     <param id="0" name="Layer">&quot;foreground&quot;</param>
@@ -69,12 +57,12 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-12" name="Set group active" sid="136563874475835" type="System">
+                <action id="-12" name="Set group active" sid="420547554654973" type="System">
                     <param id="0" name="Group name">&quot;Random Fights&quot;</param>
                     <param id="1" name="State">0</param>
                 </action>
-                <action id="-16" name="Wait" sid="513211041673718" type="System">
-                    <param id="0" name="Seconds">3.0</param>
+                <action id="-16" name="Wait" sid="644128320331856" type="System">
+                    <param id="0" name="Seconds">5</param>
                 </action>
                 <action id="-12" name="Set group active" sid="822489193380716" type="System">
                     <param id="0" name="Group name">&quot;Random Fights&quot;</param>
@@ -87,26 +75,42 @@
                 <condition id="-3" name="On end of layout" sid="313882410161582" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="571819016087602" type="MusicPlayer">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
+                <action id="33" name="Stop all" sid="571819016087602" type="MusicPlayer" />
             </actions>
         </event-block>
         <event-group description="" inactive="1" sid="866094834699903" title="Random Fights">
             <sub-events>
-                <event-block sid="277800497382094">
+                <event-block sid="626305818735526">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="891278778783578" type="System">
-                            <param id="0" name="Interval (seconds)">5.0</param>
+                        <condition id="-6" name="Every X seconds" sid="119082145547506" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="575772341603265" type="System">
-                            <param id="0" name="First value">int(Player.X) % 2</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">0</param>
-                        </condition>
-                        <condition behavior="8Direction" id="0" name="Is moving" sid="918005265143509" type="Player" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="720168431594863" type="System">
+                            <param id="0" name="Variable">randomBattle</param>
+                            <param id="1" name="Value">int(random(0,100))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277800497382094">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="575772341603265" type="System">
+                            <param id="0" name="First value">randomBattle</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">50</param>
+                        </condition>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="918005265143509" type="Player" />
+                        <condition id="-4" name="Trigger once while true" sid="273585614505347" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="805035620061784" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="702887121790933" type="System">
+                            <param id="0" name="Variable">randomBattle</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="-18" name="Set layer opacity" sid="281819057268534" type="System">
                             <param id="0" name="Layer">&quot;foreground&quot;</param>
                             <param id="1" name="Opacity">25</param>
@@ -257,7 +261,7 @@
                         <condition id="-7" name="Compare instance variable" sid="595236528090182" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -276,7 +280,7 @@
                         <condition id="-7" name="Compare instance variable" sid="583664522965865" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -295,7 +299,7 @@
                         <condition id="-7" name="Compare instance variable" sid="853935853775094" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -314,7 +318,7 @@
                         <condition id="-7" name="Compare instance variable" sid="830026246999415" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
+                            <param id="2" name="Value">3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -333,7 +337,7 @@
                         <condition id="-7" name="Compare instance variable" sid="508290648333269" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>

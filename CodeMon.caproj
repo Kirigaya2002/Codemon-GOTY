@@ -21,6 +21,7 @@
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -149,6 +150,11 @@
             <object-folder name="Dialog">
                 <object-type name="Dialog" sid="963611885225300">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="869480430287871">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681371165664728" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\DialogueBoxSimple.png">
@@ -170,6 +176,11 @@
                         <instance-variable name="personaje" sid="163800546710577" type="string" />
                         <instance-variable name="contador" sid="605072081171495" type="number" />
                     </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="874889306322346">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
             </object-folder>
         </object-folder>

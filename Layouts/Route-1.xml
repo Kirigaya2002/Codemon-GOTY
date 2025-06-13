@@ -121,8 +121,8 @@
                     </properties>
                     <instance-variables>
                         <DirectionName>Up</DirectionName>
-                        <XBeforeFight>0</XBeforeFight>
-                        <YBeforeFight>0</YBeforeFight>
+                        <XBeforeFight>456</XBeforeFight>
+                        <YBeforeFight>426</YBeforeFight>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="ScrollTo">
@@ -150,8 +150,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>456.692077637</x>
-                        <y>426.049316406</y>
+                        <x>456</x>
+                        <y>426</y>
                         <z>0</z>
                         <width>14</width>
                         <height>14</height>
@@ -350,14 +350,25 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>340.044891357</x>
-                        <y>409.699920654</y>
+                        <x>158.219055176</x>
+                        <y>199.73576355</y>
                         <z>0</z>
-                        <width>297.946594238</width>
-                        <height>82.520370483</height>
+                        <width>267.741149902</width>
+                        <height>69.095214844</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -369,7 +380,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-11,400,0</font>
+                        <font>Arial,-8,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -381,14 +392,25 @@
                         <personaje></personaje>
                         <contador>0</contador>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>203.497573853</x>
-                        <y>382.944641113</y>
+                        <x>33.96598053</x>
+                        <y>177.770446777</y>
                         <z>0</z>
-                        <width>273.910461426</width>
-                        <height>55.495117188</height>
+                        <width>243.70501709</width>
+                        <height>42.069961548</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -428,8 +450,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>460.203033447</x>
-                        <y>433.06640625</y>
+                        <x>457.478240967</x>
+                        <y>433</y>
                         <z>0</z>
                         <width>18.480072021</width>
                         <height>37.132095337</height>

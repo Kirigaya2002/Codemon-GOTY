@@ -512,11 +512,22 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>323.163818359</x>
-                        <y>307.759521484</y>
+                        <x>147</x>
+                        <y>201</y>
                         <z>0</z>
                         <width>183.988647461</width>
                         <height>41.494888306</height>
@@ -543,11 +554,22 @@
                         <personaje></personaje>
                         <contador>0</contador>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>235.130706787</x>
-                        <y>291.805267334</y>
+                        <x>59</x>
+                        <y>185</y>
                         <z>0</z>
                         <width>177.901580811</width>
                         <height>35.552642822</height>
