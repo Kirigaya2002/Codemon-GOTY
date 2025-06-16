@@ -1260,6 +1260,75 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Vijava">
+                <object-type name="Dennis" sid="342438051048752">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="836172961070735">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957268580494399" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1.58824" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager4\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="1" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="1" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Esteban" sid="596104252947621">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="624739756083104">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706831395036335" speed="5">
+                            <frame duration="1" hotspotX="-0.0625" hotspotY="4.375" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\OldMan\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0.8125" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="0" y="0" />
+                                    <point x="0.9375" y="0" />
+                                    <point x="0.9375" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Lara" sid="927821438736914">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="557581229085541" speed="5">
+                            <frame duration="1" hotspotX="0.526316" hotspotY="1.05882" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager3\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.526316" y="1" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="1" />
+                                    <point x="0.526316" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Fight">
             <object-folder name="Buttons">

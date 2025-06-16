@@ -14,15 +14,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Route-1</layout>
         <layout order="3">FirstFloor</layout>
         <layout order="5">SecondFloor</layout>
-        <layout order="8">Main Menu Layout</layout>
-        <layout order="9">TownVijava</layout>
-        <layout order="11">Route-3</layout>
-        <layout order="12">Laboratory</layout>
+        <layout order="8">TownVijava</layout>
         <event-sheet order="0">Fight sheet</event-sheet>
-        <event-sheet active="1" order="4">Route-1</event-sheet>
+        <event-sheet order="4">Route-1</event-sheet>
         <event-sheet order="6">FirstFloor</event-sheet>
-        <event-sheet order="7">SecondFloor</event-sheet>
-        <event-sheet order="10">Route-3</event-sheet>
+        <event-sheet active="1" order="7">TownVillava Sheet</event-sheet>
+        <event-sheet order="9">Global Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -39,24 +36,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Input/" />
         <folder expanded="0" path="object-folder/System/ UI/Font/" />
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
-        <folder expanded="0" path="object-folder/System/ UI/Election/" />
+        <folder expanded="1" path="object-folder/System/ UI/Election/" />
         <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
         <folder expanded="1" path="object-folder/World/" />
         <folder expanded="0" path="object-folder/World/StartHouse/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Sprites/" />
-        <folder expanded="0" path="object-folder/World/Laboratory/" />
-        <folder expanded="0" path="object-folder/World/Laboratory/Tilesets/" />
+        <folder expanded="1" path="object-folder/World/Laboratory/" />
+        <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
         <folder expanded="1" path="object-folder/World/TownVijava/" />
-        <folder expanded="1" path="object-folder/World/Routes/" />
+        <folder expanded="0" path="object-folder/World/Routes/" />
         <folder expanded="1" path="object-folder/World/Routes/Route-1/" />
         <folder expanded="1" path="object-folder/World/Routes/Route-3/" />
         <folder expanded="1" path="object-folder/Characters/" />
         <folder expanded="1" path="object-folder/Characters/Protagonist/" />
-        <folder expanded="0" path="object-folder/Characters/Cientificos/" />
+        <folder expanded="1" path="object-folder/Characters/Cientificos/" />
         <folder expanded="1" path="object-folder/Characters/Codemon/" />
         <folder expanded="1" path="object-folder/Characters/Enemy/" />
         <folder expanded="1" path="object-folder/Characters/Mom/" />
+        <folder expanded="1" path="object-folder/Characters/Vijava/" />
         <folder expanded="0" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
@@ -69,13 +67,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/World/Routes/" />
         <folder expanded="1" path="layout-folder/Fights/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/Menu/" />
+        <folder expanded="1" path="event-folder/Menu/" />
         <folder expanded="1" path="event-folder/World/" />
         <folder expanded="1" path="event-folder/World/StartHouse/" />
-        <folder expanded="0" path="event-folder/World/Laboratory/" />
-        <folder expanded="0" path="event-folder/World/TownVillava/" />
+        <folder expanded="1" path="event-folder/World/Laboratory/" />
+        <folder expanded="1" path="event-folder/World/TownVillava/" />
         <folder expanded="1" path="event-folder/World/Routes/" />
-        <folder expanded="0" path="event-folder/Global/" />
+        <folder expanded="1" path="event-folder/Global/" />
         <folder expanded="1" path="event-folder/Global/Global Sheets/" />
         <folder expanded="1" path="event-folder/Fights/" />
         <folder expanded="0" path="file-folder/" />
@@ -117,6 +115,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Codemon/" />
         <folder expanded="1" path="animation-folder/firstEnemy/" />
         <folder expanded="1" path="animation-folder/Mom/" />
+        <folder expanded="1" path="animation-folder/Dennis/" />
+        <folder expanded="1" path="animation-folder/Esteban/" />
+        <folder expanded="1" path="animation-folder/Lara/" />
         <folder expanded="1" path="animation-folder/AttackBtn/" />
         <folder expanded="1" path="animation-folder/DefendBtn/" />
         <folder expanded="1" path="animation-folder/SkillBtn/" />
