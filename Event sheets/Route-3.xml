@@ -4,5 +4,1870 @@
     <name>Route-3</name>
     <events>
         <include>Global Events</include>
+        <event-group description="" sid="274710834360328" title="Inicio de Lay Ruta 3">
+            <sub-events>
+                <event-block sid="182508022284715">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="493314491582765" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="833396160946954" type="MusicPlayer">
+                            <param id="0" name="Audio file">13 - Mystical</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;ambiente&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="131167526414342" type="Puzzle1">
+                            <param id="0" name="Animation">&quot;animation&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="913557089290844" type="Puzzle2">
+                            <param id="0" name="Animation">&quot;animation&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="540121787723325" type="Puzzle3">
+                            <param id="0" name="Animation">&quot;animation&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="261834770327875" type="Puzzle4">
+                            <param id="0" name="Animation">&quot;animation&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="257871583030289">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="441491146648655" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="957065770457560" type="MusicPlayer" />
+                    </actions>
+                </event-block>
+                <event-group description="" sid="727484130777094" title="Ir a GYM3">
+                    <sub-events>
+                        <event-block sid="408879250730326">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="583409542354691" type="Player">
+                                    <param id="0" name="Object">DoorToTown3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="141676362625734" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="527285402383612" type="System">
+                                    <param id="0" name="Layout">Route-1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970899913716960">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="885996540067578" type="Player">
+                                    <param id="0" name="Object">DoorToTown3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="558097376028090" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="160197606045887" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="495686179303026" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="301504182093794" type="Text">
+                                    <param id="0" name="Text">&quot;No has resuelto todas las preguntas&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="970483577133998" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="881315452664745" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="722279583268981" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="123263318589739" title="Interaccion Ruta 3">
+            <sub-events>
+                <event-group description="" sid="254666021465085" title="Carteles Ruta 3">
+                    <sub-events>
+                        <event-block sid="341983105995369">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="856853719257012" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="169135387701444" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="655046998673577" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="707473242583415" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="321670593855014" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="381632327378422">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="151665060982783" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="849948249417642" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="108847853492543" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="809622941163025" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="505030727547995" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="713318241204031">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="391137837442840" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="329310746276647" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="618119467797089" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="522696988162796" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="409995644145439" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="646001668254116">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="234339301976374" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="818307662137320" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="632236715610555" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="571769694120690" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="521018847445615" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="808432929392862">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="107633665116962" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="417898995866046" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="910545820228702" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="710035966501045" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="390831679019808" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="656534808679684" title="Puzzle Ruta 3">
+                    <sub-events>
+                        <event-block sid="278753720755757">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="591516630571406" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="429943580350051" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="603358022298181" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="775803589469156" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="142043260856630" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="192338324647349">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="375351178904966" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="575868633501774" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="479327639909008" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="636116317216804" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="116110053968495" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="552467083185879">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="177916119394964" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="206159714402167" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="797027606423350" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="964722730049361" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="122040173196884" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="454237904980373">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="822373949497867" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="833344994005033" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="501742352848642" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="156239636237779" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="940952708144047" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="358827798500831" title="Puzzle ruta 3 Options">
+                    <sub-events>
+                        <event-group description="" sid="341325509339859" title="Puzzle1">
+                            <sub-events>
+                                <comment>Opcion yes correcta</comment>
+                                <event-block sid="610877512667248">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="667400956283831" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpYes</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="927402170234331" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="426897029173455" type="System">
+                                            <param id="0" name="Variable">puzzleRuta3</param>
+                                            <param id="1" name="Value">puzzleRuta3+1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="747393805867872" type="Puzzle1">
+                                            <param id="0" name="Instance variable">isResolved</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="157118530755253" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="203840401120250" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="367957290848209" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Success4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="796815116726662" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="798960981608412" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="807942181519146">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="906557525493935" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpNo</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="788110407040730" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="652503515397224" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="638282717255826" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="849290991313208" type="MusicPlayer">
+                                            <param id="0" name="Audio file">GameOver4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="806335575101851" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="177161249974594" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="444767370563663" title="Puzzle2">
+                            <sub-events>
+                                <event-block sid="865017606540534">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="847731466717421" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpYes</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="476958001470576" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="918834659504850" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="412179907688603" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="320108656072625" type="MusicPlayer">
+                                            <param id="0" name="Audio file">GameOver4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="104557506406111" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="945443177303310" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Opcion no, Correcta</comment>
+                                <event-block sid="355135999249341">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="560580943381865" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpNo</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="766897672843859" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="792062707969893" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="508938296013788" type="System">
+                                            <param id="0" name="Variable">puzzleRuta3</param>
+                                            <param id="1" name="Value">puzzleRuta3+1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="429494380177181" type="Puzzle2">
+                                            <param id="0" name="Instance variable">isResolved</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="912384450168506" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="284185945608871" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Success4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="101977778677732" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="859950730050511" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="136872804617877" title="Puzzle3">
+                            <sub-events>
+                                <comment>Opcion yes correcta</comment>
+                                <event-block sid="385949850827922">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="989904349615078" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpYes</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="530707037778753" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="643366161395660" type="System">
+                                            <param id="0" name="Variable">puzzleRuta3</param>
+                                            <param id="1" name="Value">puzzleRuta3+1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="538825220167458" type="Puzzle3">
+                                            <param id="0" name="Instance variable">isResolved</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="453652985094730" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="743145093524466" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="927487127385319" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Success4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="900124357444831" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="402534717208608" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="492043869112054">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="139264719931855" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpNo</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="749261869037360" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="886332169138341" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="675564389454650" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="137927427929889" type="MusicPlayer">
+                                            <param id="0" name="Audio file">GameOver4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="488840515731290" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="437127831314234" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="108625544728806" title="Puzzle4">
+                            <sub-events>
+                                <comment>Opcion yes correcta</comment>
+                                <event-block sid="174962297650952">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="444501176600510" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpYes</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="720112265731341" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="878151787825391" type="System">
+                                            <param id="0" name="Variable">puzzleRuta3</param>
+                                            <param id="1" name="Value">puzzleRuta3+1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="568700714049183" type="Puzzle4">
+                                            <param id="0" name="Instance variable">isResolved</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="460700070546915" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="800491268846840" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="482182339216437" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Success4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="392453039171883" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="243784475589289" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="644640321944833">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="230523704302643" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OpNo</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="797324439149242" type="DisplayArrow">
+                                            <param id="0" name="Object">Puzzle4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="274500065729776" type="Text">
+                                            <param id="0" name="Instance variable">contador</param>
+                                            <param id="1" name="Value">Text.contador+1</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="891999129277168" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="282047784532425" type="MusicPlayer">
+                                            <param id="0" name="Audio file">GameOver4</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="823271004032786" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="215588482182876" type="MusicPlayer">
+                                            <param id="0" name="Tag">&quot;ambiente&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="978869358228516" title="Dialogos Ruta 3">
+            <sub-events>
+                <event-group description="" sid="410597410188202" title="Dialogo Puzzle 1 Ruta 3">
+                    <sub-events>
+                        <comment>Inicio de dialogo de puzzle</comment>
+                        <event-block sid="311284621938720">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="376832763790427" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="729586024168335" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="823271826481643" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="171522263574097" type="Puzzle1">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="430415955902143" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="652612969276358">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="476503524727729" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="785554908233005" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="606322403221941" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="113220270187032" type="Puzzle1">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="732251152814541" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="542558499299318" type="OpYes">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="640600257260023" type="OpNo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="825008346373658">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="225771080862051" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="206485585939323" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="141473392057009" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="311565465350783" type="Puzzle1">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="514332217619453" type="Text">
+                                    <param id="0" name="Text">&quot;Intentalo mas tarde...&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="433889376004360" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="525486489171080" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="953168707582445">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="562124075048490" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="688368908041906" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="759704533580331" type="Puzzle1">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="542602865065767" type="Text">
+                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando termina el dialogo con el NPC</comment>
+                        <event-block sid="960066286283987">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="628676381155607" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="238475858459180" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="959299478544371" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="826249208305177" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="422335996991295" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="313082697659672" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="147468505098593" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="472345455453465" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando el puzzle esta resuelto con el npc</comment>
+                        <event-block sid="684577569138821">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="427756691309854" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="490452217109434" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="104330303943576" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="577461658422219" type="Puzzle1">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="370045534890127" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="792721642500764" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="658280911460470" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="948115366629591" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="405566298957289" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="674265564319303" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="795463178573203" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="774631839384756" title="Dialogo Puzzle 2 Ruta 3">
+                    <sub-events>
+                        <comment>Inicio de dialogo de puzzle</comment>
+                        <event-block sid="987389855923288">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="920773721893656" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="827752757820405" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="845472441776095" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="639150710025350" type="Puzzle2">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="211238572754856" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="505625029283266">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="412962737264576" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="204278765843669" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="979545791659166" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="377853530787390" type="Puzzle2">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="799596733042888" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="572046617198490" type="OpYes">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="982200387346046" type="OpNo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="125482824364165">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="791820146228175" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="786015704179634" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="549021175435916" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="302353236259446" type="Puzzle2">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="339210119487868" type="Text">
+                                    <param id="0" name="Text">&quot;Intentalo mas tarde...&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="709386552169642" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="923658630185967" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="402472454854245">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="943368377688268" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="530655926082569" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="427315429329201" type="Puzzle2">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="653665254390368" type="Text">
+                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando termina el dialogo con el NPC</comment>
+                        <event-block sid="639536916662583">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="813547063173485" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="650892415350482" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="829188307388935" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="780750307168244" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="321078710694029" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="498437829898731" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="259417294919987" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="621749187534956" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando el puzzle esta resuelto con el npc</comment>
+                        <event-block sid="854744352984058">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="477519579522623" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="722347872352616" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="995135305637652" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="910871245862136" type="Puzzle2">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="499749510987972" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="324119826929678" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="373431893591406" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="547156292885788" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="706465645043125" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="506931591797201" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="393004117521105" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="441054150698306" title="Dialogo Puzzle 3 Ruta 3">
+                    <sub-events>
+                        <comment>Inicio de dialogo de puzzle</comment>
+                        <event-block sid="708135135547975">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="710633212171086" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="650507069088625" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="189226055258041" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="653810545710760" type="Puzzle3">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="124255324088706" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="446993580581544">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="788637580752743" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="826227387182072" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="484807500961166" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="760328505178353" type="Puzzle3">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="858950921621976" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="517657452900761" type="OpYes">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="969339920294277" type="OpNo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="273968641777179">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="494748419945995" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="769979660681078" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="219258360015745" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="610073290814279" type="Puzzle3">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="838597032554112" type="Text">
+                                    <param id="0" name="Text">&quot;Intentalo mas tarde...&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="852513786907996" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="226954119788094" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="487289509528479">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="977345636244671" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="640317583401043" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="768517829469949" type="Puzzle3">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="480805186399523" type="Text">
+                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando termina el dialogo con el NPC</comment>
+                        <event-block sid="216116800843561">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="210883854106855" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="972986307501713" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="116086272594709" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="226229291894749" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="395694930319441" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="148101148265057" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="693024017899557" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="273087013655040" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando el puzzle esta resuelto con el npc</comment>
+                        <event-block sid="418376018801479">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="255406465589959" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="361586844534372" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="406167600201269" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="381965859433139" type="Puzzle3">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="394431436764671" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="797511541307425" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="212373771271285" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="599253916140411" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="394478829551751" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="465455908066543" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="687389233579698" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="216033536661016" title="Dialogo Puzzle 4 Ruta 3">
+                    <sub-events>
+                        <comment>Inicio de dialogo de puzzle</comment>
+                        <event-block sid="851133683891367">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="709943152389619" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="854441671596650" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="385849910115616" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="469715770254557" type="Puzzle4">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="332970843305681" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="212204606814951">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="410305961082389" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="578129134067196" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="596347816932714" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="363257699242229" type="Puzzle4">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="241994363975339" type="Text">
+                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="604815095361319" type="OpYes">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="192204540188178" type="OpNo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="521215134069570">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="924150194674318" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="160009787268458" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="645779679243900" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="547421573734108" type="Puzzle4">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="605335664640405" type="Text">
+                                    <param id="0" name="Text">&quot;Intentalo mas tarde...&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="398758839427344" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="431716995448727" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="409864497779676">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="133061124765567" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="986098499725540" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="128400147774409" type="Puzzle4">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="967588167632969" type="Text">
+                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando termina el dialogo con el NPC</comment>
+                        <event-block sid="512165821468850">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="781342665517952" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="557514087549180" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="380028991720655" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="967135508022791" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="504462847941010" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="323304605777722" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="387949072703940" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="740649590334888" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Resetear dialogos, cuando el puzzle esta resuelto con el npc</comment>
+                        <event-block sid="552384842222726">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="766070626322310" type="System">
+                                    <param id="0" name="Variable">puzzleRuta3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="130308003831240" type="DisplayArrow">
+                                    <param id="0" name="Object">Puzzle4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="266538223436911" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="350734850351284" type="Puzzle4">
+                                    <param id="0" name="Instance variable">isResolved</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="533941712259452" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="210201399068397" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="110383370161987" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="629116625274521" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="329843754580718" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="251539931886408" type="OpYes">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="864301258408319" type="OpNo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <comment>Dialogo de rompecabezas ya resueltos</comment>
+                <event-block sid="644318106717639">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="579555358663826" type="System">
+                            <param id="0" name="Variable">puzzleRuta3</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="497262415819256" type="Text">
+                            <param id="0" name="Text">&quot;Ya resolviste todos los rompecabezas. Sigue tu aventura&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="756968116650095" title="Dialogo Cartel 1 Ruta 3">
+                    <sub-events>
+                        <event-block sid="169998060510549">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="913896429012822" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="295623712388091" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="647301711477951" type="Text">
+                                    <param id="0" name="Text">&quot;Vamos a aprender de si o no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="119448402803623">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="374193346522525" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="989828057751981" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="809748283386891" type="Text">
+                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="463566589941717">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="544223750005989" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="545566729470176" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="311948651746650" type="Text">
+                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="809655278146418">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="902452729459358" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="946762102359897" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="277708680528341" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="424580038149860" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="667107762953741" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="725828141706525" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="887052241279914" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="226382468350629" title="Dialogo Cartel 2 Ruta 3">
+                    <sub-events>
+                        <event-block sid="946767821071966">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="160682349495844" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="256896789219095" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="210517068044381" type="Text">
+                                    <param id="0" name="Text">&quot;Cartel1&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329984516302620">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="641978125201599" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="659878069600906" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="204509660903218" type="Text">
+                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="387694517457004">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="452019777078573" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="207227195703602" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="823264559023775" type="Text">
+                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="965954013916434">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="191053922342374" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="460304597377453" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="960719047548091" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="723662286584947" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="126554209068965" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="462370826406924" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="238431560436429" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="444310848658650" title="Dialogo Cartel 3 Ruta 3">
+                    <sub-events>
+                        <event-block sid="594437468752237">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="577773744826282" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="517616549426651" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="489281285112743" type="Text">
+                                    <param id="0" name="Text">&quot;Cartel2&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="796368974089606">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="245611140131238" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="400838044716667" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="925024527036399" type="Text">
+                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="139468690158130">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="550196357899599" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="158620343566670" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="665241851152721" type="Text">
+                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536097029908109">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="786849050729967" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="387932174924703" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="359093009378139" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="110302601017397" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="451691563534675" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="279230175819528" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="920459399475415" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="450052040702265" title="Dialogo Cartel 4 Ruta 3">
+                    <sub-events>
+                        <event-block sid="760588661224781">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="526517410548871" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="232538892413393" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="231322806022703" type="Text">
+                                    <param id="0" name="Text">&quot;Cartel3&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="540377735458739">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="727086410205678" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="891218149742107" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="320230132077067" type="Text">
+                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500849329832220">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="919150986573147" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="539800179462536" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="393772253108003" type="Text">
+                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="180737307021236">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="533653122881444" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="272642569926936" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="424316851859131" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="627349404256217" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="212975091045429" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="535609003777530" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="125232930304587" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="721442745101304" title="Dialogo Cartel 5 Ruta 3">
+                    <sub-events>
+                        <event-block sid="238248798123134">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="515344731591512" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="862596281646683" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="313988232062340" type="Text">
+                                    <param id="0" name="Text">&quot;Cartel4&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="405988248522088">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="247319541871950" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="813841143950390" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="685425026199384" type="Text">
+                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970531746179061">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="441506834128134" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="673011730865577" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="316695326552750" type="Text">
+                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="830465334589368">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="917446226638722" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="721091985128251" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="772244111427296" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="588149801645121" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="647142705761882" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="881866013226196" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="233033399332589" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="396137587276875" title="Pasar Dialogos">
+                    <sub-events>
+                        <event-block sid="741889754594201">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="720474464793330" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="154867542191243" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="680281806728283" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">Text.contador+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
