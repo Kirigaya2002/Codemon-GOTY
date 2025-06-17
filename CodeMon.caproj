@@ -1141,6 +1141,35 @@
                     </object-type>
                 </object-folder>
             </object-folder>
+            <object-folder name="Gyms">
+                <object-folder name="GymRoute2">
+                    <object-type name="floorGym2" sid="700103452717701">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="natureGym2" sid="878474773288046">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="waterGym2" sid="933211762537410">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="boats" sid="486186148466068">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="decorationGym2" sid="672092289061377">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
+                        <tiles />
+                    </object-type>
+                </object-folder>
+            </object-folder>
         </object-folder>
         <object-folder name="Characters">
             <object-folder name="Protagonist">
@@ -1900,6 +1929,77 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="GymRoute2">
+                <object-type name="swimer2" sid="156472636672855">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="478856732676215" speed="5">
+                            <frame duration="1" hotspotX="-1.13333" hotspotY="-0.5" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Villager5\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0" y="0.605263" />
+                                    <point x="0.741414" y="0" />
+                                    <point x="0.870707" y="0" />
+                                    <point x="0.806061" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="swimer3" sid="199378997098079">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848338184456731" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="-0.5" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\EggBoy\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="swimer1" sid="866074645186729">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961997353915912" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="-0.470588" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0" y="1" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sprite" sid="374915453734545">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526201583515388" speed="5">
+                            <frame duration="1" hotspotX="2" hotspotY="3.29412" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Samurai\SpriteSheet.png">
+                                <collision-poly>
+                                    <point x="0.1875" y="0.617647" />
+                                    <point x="1" y="0.411765" />
+                                    <point x="1" y="1" />
+                                    <point x="0.125" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Fight">
             <object-folder name="Buttons">
@@ -2068,6 +2168,9 @@
                 <layout>Route-3.xml</layout>
                 <layout>Route-2.xml</layout>
             </layout-folder>
+            <layout-folder name="Gyms">
+                <layout>GymRoute2.xml</layout>
+            </layout-folder>
         </layout-folder>
         <layout-folder name="Fights">
             <layout>Fight Layout.xml</layout>
@@ -2102,6 +2205,10 @@
         <event-folder name="Fights">
             <event-sheet>Fight sheet.xml</event-sheet>
         </event-folder>
+        <event-folder name="Gyms">
+            <event-sheet>GymRoute2.xml</event-sheet>
+        </event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="30" />
