@@ -194,6 +194,15 @@
                         <MinDefense>5</MinDefense>
                         <MaxDefense>20</MaxDefense>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>100</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -224,6 +233,15 @@
                         <PositionX>310</PositionX>
                         <PositionY>366</PositionY>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>100</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

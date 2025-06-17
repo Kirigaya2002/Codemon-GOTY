@@ -8,11 +8,31 @@
         <event-block sid="823856343933469">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="886780291038799" type="Player">
-                    <param id="0" name="Object">DoorToTown</param>
+                    <param id="0" name="Object">DoorToGym</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="952363780025709" type="System">
+                    <param id="0" name="Layout">GymRoute1</param>
+                </action>
+                <action id="-9" name="Set value" sid="134768900669028" type="System">
+                    <param id="0" name="Variable">XPosition</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="994499087704479" type="System">
+                    <param id="0" name="Variable">YPosition</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="157111390107679">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="919176664131936" type="Player">
+                    <param id="0" name="Object">DoorToTown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="185457094996160" type="System">
                     <param id="0" name="Layout">TownVijava</param>
                 </action>
             </actions>
@@ -22,10 +42,6 @@
                 <condition id="-2" name="On start of layout" sid="547076377738394" type="System" />
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="161440991085299" type="Player">
-                    <param id="0" name="X">Player.XBeforeFight</param>
-                    <param id="1" name="Y">Player.YBeforeFight</param>
-                </action>
                 <action behavior="8Direction" id="8" name="Set enabled" sid="698029499325149" type="Player">
                     <param id="0" name="State">1</param>
                 </action>
@@ -78,6 +94,27 @@
                 <action id="33" name="Stop all" sid="571819016087602" type="MusicPlayer" />
             </actions>
         </event-block>
+        <event-block sid="711844144123339">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="590432630786924" type="System">
+                    <param id="0" name="Variable">XPosition</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="542525930374723" type="System">
+                    <param id="0" name="Variable">YPosition</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="665826885713910" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="161440991085299" type="Player">
+                    <param id="0" name="X">XPosition</param>
+                    <param id="1" name="Y">YPosition</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" inactive="1" sid="866094834699903" title="Random Fights">
             <sub-events>
                 <event-block sid="626305818735526">
@@ -104,6 +141,14 @@
                         <condition id="-4" name="Trigger once while true" sid="273585614505347" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="111514164528748" type="System">
+                            <param id="0" name="Variable">XPosition</param>
+                            <param id="1" name="Value">Player.X</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="330978718023455" type="System">
+                            <param id="0" name="Variable">YPosition</param>
+                            <param id="1" name="Value">Player.Y</param>
+                        </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="805035620061784" type="Player">
                             <param id="0" name="State">0</param>
                         </action>
@@ -121,14 +166,6 @@
                         </action>
                         <action id="-15" name="Set visible" sid="594962837523586" type="PlayerAnimation">
                             <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="177161904302433" type="Player">
-                            <param id="0" name="Instance variable">XBeforeFight</param>
-                            <param id="1" name="Value">Player.X</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="623548050502564" type="Player">
-                            <param id="0" name="Instance variable">YBeforeFight</param>
-                            <param id="1" name="Value">Player.Y</param>
                         </action>
                         <action id="6" name="Stop" sid="535010479080363" type="MusicPlayer">
                             <param id="0" name="Tag">&quot;&quot;</param>
@@ -153,22 +190,25 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="660187009898909" title="Sonido" />
-        <event-block sid="843296429671869">
-            <conditions>
-                <condition id="3" name="On key released" sid="886799233469709" type="Keyboard">
-                    <param id="0" name="Key">90</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="831336985443924" type="MusicPlayer">
-                    <param id="0" name="Audio file">Move5</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="660187009898909" title="Sonido">
+            <sub-events>
+                <event-block sid="843296429671869">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="886799233469709" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="831336985443924" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="499382583602286" title="Acciones NPC">
             <sub-events>
                 <event-group description="" sid="775025963760429" title="Dialogo2">

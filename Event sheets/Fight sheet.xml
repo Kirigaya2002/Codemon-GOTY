@@ -158,7 +158,7 @@
                                 </action>
                                 <action id="-29" name="Move to object" sid="689082195456619" type="firstEnemy">
                                     <param id="0" name="Where">0</param>
-                                    <param id="1" name="Object">firstEnemy</param>
+                                    <param id="1" name="Object">Codemon</param>
                                 </action>
                                 <action id="-4" name="Set position to another object" sid="924087360878563" type="firstEnemy">
                                     <param id="0" name="Object">Codemon</param>
@@ -339,7 +339,7 @@
                                         </action>
                                         <action id="-29" name="Move to object" sid="862655560591343" type="firstEnemy">
                                             <param id="0" name="Where">0</param>
-                                            <param id="1" name="Object">firstEnemy</param>
+                                            <param id="1" name="Object">Codemon</param>
                                         </action>
                                         <action id="-4" name="Set position to another object" sid="646980568804966" type="firstEnemy">
                                             <param id="0" name="Object">Codemon</param>

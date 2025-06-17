@@ -102,8 +102,8 @@
                         <x>301.662353516</x>
                         <y>250.890197754</y>
                         <z>0</z>
-                        <width>14</width>
-                        <height>14</height>
+                        <width>7</width>
+                        <height>7</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -120,6 +120,13 @@
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>100</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -377,8 +384,8 @@
                         <x>302.323181152</x>
                         <y>285.615722656</y>
                         <z>0</z>
-                        <width>12.226348877</width>
-                        <height>17.186950684</height>
+                        <width>7</width>
+                        <height>7</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.967999995</hotspotY>

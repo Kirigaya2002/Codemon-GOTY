@@ -28,5 +28,17 @@
                 <action id="33" name="Stop all" sid="801265849484458" type="MusicPlayer" />
             </actions>
         </event-block>
+        <event-block sid="911397255654526">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="887206422225904" type="Player">
+                    <param id="0" name="Object">DoorToGym2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="613242053954688" type="System">
+                    <param id="0" name="Layout">GymRoute2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

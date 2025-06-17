@@ -50,6 +50,14 @@
                         <action id="-2" name="Go to layout" sid="841480830097476" type="System">
                             <param id="0" name="Layout">Route-1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="162106469104972" type="System">
+                            <param id="0" name="Variable">XPosition</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="176643706097977" type="System">
+                            <param id="0" name="Variable">YPosition</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="846551189888020">

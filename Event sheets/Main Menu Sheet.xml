@@ -23,10 +23,13 @@
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="496665326489845" type="MusicPlayer">
-                    <param id="0" name="Audio file">1 - Adventure Begin</param>
+                    <param id="0" name="Audio file">31 - Sunny</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Main menu theme&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="561711592125657" type="Shadows">
+                    <param id="0" name="Opacity">40</param>
                 </action>
             </actions>
         </event-block>
@@ -40,5 +43,72 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="320817629092256" title="Sky movement2">
+            <sub-events>
+                <event-group description="" sid="415236981126622" title="movement2">
+                    <sub-events>
+                        <event-block sid="262746844087091">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="406305937824191" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="938968627600789" type="BackClouds">
+                                    <param id="0" name="X">BackClouds.X - (dt*15)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="411876221917594" type="FrontClouds">
+                                    <param id="0" name="X">FrontClouds.X - (dt*30)</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="581408889166561" type="LineCloud">
+                                    <param id="0" name="X">LineCloud.X - (dt*60)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="421175916265066" title="reset position2">
+                    <sub-events>
+                        <event-block sid="589288227155305">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="492252167941005" type="BackClouds">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">-576</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="497303128616839" type="BackClouds">
+                                    <param id="0" name="X">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="157679349739322">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="742678524589250" type="FrontClouds">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">-576</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="207950863960573" type="FrontClouds">
+                                    <param id="0" name="X">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="488923086399296">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="149665659084852" type="LineCloud">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">-576</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="616301088005850" type="LineCloud">
+                                    <param id="0" name="X">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

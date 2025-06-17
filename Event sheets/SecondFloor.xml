@@ -16,6 +16,13 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="228255421726924">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="321988909549792" type="System" />
+            </conditions>
+            <actions>
                 <action id="-20" name="Set layout scale" sid="928763445239721" type="System">
                     <param id="0" name="Scale">2.0</param>
                 </action>

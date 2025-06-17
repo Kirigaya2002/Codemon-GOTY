@@ -5,6 +5,8 @@
     <events>
         <variable constant="0" name="puzzleRuta3" sid="546274967612529" static="0" type="number">0</variable>
         <variable comment="variable que indica si el codemon fue elegido" constant="0" name="elegido" sid="265271782898538" static="0" type="number">0</variable>
+        <variable constant="0" name="XPosition" sid="947550439149763" static="0" type="number">0</variable>
+        <variable constant="0" name="YPosition" sid="584352345109094" static="0" type="number">0</variable>
         <event-block sid="217230387909117">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="481738878372486" type="System" />
@@ -171,6 +173,7 @@
                             <param id="0" name="X">Player.X</param>
                             <param id="1" name="Y">Player.Y - 15</param>
                         </action>
+                        <action id="-24" name="Move to top" sid="801382465599618" type="InteracIcon" />
                     </actions>
                 </event-block>
                 <event-block sid="404106446472540">
