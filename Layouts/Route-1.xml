@@ -450,8 +450,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>457.478240967</x>
-                        <y>433</y>
+                        <x>457.004394531</x>
+                        <y>432.052337646</y>
                         <z>0</z>
                         <width>18.480072021</width>
                         <height>37.132095337</height>
@@ -516,6 +516,31 @@
                         <depth>0</depth>
                         <hotspotX>2</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="InteracIcon" uid="142">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>456.208251953</x>
+                        <y>410.567169189</y>
+                        <z>0</z>
+                        <width>14</width>
+                        <height>13</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.538461566</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

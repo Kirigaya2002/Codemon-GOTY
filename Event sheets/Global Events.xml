@@ -155,5 +155,53 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="900814572264361" title="Interacciones del Jugador">
+            <sub-events>
+                <event-block sid="203326509582875">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="877769964712488" type="DisplayArrow">
+                            <param id="0" name="Object">Interactuables</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="570029011132389" type="InteracIcon">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="144444548867646" type="InteracIcon">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y - 15</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404106446472540">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="755685230966795" type="DisplayArrow">
+                            <param id="0" name="Object">Interactuables</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="523636474529947" type="InteracIcon">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="250481692295552">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="321009287412821" type="System">
+                            <param id="0" name="Object">Interactuables</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="223592437802983" type="DisplayArrow">
+                            <param id="0" name="Object">Interactuables</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="209318424263428" type="InteracIcon">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Stop loop" sid="467552802111481" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

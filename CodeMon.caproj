@@ -437,8 +437,8 @@
                             </tile>
                             <tile id="112">
                                 <collision-poly>
-                                    <point x="0" y="0.5" />
-                                    <point x="0.8125" y="0.5" />
+                                    <point x="0.00390625" y="0.808594" />
+                                    <point x="0.726563" y="0.488281" />
                                     <point x="0.875" y="1" />
                                     <point x="0" y="1" />
                                 </collision-poly>
@@ -453,10 +453,10 @@
                             </tile>
                             <tile id="128">
                                 <collision-poly>
-                                    <point x="0" y="0" />
+                                    <point x="0.0625" y="0" />
                                     <point x="0.9375" y="0" />
                                     <point x="0.9375" y="1" />
-                                    <point x="0" y="1" />
+                                    <point x="0.0625" y="1" />
                                 </collision-poly>
                             </tile>
                             <tile id="144">
@@ -1231,6 +1231,30 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="InteracIcon" sid="140142741050051">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="827956221265034">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173351001024432" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Ui\Emote\emote22.png">
+                                <collision-poly>
+                                    <point x="0.142857" y="0.153846" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.857143" y="0.153846" />
+                                    <point x="1" y="0.461538" />
+                                    <point x="0.785714" y="0.769231" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.214286" y="0.769231" />
+                                    <point x="0" y="0.461538" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="Cientificos">
                 <object-type name="Cientifica1" sid="400847670760956">
@@ -1995,7 +2019,35 @@
             </object-type>
         </object-folder>
     </object-folder>
-    <families />
+    <families>
+        <family name="Interactuables" plugin-id="Sprite" sid="354451394445731">
+            <members>
+                <member>Cartel1</member>
+                <member>Cartel2</member>
+                <member>Cartel3</member>
+                <member>Cartel4</member>
+                <member>Cartel5</member>
+                <member>Cientifica1</member>
+                <member>Cientifico3</member>
+                <member>Cientifico4</member>
+                <member>Dennis</member>
+                <member>EmptyOption</member>
+                <member>Esteban</member>
+                <member>Flag</member>
+                <member>Lara</member>
+                <member>Mom</member>
+                <member>NPC1</member>
+                <member>NPC2</member>
+                <member>Option</member>
+                <member>Profesor</member>
+                <member>Puzzle1</member>
+                <member>Puzzle2</member>
+                <member>Puzzle3</member>
+                <member>Puzzle4</member>
+                <member>test</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout-folder name="Menu">
             <layout>Main Menu Layout.xml</layout>

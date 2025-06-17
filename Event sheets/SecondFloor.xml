@@ -21,17 +21,18 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="198368314561697">
+        <event-block sid="128873710491299">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="819658206501336" type="Player">
+                <condition id="0" name="On collision with another object" sid="344587536683926" type="Player">
                     <param id="0" name="Object">SpriteDoorFirstFloor</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="892337381337612" type="System">
+                <action id="-2" name="Go to layout" sid="163626832216935" type="System">
                     <param id="0" name="Layout">FirstFloor</param>
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="143723491401427" title="Tutorial " />
     </events>
 </c2eventsheet>
