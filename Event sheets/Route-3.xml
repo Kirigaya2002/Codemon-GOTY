@@ -33,6 +33,10 @@
                             <param id="0" name="Animation">&quot;animation&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-17" name="Set layer scale" sid="167868881670218" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Scale">2.0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="257871583030289">
@@ -661,7 +665,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="430415955902143" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;Espero que estés listo para tu prueba, la pregunta es la siguiente&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -686,7 +690,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="732251152814541" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;¿La herencia permite que una clase hija reutilice atributos y métodos de una clase padre?&quot;</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="542558499299318" type="OpYes">
                                     <param id="0" name="Visibility">1</param>
@@ -743,7 +747,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="542602865065767" type="Text">
-                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                    <param id="0" name="Text">&quot;Si es la respuesta. Según el Cartel 1, la herencia evita repetir código al heredar de una clase padre.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -854,7 +858,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="211238572754856" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;Vamos directo a tú prueba, la pregunta es la siguiente&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -879,7 +883,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="799596733042888" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;¿El polimorfismo obliga a todas las clases a tener el mismo comportamiento para un mismo método?&quot;</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="572046617198490" type="OpYes">
                                     <param id="0" name="Visibility">1</param>
@@ -936,7 +940,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="653665254390368" type="Text">
-                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                    <param id="0" name="Text">&quot;Si es la respuesta, El Cartel 2 explica que el polimorfismo permite comportamientos distintos para un mismo método según la clase.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1047,7 +1051,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="124255324088706" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;Motivate viajero, aqui esta tu pregunta para salir de aquí&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1072,7 +1076,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="858950921621976" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;¿La herencia ayuda a organizar las clases en jerarquías?&quot;</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="517657452900761" type="OpYes">
                                     <param id="0" name="Visibility">1</param>
@@ -1129,7 +1133,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="480805186399523" type="Text">
-                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                    <param id="0" name="Text">&quot;Si es la respuesta. El Cartel 3 menciona que la herencia organiza clases en jerarquías.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1240,7 +1244,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="332970843305681" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;Vamos vamos, esto solo es el inicio de tus conocimientos!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1265,7 +1269,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="241994363975339" type="Text">
-                                    <param id="0" name="Text">&quot;Tu primera prueba es la siguiente&quot;</param>
+                                    <param id="0" name="Text">&quot;¿El polimorfismo permite añadir nuevas funcionalidades al programa sin modificar el código existente?&quot;</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="604815095361319" type="OpYes">
                                     <param id="0" name="Visibility">1</param>
@@ -1322,7 +1326,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="967588167632969" type="Text">
-                                    <param id="0" name="Text">&quot;Si es la respuesta&quot;</param>
+                                    <param id="0" name="Text">&quot;El Cartel 3 destaca que el polimorfismo facilita extender el programa.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1439,7 +1443,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="647301711477951" type="Text">
-                                    <param id="0" name="Text">&quot;Vamos a aprender de si o no&quot;</param>
+                                    <param id="0" name="Text">&quot;Vamos a aprender en esta nueva ruta, sobre el polimorfismo y herencia&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1456,7 +1460,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="809748283386891" type="Text">
-                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                    <param id="0" name="Text">&quot;Lea todos los carteles para obtener conociemiento. Para así responder las preguntas de los habitantes de esta ruta. No podrás salir de esta ruta, solo si superas todas las pruebas&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1473,7 +1477,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="311948651746650" type="Text">
-                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                    <param id="0" name="Text">&quot;Mucha suerte!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1524,7 +1528,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="210517068044381" type="Text">
-                                    <param id="0" name="Text">&quot;Cartel1&quot;</param>
+                                    <param id="0" name="Text">&quot;Titulo de cartel 1: Reutiliza código como un maestro Codemon&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1541,7 +1545,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="204509660903218" type="Text">
-                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                    <param id="0" name="Text">&quot;En Java, una clase puede heredar atributos y métodos de otra. Un ejemplo clásico es un Animal y un Perro.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1558,7 +1562,41 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="823264559023775" type="Text">
-                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                    <param id="0" name="Text">&quot;public class Animal {&#x0D;&#x0A;  public void sonido() {&#x0D;&#x0A;  }&#x0D;&#x0A;}&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="841146898002507">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="717264842759490" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="520543457343677" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="750932491967564" type="Text">
+                                    <param id="0" name="Text">&quot;public class Perro extends Animal {&#x0D;&#x0A;  void moverCola() {&#x0D;&#x0A;  }&#x0D;&#x0A;}&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="863116190304687">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="797958984977163" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="495012359995920" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="395999790921683" type="Text">
+                                    <param id="0" name="Text">&quot;Esto es llamado herencia de clases, y es logrado por las palabra reservada &apos;extends&apos; &quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1567,7 +1605,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="191053922342374" type="Text">
                                     <param id="0" name="Instance variable">contador</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">3</param>
+                                    <param id="2" name="Value">5</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="460304597377453" type="DisplayArrow">
                                     <param id="0" name="Object">Cartel2</param>
@@ -1609,7 +1647,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="489281285112743" type="Text">
-                                    <param id="0" name="Text">&quot;Cartel2&quot;</param>
+                                    <param id="0" name="Text">&quot;Titulo de cartel 2: Polimorfismo, misma acción, diferentes formas.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1626,7 +1664,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="925024527036399" type="Text">
-                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                    <param id="0" name="Text">&quot;En programación orientada a objetos, esto quiere decir que un mismo método puede comportarse de formas diferentes, dependiendo del objeto que lo usa.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1643,7 +1681,75 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="665241851152721" type="Text">
-                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                    <param id="0" name="Text">&quot;Un ejemplo sencillo es. Un &apos;Animal&apos; hace un sonido, pero un &apos;Gato&apos; maulla y un &apos;Perro&apos; ladra. A nivel de código se ve de la siguiente forma.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="931404082342008">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="611204314909844" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="291916374547064" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="654685839593549" type="Text">
+                                    <param id="0" name="Text">&quot;public class Animal {&#x0D;&#x0A;   public void sonido() {&#x0D;&#x0A;    System.out.println( &apos;Animal hace sonido&apos;);     } }&#x0D;&#x0A;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="843585544729650">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="790261570302340" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="926327481603791" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="459508789248781" type="Text">
+                                    <param id="0" name="Text">&quot;public class Perro extends Animal {&#x0D;&#x0A;  public void sonido() {&#x0D;&#x0A;    System.out.println(&apos;¡Guau guau!&apos;);    } }&#x0D;&#x0A;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="315572126527530">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="684604772201912" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="150404405923675" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="799597851133893" type="Text">
+                                    <param id="0" name="Text">&quot;public class Gato extends Animal {&#x0D;&#x0A;  public void sonido() {&#x0D;&#x0A;    System.out.println(&apos;Miau&apos;);   } }&#x0D;&#x0A;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="746991813444964">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="561147701250535" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="446852003214702" type="DisplayArrow">
+                                    <param id="0" name="Object">Cartel3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="121895890267569" type="Text">
+                                    <param id="0" name="Text">&quot;Como puedes ver todos los animales hacen sonidos, pero no hacen el mismo sonido. Aunque el método es igual, cada clase tiene su lógica y lo implementa a su forma.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1652,7 +1758,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="786849050729967" type="Text">
                                     <param id="0" name="Instance variable">contador</param>
                                     <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">3</param>
+                                    <param id="2" name="Value">7</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="387932174924703" type="DisplayArrow">
                                     <param id="0" name="Object">Cartel3</param>
@@ -1694,7 +1800,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="231322806022703" type="Text">
-                                    <param id="0" name="Text">&quot;Cartel3&quot;</param>
+                                    <param id="0" name="Text">&quot;Titulo de cartel 2: Ventajas de usar Herencia y Polimorfismo&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1711,24 +1817,24 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="320230132077067" type="Text">
-                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
+                                    <param id="0" name="Text">&quot;Muchas de las ventajas de la herencia es: reutilización de código y organización de clases en jerarquías&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="500849329832220">
+                        <event-block sid="240671307105912">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="919150986573147" type="Text">
+                                <condition id="-7" name="Compare instance variable" sid="667098588313238" type="Text">
                                     <param id="0" name="Instance variable">contador</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
-                                <condition id="1" name="Is overlapping another object" sid="539800179462536" type="DisplayArrow">
+                                <condition id="1" name="Is overlapping another object" sid="218626904913429" type="DisplayArrow">
                                     <param id="0" name="Object">Cartel4</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="393772253108003" type="Text">
-                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
+                                <action id="0" name="Set text" sid="668705659962372" type="Text">
+                                    <param id="0" name="Text">&quot;Muchas de las ventajas de la herencia es: extender el código fácilmente y el código general que funciona con distintos objetos&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1758,91 +1864,6 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action behavior="8Direction" id="8" name="Set enabled" sid="125232930304587" type="Player">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" sid="721442745101304" title="Dialogo Cartel 5 Ruta 3">
-                    <sub-events>
-                        <event-block sid="238248798123134">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="515344731591512" type="Text">
-                                    <param id="0" name="Instance variable">contador</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="862596281646683" type="DisplayArrow">
-                                    <param id="0" name="Object">Cartel5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="313988232062340" type="Text">
-                                    <param id="0" name="Text">&quot;Cartel4&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="405988248522088">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="247319541871950" type="Text">
-                                    <param id="0" name="Instance variable">contador</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="813841143950390" type="DisplayArrow">
-                                    <param id="0" name="Object">Cartel5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="685425026199384" type="Text">
-                                    <param id="0" name="Text">&quot;Diay si&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="970531746179061">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="441506834128134" type="Text">
-                                    <param id="0" name="Instance variable">contador</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="673011730865577" type="DisplayArrow">
-                                    <param id="0" name="Object">Cartel5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="316695326552750" type="Text">
-                                    <param id="0" name="Text">&quot;Diay no&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="830465334589368">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="917446226638722" type="Text">
-                                    <param id="0" name="Instance variable">contador</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="721091985128251" type="DisplayArrow">
-                                    <param id="0" name="Object">Cartel5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="772244111427296" type="Text">
-                                    <param id="0" name="Text">&quot;&quot;</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="588149801645121" type="Text">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="647142705761882" type="Dialog">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="881866013226196" type="Text">
-                                    <param id="0" name="Instance variable">contador</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action behavior="8Direction" id="8" name="Set enabled" sid="233033399332589" type="Player">
                                     <param id="0" name="State">1</param>
                                 </action>
                             </actions>
