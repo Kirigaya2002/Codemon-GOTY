@@ -2846,7 +2846,9 @@
         <music-folder name="Gym1">
             <file name="21 - Dungeon.ogg" />
         </music-folder>
-        <music-folder name="Gym2" />
+        <music-folder name="Gym2">
+            <file name="14 - Curse.ogg" />
+        </music-folder>
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

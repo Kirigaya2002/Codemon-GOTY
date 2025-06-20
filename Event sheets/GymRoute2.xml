@@ -16,7 +16,7 @@
                             <param id="0" name="Scale">2.0</param>
                         </action>
                         <action id="0" name="Play" sid="461866151936021" type="MusicPlayer">
-                            <param id="0" name="Audio file">21 - Dungeon</param>
+                            <param id="0" name="Audio file">14 - Curse</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
