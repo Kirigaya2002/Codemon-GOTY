@@ -2755,6 +2755,12 @@
             <file name="Alert6.m4a" />
             <file name="Alert6.ogg" />
         </sound-folder>
+        <sound-folder name="Answers">
+            <file name="GameOver3.m4a" />
+            <file name="GameOver3.ogg" />
+            <file name="Success3.m4a" />
+            <file name="Success3.ogg" />
+        </sound-folder>
     </sounds-folder>
     <music-folder>
         <music-folder name="Main Menu">
