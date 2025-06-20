@@ -1407,6 +1407,7 @@
                         </animation-folder>
                     </object-type>
                 </object-folder>
+                <object-folder name="GymRoute3" />
             </object-folder>
         </object-folder>
         <object-folder name="Characters">
@@ -2681,6 +2682,7 @@
             <layout-folder name="Gyms">
                 <layout>GymRoute2.xml</layout>
                 <layout>GymRoute1.xml</layout>
+                <layout>GymRoute3.xml</layout>
             </layout-folder>
         </layout-folder>
         <layout-folder name="Fights">
@@ -2711,6 +2713,7 @@
             <event-folder name="Gym">
                 <event-sheet>GymRoute1 Sheet.xml</event-sheet>
                 <event-sheet>GymRoute2.xml</event-sheet>
+                <event-sheet>GymRoute3.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="Global">

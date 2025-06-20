@@ -40,6 +40,149 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="143723491401427" title="Tutorial " />
+        <event-group description="" sid="143723491401427" title="Tutorial ">
+            <sub-events>
+                <event-block sid="712659148083691">
+                    <conditions>
+                        <condition id="-7" name="Compare time" sid="930717791386927" type="System">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Time (seconds)">2.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="484321414393881" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="575492912946233" type="Text">
+                            <param id="0" name="Text">&quot;Bienvenido a CODEMON!!&#x0D;&#x0A;&#x0D;&#x0A;Toca [ Z ] para continuar..&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="202279895656094" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="302801621170086" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="125749195856173" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906971582161859">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="101846182083269" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="571896899617017" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="918878257959162">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="694755705140559" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="484151898234876" type="Text" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="482058013919477" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Value">Text.contador+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="306128760000833">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="448401357221563" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="724131538423291" type="Text">
+                            <param id="0" name="Text">&quot;En esta aventura queremos que aprendas sobre Programacion l y todos sus derivados!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514808584589737">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="821490254193966" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="436224492475237" type="Text">
+                            <param id="0" name="Text">&quot;Para moverte utiliza las flechas del teclado y para interacturar utiliza la [ Z ]&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="908819435450011">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="874544727308283" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="184906195522497" type="Text">
+                            <param id="0" name="Text">&quot;Con esto dicho, disfruta de tu aventura! &quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="730233416752322">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="578729808133596" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="569310605643184" type="Text">
+                            <param id="0" name="Text">&quot;Primero dirigete al primer piso de la casa!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985582240210370">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="388646098101704" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="273080288161040" type="Text">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="811665161623439" type="Text">
+                            <param id="0" name="Instance variable">contador</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="159676710704246" type="Text">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="138152775098641" type="Dialog">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="444527575740816" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
