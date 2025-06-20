@@ -285,7 +285,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>54</width>
+                        <width>40</width>
                         <height>30</height>
                         <max-width>54</max-width>
                         <max-height>30</max-height>
@@ -349,6 +349,64 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Estatua1" uid="212">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>471.888946533</x>
+                        <y>136.049331665</y>
+                        <z>0</z>
+                        <width>22.85682106</width>
+                        <height>21.677663803</height>
+                        <depth>0</depth>
+                        <hotspotX>6.545454502</hotspotX>
+                        <hotspotY>-3.78125</hotspotY>
+                        <angle>0.000047889</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Estatua2" uid="210">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>227.89201355</x>
+                        <y>209.768844604</y>
+                        <z>0</z>
+                        <width>21.679861069</width>
+                        <height>21.679861069</height>
+                        <depth>0</depth>
+                        <hotspotX>6.75</hotspotX>
+                        <hotspotY>-3.78125</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

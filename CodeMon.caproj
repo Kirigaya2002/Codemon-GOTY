@@ -2421,6 +2421,52 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Estatua1" sid="438318205911343">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="856453413648400">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413704376700745" speed="5">
+                            <frame duration="1" hotspotX="6.54545" hotspotY="-3.78125" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="0.96875" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Estatua2" sid="393691120603839">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="760115712365992">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667398171172298" speed="5">
+                            <frame duration="1" hotspotX="6.75" hotspotY="-3.78125" original-source="C:\Users\Jorge\Desktop\Sprites\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="0.96875" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="GymRoute2">
                 <object-type name="swimer2" sid="156472636672855">
@@ -2636,6 +2682,8 @@
                 <member>Cientifico4</member>
                 <member>Dennis</member>
                 <member>EmptyOption</member>
+                <member>Estatua1</member>
+                <member>Estatua2</member>
                 <member>Esteban</member>
                 <member>Flag</member>
                 <member>Gym1Leader</member>
