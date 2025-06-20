@@ -1212,23 +1212,51 @@
                     </object-type>
                     <object-type name="natureGym2" sid="878474773288046">
                         <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="708686454671464">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
                         <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
                         <tiles />
                     </object-type>
                     <object-type name="waterGym2" sid="933211762537410">
                         <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="307463646990663">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
                         <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
                         <tiles />
                     </object-type>
                     <object-type name="boats" sid="486186148466068">
                         <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="335743335443341">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
                         <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
                         <tiles />
                     </object-type>
                     <object-type name="decorationGym2" sid="672092289061377">
                         <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="554601138796274">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
                         <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetElement.png" />
                         <tiles />
+                    </object-type>
+                    <object-type name="DoorToRoute3" sid="761715471877934">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712059839434569" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
                     </object-type>
                 </object-folder>
                 <object-folder name="GymRoute1">
@@ -2432,6 +2460,11 @@
                 </object-type>
                 <object-type name="swimer1" sid="866074645186729">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="322604071292469">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961997353915912" speed="5">
                             <frame duration="1" hotspotX="0" hotspotY="-0.470588" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Boy\SpriteSheet.png">
@@ -2448,8 +2481,13 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Sprite" sid="374915453734545">
+                <object-type name="boss" sid="374915453734545">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="822708417450449">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526201583515388" speed="5">
                             <frame duration="1" hotspotX="2" hotspotY="3.29412" original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Samurai\SpriteSheet.png">
@@ -2586,6 +2624,7 @@
     <families>
         <family name="Interactuables" plugin-id="Sprite" sid="354451394445731">
             <members>
+                <member>boss</member>
                 <member>Cartel1</member>
                 <member>Cartel2</member>
                 <member>Cartel3</member>
@@ -2612,6 +2651,9 @@
                 <member>question1npc</member>
                 <member>question2npc</member>
                 <member>question3npc</member>
+                <member>swimer1</member>
+                <member>swimer2</member>
+                <member>swimer3</member>
                 <member>test</member>
             </members>
         </family>
@@ -2747,6 +2789,7 @@
         <music-folder name="Gym1">
             <file name="21 - Dungeon.ogg" />
         </music-folder>
+        <music-folder name="Gym2" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
