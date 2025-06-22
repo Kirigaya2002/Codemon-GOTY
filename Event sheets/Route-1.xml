@@ -190,25 +190,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="660187009898909" title="Sonido">
-            <sub-events>
-                <event-block sid="843296429671869">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="886799233469709" type="Keyboard">
-                            <param id="0" name="Key">90</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="831336985443924" type="MusicPlayer">
-                            <param id="0" name="Audio file">Move5</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="499382583602286" title="Acciones NPC">
             <sub-events>
                 <event-group description="" sid="775025963760429" title="Dialogo2">
@@ -454,7 +435,7 @@
                         <condition id="-7" name="Compare instance variable" sid="393389655737193" type="Text">
                             <param id="0" name="Instance variable">contador</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">5</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -781,7 +762,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="342007708819032" type="Text">
-                            <param id="0" name="Text">&quot;Obelisk: ¿Un caminante...? Hace siglos fui maestro del código. Caí en ruina por usar goto. Ahora soy piedra... pero mi conocimiento aún compila. ¿Lo escucharás?&quot;</param>
+                            <param id="0" name="Text">&quot;Obelisk: ¿Un caminante...? Fui maestro del código... hasta que olvidé un punto y coma. Desde entonces soy piedra. Pero aún recuerdo... ¿Quieres escuchar mis enseñanzas?&quot;</param>
                         </action>
                     </actions>
                 </event-block>

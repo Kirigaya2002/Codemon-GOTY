@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global Events</name>
     <events>
+        <variable comment="variable que indica si la llave debe ser visible al jugador" constant="0" name="keyRuta2" sid="217243779123375" static="0" type="number">0</variable>
         <variable constant="0" name="puzzleRuta3" sid="546274967612529" static="0" type="number">0</variable>
         <variable comment="variable que indica si el codemon fue elegido" constant="0" name="elegido" sid="265271782898538" static="0" type="number">0</variable>
         <variable constant="0" name="XPosition" sid="947550439149763" static="0" type="number">0</variable>
@@ -202,6 +203,24 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-24" name="Stop loop" sid="467552802111481" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="929835893310572">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="392918535480789" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="314934956331877" type="DisplayArrow">
+                            <param id="0" name="Object">Interactuables</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="464685107542659" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

@@ -33,25 +33,6 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="867866480886848" title="Sonidos Ambiente">
-                    <sub-events>
-                        <event-block sid="740964416543308">
-                            <conditions>
-                                <condition id="3" name="On key released" sid="633315830428518" type="Keyboard">
-                                    <param id="0" name="Key">90</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="645617147865645" type="MusicPlayer">
-                                    <param id="0" name="Audio file">Move5</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" sid="503301339377458" title="Movimento de Personajes">

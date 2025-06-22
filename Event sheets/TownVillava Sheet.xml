@@ -116,21 +116,6 @@
         </event-group>
         <event-group description="" sid="961206935074655" title="DialogoVijava">
             <sub-events>
-                <event-block sid="985871127849907">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="593103672570666" type="Keyboard">
-                            <param id="0" name="Key">90</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="144939038334803" type="MusicPlayer">
-                            <param id="0" name="Audio file">Move5</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-group description="" sid="269789724033202" title="Lara">
                     <sub-events>
                         <event-block sid="716252158539645">

@@ -18,6 +18,24 @@
                     <param id="3" name="Volume">60</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-15" name="Set visible" sid="731053670823051" type="key">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117295484941723">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="511533325981088" type="System" />
+                <condition id="-14" name="Compare variable" sid="337530379475676" type="System">
+                    <param id="0" name="Variable">keyRuta2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="917169248445801" type="key">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="266061249516667">
@@ -40,5 +58,874 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="713574552510257" title="Llave">
+            <sub-events>
+                <event-block sid="522253013289780">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="454894630073938" type="Player">
+                            <param id="0" name="Object">key</param>
+                        </condition>
+                        <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="556057622020003" type="key" />
+                        <condition id="-9" name="Is visible" sid="225728539249169" type="key" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="305274190996603" type="MusicPlayer">
+                            <param id="0" name="Audio file">Coin2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="132504826781799" type="key">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="418868964141500" title="Acciones Ruta 2">
+            <sub-events>
+                <event-group description="" sid="493560585631612" title="Dialogo3">
+                    <sub-events>
+                        <event-block sid="957170027262917">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="210542993810895" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="179612540316878" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="262677216694208" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">Text.contador+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="209659311798047" title="Guardian1">
+                    <sub-events>
+                        <event-block sid="535646801730663">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="784540058812160" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="380678532252450" type="DisplayArrow">
+                                    <param id="0" name="Object">Guardian</param>
+                                </condition>
+                                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="597585318979973" type="key" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="178394060163421" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="776249764634343" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="491590526237966" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;guar1&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="297041149758733" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="937590323780667" title="Guardian2">
+                    <sub-events>
+                        <event-block sid="687482979180869">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="446552184475286" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="871890232236893" type="DisplayArrow">
+                                    <param id="0" name="Object">Guardian</param>
+                                </condition>
+                                <condition behavior="Pin" id="0" name="Is pinned" sid="623621902729827" type="key" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="424544479455791" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="351090243288329" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="869598138296145" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;guar2&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="708765034121885" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="156701012726387" title="Kael">
+                    <sub-events>
+                        <event-block sid="817073479290494">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="127142772962262" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="333895729860066" type="DisplayArrow">
+                                    <param id="0" name="Object">eggman</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="471575818580638" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="579089768483516" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="603496064073983" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;npc1&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="416264954955041" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="487488713403598" title="Dixon1">
+                    <sub-events>
+                        <event-block sid="402734476372778">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="577731184881162" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="338677396139666" type="DisplayArrow">
+                                    <param id="0" name="Object">boy</param>
+                                </condition>
+                                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="414792882424048" type="Pico" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="627396197543211" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="859793467389972" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="599129467795799" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;npc2&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="405785570978828" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="799520000815427" title="Dixon2">
+                    <sub-events>
+                        <event-block sid="693519718584268">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="766397145293315" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="823035707830737" type="DisplayArrow">
+                                    <param id="0" name="Object">boy</param>
+                                </condition>
+                                <condition behavior="Pin" id="0" name="Is pinned" sid="367541300219232" type="Pico" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="407428015049301" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="871725498530464" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="161696429214371" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Value">&quot;npc22&quot;</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="697475429767777" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="505639531169003" title="Diologos Ruta 2">
+            <sub-events>
+                <event-group description="" sid="777330935049172" title="Dialogo Guardian (sin llave)">
+                    <sub-events>
+                        <event-block sid="986105598438021">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="327252008468245" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="618300684280848" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="590199772052595" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Yo soy el portador del límite. Nada pasa sin lo esencial. En Java, como aquí, debes traer lo correcto para avanzar. Trae la llave, joven compilador.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="785720660989662">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="590353766523535" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="957987260200531" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="798617343592636" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: En Java, si no importas una clase externa, no puedes usarla. Así como tú, sin la llave, no puedes cruzar esta frontera.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="131525446811243">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="581568240104391" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="484019457150028" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="902765358464360" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: El comando import conecta tu clase con otras. Sin él, tu programa es ciego al resto del mundo... y tú, sin llave, estás varado aquí.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="243672930528817">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="354349016625777" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="628844832761908" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="990405935480123" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Hay paquetes predefinidos como java.util o java.io. Pero para usarlos, debes pedir permiso con un import, como pides el paso a este guardián.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="799847334198150">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="834336761315110" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="123308021527139" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="625287132222151" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Aún no portas lo necesario. La llave no está aquí. Búscala, impórtala, y vuelve. Solo entonces... cruzarás hacia el código que sigue.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="906258806345975">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="309298503490165" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="634668287283825" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="723609099284416" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="913095804377981" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="513276147642653" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="628429701176081" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="924332972626243" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="307560574976996" type="key">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="285022119905190" title="Dialogo Guardian (con llave)">
+                    <sub-events>
+                        <event-block sid="802967514760525">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="739319028237218" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="169101984134757" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="514834677049792" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Has traído la llave... como quien trae un import bien escrito. El paso se abre para quien conoce y respeta las dependencias.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="203241108261544">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="255307399495352" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="955175851640265" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="228321580171805" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Así como tu clase ahora accede al mundo exterior, tú también puedes cruzar. Importar es declarar que necesitas algo para avanzar.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="964200052347665">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="117695016707586" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="996424329656840" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="762445913597468" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Yo era la barrera, y ahora, con la llave, soy el puente. Así actúa import: habilita lo que antes estaba fuera de tu alcance.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="671817175518237">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="329096979654637" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="485235613022347" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="214105856042071" type="Text">
+                                    <param id="0" name="Text">&quot;Guardian: Cruza con sabiduría. Cada import que haces trae poder, pero también responsabilidad. No importes lo que no entiendas... o quedarás perdido en las dependencias.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="112739838059581">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="343254336135737" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;guar2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="459358346613444" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="841243453053057" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="124525690301684" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="127695245804981" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="712791782275544" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="764582514451584" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="662670560582469" type="Guardian" />
+                                <action id="-9" name="Destroy" sid="914693244388965" type="key" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="610354798722450" title="Dialogo Dixon (sin pico)">
+                    <sub-events>
+                        <event-block sid="332782042176726">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="867501110197760" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="968636028936173" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="255753650876649" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Estas rocas bloquean el paso... como problemas que Java no resuelve solo. Necesito un Pico especial. Creo que Kael me puede prestar uno...&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="996697076853239">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="768261118169911" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="623825888906680" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="900484926970268" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: En Java, las librerías son como herramientas listas para usar. Si necesitas algo, seguramente ya hay una librería que lo hace mejor.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="936911627787675">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="527733337970470" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="851923780987463" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="373268561871851" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: ¿Ves estas rocas? Podría escribir todo desde cero... o usar el Pico, creado por alguien más. Eso es usar una librería: aprovechar soluciones ya hechas.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="781292896831836">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="286409178992315" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="852234529936457" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="744125578414727" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Desde Scanner para leer datos hasta librerías de gráficos, Java te da muchas herramientas. Como el Pico... solo hay que saber usarlas.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="355060726014018">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="214299042653564" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="432948436211741" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="353521714204745" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Sin el Pico, no hay paso. Sin librerías, tu código es más lento y complejo. Ve con Kael, pídeselo… y vuelve cuando estés listo para avanzar.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="193009044995892">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="489530320519540" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc2&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="576036043685219" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="213300205294166" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="472413138806179" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="958871392191320" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="161395673965521" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="237624471388233" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="107273211878670" title="Dialogo Dixon (con pico)">
+                    <sub-events>
+                        <event-block sid="473718765991624">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="707564022490853" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="869927131931013" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="881178550558615" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: ¡Ese es el Pico! Justo lo que necesitábamos. Así como una librería bien importada... ahora podemos resolver lo que antes parecía imposible.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="904848378341256">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="178101220680386" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="191097572269089" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="306155851628399" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Usar librerías en Java es como usar esta herramienta: tú no la construiste, pero sabes cómo usarla. ¡Y eso acelera todo tu progreso!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="681225621616384">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="673417703562008" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="564292485686617" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="714263403532253" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Con el Pico rompemos rocas. Con librerías, rompemos barreras de código. Aprender a usarlas bien es como dominar herramientas de verdad.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="687247263864180">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="120772832711954" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="862101081483711" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="888651344397441" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Recuerda: importar una librería no es trampa, es sabiduría. ¿Para qué reinventar la rueda si ya tienes una lista para rodar?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="389895206763804">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="711700684892034" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="638729486810166" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="192558397552830" type="Text">
+                                    <param id="0" name="Text">&quot;Dixon: Gracias por tu ayuda. Sigue así, buscando las herramientas correctas. En Java, y en la vida... a veces solo necesitas saber qué importar.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="587168642318521">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="857729110298421" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc22&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="565685129379189" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="978259100541067" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="743786651893316" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="202571414267355" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="751346254198617" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="619487634506085" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="357075793512163" type="rocas" />
+                                <action id="-9" name="Destroy" sid="337684561183971" type="Pico" />
+                                <action behavior="Solid" id="0" name="Set enabled" sid="699087731397019" type="boy">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="637582024718845" title="Dialogo Kael">
+                    <sub-events>
+                        <event-block sid="122232804952577">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="877950315423794" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="343721412024174" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="712169364197443" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: Aquí estaba mi hogar… todo en un solo archivo. Cuando llegó el codemon, no había estructura. El caos del mal diseño lo destruyó todo.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="941734886798723">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="533538345521336" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="729546255765564" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="140970018903483" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: MVC salvó mi nueva vida. Divide el código en tres partes: el modelo guarda los datos… ¡como mis viejos registros!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="150288136792086">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="959431763526227" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="654222241215130" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="953095596795039" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: La vista muestra la información, pero no sabe de lógica. Así como esta fachada, bella pero sin saber lo que lleva dentro.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="150472318821607">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="588254744736865" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="138845476403507" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="214957391870450" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: El controlador conecta todo: recibe acciones, actualiza el modelo y le dice a la vista qué mostrar. ¡Es el mensajero del sistema!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="709259734982452">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="582969285889148" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="701138836998011" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="238937181810090" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: Si yo hubiera usado MVC… tal vez mi casa seguiría en pie. Recuerda: un código ordenado es más fuerte que cualquier codemon.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="557901536446566">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="252151013947647" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="797666984716613" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="569524317015821" type="Text">
+                                    <param id="0" name="Text">&quot;Kael: Toma este Pico. No lo forjé con fuego, sino con lógica. Úsalo con sabiduría, como una buena librería. ¡Y que tu código nunca colapse como mi casa!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="528718812119254">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="315985175127187" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;npc1&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="745765086739365" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="827450589404082" type="Text">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="454249892730899" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="369595536113542" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="255800274048436" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="208232314177216" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="949997639139807" type="Pico">
+                                    <param id="0" name="Pin to">Player</param>
+                                    <param id="1" name="Mode">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -55,21 +55,6 @@
         </event-block>
         <event-group description="" sid="836088632978359" title="InteractionMom">
             <sub-events>
-                <event-block sid="389625551636858">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="950486037627708" type="Keyboard">
-                            <param id="0" name="Key">90</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="880721232235933" type="MusicPlayer">
-                            <param id="0" name="Audio file">Move5</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-group description="" sid="478602496594239" title="Dialog">
                     <sub-events>
                         <event-block sid="726646839872752">
