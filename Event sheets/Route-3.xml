@@ -37,6 +37,9 @@
                             <param id="0" name="Layer">0</param>
                             <param id="1" name="Scale">2.0</param>
                         </action>
+                        <action id="0" name="Set text" sid="607752566145847" type="Text2">
+                            <param id="0" name="Text">&quot;Lea los carteles y resuelve las preguntas de tus rivales (&quot;&amp;puzzleRuta3&amp;&quot; /4)&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="257871583030289">
@@ -347,6 +350,9 @@
                                             <param id="0" name="Tag">&quot;ambiente&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
+                                        <action id="0" name="Set text" sid="634793032874723" type="Text2">
+                                            <param id="0" name="Text">&quot;Lea los carteles y resuelve las preguntas de tus rivales (&quot;&amp;puzzleRuta3&amp;&quot; /4)&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="807942181519146">
@@ -465,6 +471,9 @@
                                             <param id="0" name="Tag">&quot;ambiente&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
+                                        <action id="0" name="Set text" sid="832992794363590" type="Text2">
+                                            <param id="0" name="Text">&quot;Lea los carteles y resuelve las preguntas de tus rivales (&quot;&amp;puzzleRuta3&amp;&quot; /4)&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -512,6 +521,9 @@
                                         <action id="2" name="Set muted" sid="402534717208608" type="MusicPlayer">
                                             <param id="0" name="Tag">&quot;ambiente&quot;</param>
                                             <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="459598653699462" type="Text2">
+                                            <param id="0" name="Text">&quot;Lea los carteles y resuelve las preguntas de tus rivales (&quot;&amp;puzzleRuta3&amp;&quot; /4)&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -595,6 +607,9 @@
                                         <action id="2" name="Set muted" sid="243784475589289" type="MusicPlayer">
                                             <param id="0" name="Tag">&quot;ambiente&quot;</param>
                                             <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="113894422433291" type="Text2">
+                                            <param id="0" name="Text">&quot;Lea los carteles y resuelve las preguntas de tus rivales (&quot;&amp;puzzleRuta3&amp;&quot; /4)&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>

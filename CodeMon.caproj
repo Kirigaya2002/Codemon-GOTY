@@ -3026,6 +3026,14 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-type name="Text2" sid="545119796843311">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="286110101486189">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families>
         <family name="Interactuables" plugin-id="Sprite" sid="354451394445731">
