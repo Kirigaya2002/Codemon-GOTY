@@ -3,12 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GymRoute1 Sheet</name>
     <events>
-        <variable comment="0 para no, 1 para si" constant="0" name="LeaderDefeat" sid="521133502409965" static="0" type="number">0</variable>
-        <variable constant="0" name="CurrentQuestion" sid="430895496090301" static="0" type="number">0</variable>
-        <variable constant="0" name="DialogReady" sid="173699326887091" static="0" type="text">true</variable>
-        <variable comment="Opción elegida para responder cada pregunta" constant="0" name="SelectedOption" sid="503859658711449" static="0" type="number">0</variable>
-        <variable comment="Almacena que linea de texto desplegar" constant="0" name="CurrentText" sid="250714593365000" static="0" type="number">0</variable>
-        <variable comment="Almacena a cuantos NPC le responde bien" constant="0" name="correctAnswers" sid="104743566965415" static="0" type="number">0</variable>
         <include>Global Events</include>
         <event-group description="" sid="978474895616870" title="Init Layout">
             <sub-events>

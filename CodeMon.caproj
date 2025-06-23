@@ -1564,7 +1564,142 @@
                         </animation-folder>
                     </object-type>
                 </object-folder>
-                <object-folder name="GymRoute3" />
+                <object-folder name="GymRoute3">
+                    <object-type name="TileMapFloor3" sid="350014571419757">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="TileMapWalls3" sid="483991706943611">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="821609189793052">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetInterior.png" />
+                        <tiles>
+                            <tile id="186">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.8125" />
+                                    <point x="0" y="0.8125" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="298">
+                                <collision-poly>
+                                    <point x="0" y="0.1875" />
+                                    <point x="1" y="0.1875" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="TileMapFloorSnow" sid="833133532745022">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloorB.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="TileMapSnow" sid="340330734778776">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetField.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Tilemap5" sid="865493591306035">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetReliefDetail.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="Tilemap6" sid="747714897347106">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="127012768387441">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                        <tiles>
+                            <tile id="343">
+                                <collision-poly>
+                                    <point x="0.484375" y="0.515625" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="344">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.53125" y="0.453125" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="367">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.34375" y="0.640625" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="368">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0.640625" y="0.609375" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
+                    <object-type name="Tilemap7" sid="388882163789530">
+                        <plugin id="Tilemap" />
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetWater.png" />
+                        <tiles />
+                    </object-type>
+                    <object-type name="DoorGym" sid="703366437136990">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="984809788497397">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795078493449050" speed="5">
+                                <frame duration="1" hotspotX="12" hotspotY="-3.5" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="DoorGym2" sid="744710805724221">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="565941240167343">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="876589982423568" speed="5">
+                                <frame duration="1" hotspotX="12" hotspotY="-3.5" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="DoorGym3" sid="964986078448773">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="377994889266406">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574933172062681" speed="5">
+                                <frame duration="1" hotspotX="12" hotspotY="-3.5" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetNature.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
             </object-folder>
         </object-folder>
         <object-folder name="Characters">
@@ -2706,6 +2841,73 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="GymRoute3">
+                <object-type name="SkeletonOne" sid="628844646689205">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="340456445206870">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964624678786337" speed="5">
+                            <frame duration="1" hotspotX="2.13333" hotspotY="2.35714" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Skeleton\SpriteSheet.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SkeletonTwo" sid="217353229604422">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="537448314214854">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758854622060957" speed="5">
+                            <frame duration="1" hotspotX="2.13333" hotspotY="2.35714" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Skeleton\SpriteSheet.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SkeletonThree" sid="526445048685934">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="427424812235275">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736494727391144" speed="5">
+                            <frame duration="1" hotspotX="2.13333" hotspotY="2.35714" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Skeleton\SpriteSheet.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SkeletonFour" sid="761552087308364">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="820163491793504">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817979914642970" speed="5">
+                            <frame duration="1" hotspotX="9.21429" hotspotY="17.1429" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Characters\Skeleton\SpriteSheet.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SkeletonLeader" sid="520498448623912">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="187176332454877">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697476630775442" speed="5">
+                            <frame duration="1" hotspotX="2" hotspotY="2.13333" original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Actor\Monsters\SkullBlue\SpriteSheet.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-folder name="Fight">
             <object-folder name="Buttons">
@@ -2860,6 +3062,11 @@
                 <member>question1npc</member>
                 <member>question2npc</member>
                 <member>question3npc</member>
+                <member>SkeletonFour</member>
+                <member>SkeletonLeader</member>
+                <member>SkeletonOne</member>
+                <member>SkeletonThree</member>
+                <member>SkeletonTwo</member>
                 <member>swimer1</member>
                 <member>swimer2</member>
                 <member>swimer3</member>

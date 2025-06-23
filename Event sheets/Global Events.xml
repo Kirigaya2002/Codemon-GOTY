@@ -8,6 +8,12 @@
         <variable comment="variable que indica si el codemon fue elegido" constant="0" name="elegido" sid="265271782898538" static="0" type="number">0</variable>
         <variable constant="0" name="XPosition" sid="947550439149763" static="0" type="number">0</variable>
         <variable constant="0" name="YPosition" sid="584352345109094" static="0" type="number">0</variable>
+        <variable comment="0 para no, 1 para si" constant="0" name="LeaderDefeat" sid="164905750861005" static="0" type="number">0</variable>
+        <variable constant="0" name="CurrentQuestion" sid="883236199718855" static="0" type="number">0</variable>
+        <variable constant="0" name="DialogReady" sid="963197777638767" static="0" type="text">true</variable>
+        <variable comment="Opción elegida para responder cada pregunta" constant="0" name="SelectedOption" sid="554504251288538" static="0" type="number">0</variable>
+        <variable comment="Almacena que linea de texto desplegar" constant="0" name="CurrentText" sid="493980065916854" static="0" type="number">0</variable>
+        <variable comment="Almacena a cuantos NPC le responde bien" constant="0" name="correctAnswers" sid="551243507093215" static="0" type="number">0</variable>
         <event-block sid="217230387909117">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="481738878372486" type="System" />

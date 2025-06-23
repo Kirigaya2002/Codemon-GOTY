@@ -10,11 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Route-2</layout>
-        <layout order="4">Route-1</layout>
-        <event-sheet order="0">Route-2</event-sheet>
+        <layout order="0">GymRoute3</layout>
+        <event-sheet active="1" order="1">GymRoute3</event-sheet>
         <event-sheet order="2">Global Events</event-sheet>
-        <event-sheet order="3">Route-1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -22,12 +20,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="Interactuables" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/System/ UI/" />
+        <folder expanded="1" path="object-folder/System/ UI/" />
         <folder expanded="0" path="object-folder/System/ UI/Sky/" />
         <folder expanded="1" path="object-folder/System/ UI/Sky/FromParts/" />
         <folder expanded="0" path="object-folder/System/ UI/Music/" />
@@ -35,8 +33,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Font/" />
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Election/" />
-        <folder expanded="0" path="object-folder/System/ UI/Dialog/" />
-        <folder expanded="0" path="object-folder/System/ UI/Puzzle/" />
+        <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
+        <folder expanded="1" path="object-folder/System/ UI/Puzzle/" />
         <folder expanded="0" path="object-folder/System/ UI/Logo/" />
         <folder expanded="0" path="object-folder/System/ UI/FX/" />
         <folder expanded="1" path="object-folder/World/" />
@@ -46,18 +44,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/World/Laboratory/" />
         <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
         <folder expanded="0" path="object-folder/World/TownVijava/" />
-        <folder expanded="1" path="object-folder/World/Routes/" />
+        <folder expanded="0" path="object-folder/World/Routes/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-1/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-3/" />
-        <folder expanded="1" path="object-folder/World/Routes/Route-2/" />
-        <folder expanded="0" path="object-folder/World/Gyms/" />
-        <folder expanded="1" path="object-folder/World/Gyms/GymRoute2/" />
+        <folder expanded="0" path="object-folder/World/Routes/Route-2/" />
+        <folder expanded="1" path="object-folder/World/Gyms/" />
+        <folder expanded="0" path="object-folder/World/Gyms/GymRoute2/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/" />
         <folder expanded="1" path="object-folder/World/Gyms/GymRoute1/tiles/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/npc/" />
         <folder expanded="1" path="object-folder/World/Gyms/GymRoute3/" />
-        <folder expanded="0" path="object-folder/Characters/" />
-        <folder expanded="0" path="object-folder/Characters/Protagonist/" />
+        <folder expanded="1" path="object-folder/Characters/" />
+        <folder expanded="1" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
         <folder expanded="0" path="object-folder/Characters/Codemon/" />
         <folder expanded="0" path="object-folder/Characters/Enemy/" />
@@ -66,7 +64,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Characters/Route-3/" />
         <folder expanded="0" path="object-folder/Characters/Route-1/" />
         <folder expanded="0" path="object-folder/Characters/GymRoute2/" />
-        <folder expanded="0" path="object-folder/Fight/" />
+        <folder expanded="1" path="object-folder/Characters/GymRoute3/" />
+        <folder expanded="1" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
         <folder expanded="1" path="layout-folder/" />
@@ -76,8 +75,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="layout-folder/World/Laboratory/" />
         <folder expanded="0" path="layout-folder/World/TownVijava/" />
         <folder expanded="1" path="layout-folder/World/Routes/" />
-        <folder expanded="0" path="layout-folder/World/Gyms/" />
-        <folder expanded="0" path="layout-folder/Fights/" />
+        <folder expanded="1" path="layout-folder/World/Gyms/" />
+        <folder expanded="1" path="layout-folder/Fights/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/Menu/" />
         <folder expanded="1" path="event-folder/World/" />
@@ -88,7 +87,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="event-folder/World/Gym/" />
         <folder expanded="1" path="event-folder/Global/" />
         <folder expanded="1" path="event-folder/Global/Global Sheets/" />
-        <folder expanded="0" path="event-folder/Fights/" />
+        <folder expanded="1" path="event-folder/Fights/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -144,6 +143,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Gym1Leader/" />
         <folder expanded="1" path="animation-folder/Ray/" />
         <folder expanded="1" path="animation-folder/DoorToRoute2/" />
+        <folder expanded="1" path="animation-folder/DoorGym/" />
+        <folder expanded="1" path="animation-folder/DoorGym2/" />
+        <folder expanded="1" path="animation-folder/DoorGym3/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/" />
         <folder expanded="1" path="animation-folder/PlayerAnimation/Idle/" />
@@ -173,6 +175,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/swimer3/" />
         <folder expanded="1" path="animation-folder/swimer1/" />
         <folder expanded="1" path="animation-folder/boss/" />
+        <folder expanded="1" path="animation-folder/SkeletonOne/" />
+        <folder expanded="1" path="animation-folder/SkeletonTwo/" />
+        <folder expanded="1" path="animation-folder/SkeletonThree/" />
+        <folder expanded="1" path="animation-folder/SkeletonFour/" />
+        <folder expanded="1" path="animation-folder/SkeletonLeader/" />
         <folder expanded="1" path="animation-folder/AttackBtn/" />
         <folder expanded="1" path="animation-folder/DefendBtn/" />
         <folder expanded="1" path="animation-folder/SkillBtn/" />
