@@ -1415,6 +1415,30 @@
                             </animation>
                         </animation-folder>
                     </object-type>
+                    <object-type name="displayArrow1" sid="962766127184835">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173112284162125" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="displayArrow2" sid="706788502125942">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118168834546739" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="displayArrow3" sid="958966590818689">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343496667428963" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
                 </object-folder>
                 <object-folder name="GymRoute1">
                     <object-folder name="tiles">
@@ -2780,7 +2804,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="swimer3" sid="199378997098079">
+                <object-type name="swimer" sid="199378997098079">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848338184456731" speed="5">
@@ -2797,7 +2821,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="swimer1" sid="866074645186729">
+                <object-type name="swimer3" sid="866074645186729">
                     <plugin id="Sprite" />
                     <behaviors>
                         <behavior-type name="Solid" sid="322604071292469">
@@ -3049,6 +3073,9 @@
                 <member>Cientifico3</member>
                 <member>Cientifico4</member>
                 <member>Dennis</member>
+                <member>displayArrow1</member>
+                <member>displayArrow2</member>
+                <member>displayArrow3</member>
                 <member>eggman</member>
                 <member>EmptyOption</member>
                 <member>Estatua1</member>
@@ -3075,7 +3102,7 @@
                 <member>SkeletonOne</member>
                 <member>SkeletonThree</member>
                 <member>SkeletonTwo</member>
-                <member>swimer1</member>
+                <member>swimer</member>
                 <member>swimer2</member>
                 <member>swimer3</member>
                 <member>test</member>

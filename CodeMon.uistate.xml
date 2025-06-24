@@ -11,8 +11,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Route-3</layout>
-        <event-sheet active="1" order="1">Route-3</event-sheet>
+        <layout order="3">GymRoute3</layout>
+        <layout order="4">GymRoute1</layout>
+        <layout order="5">GymRoute2</layout>
+        <event-sheet order="1">Route-3</event-sheet>
         <event-sheet order="2">Global Events</event-sheet>
+        <event-sheet active="1" order="6">GymRoute2</event-sheet>
+        <event-sheet order="7">TownVillava Sheet</event-sheet>
+        <event-sheet order="8">GymRoute3</event-sheet>
+        <event-sheet order="9">GymRoute1 Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -21,7 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="Interactuables" />
+        <family expanded="1" name="Interactuables" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -34,7 +41,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Election/" />
         <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
-        <folder expanded="1" path="object-folder/System/ UI/Puzzle/" />
+        <folder expanded="0" path="object-folder/System/ UI/Puzzle/" />
         <folder expanded="0" path="object-folder/System/ UI/Logo/" />
         <folder expanded="0" path="object-folder/System/ UI/FX/" />
         <folder expanded="1" path="object-folder/World/" />
@@ -53,7 +60,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/" />
         <folder expanded="1" path="object-folder/World/Gyms/GymRoute1/tiles/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/npc/" />
-        <folder expanded="1" path="object-folder/World/Gyms/GymRoute3/" />
+        <folder expanded="0" path="object-folder/World/Gyms/GymRoute3/" />
         <folder expanded="1" path="object-folder/Characters/" />
         <folder expanded="1" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
@@ -63,7 +70,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Characters/Vijava/" />
         <folder expanded="0" path="object-folder/Characters/Route-3/" />
         <folder expanded="0" path="object-folder/Characters/Route-1/" />
-        <folder expanded="0" path="object-folder/Characters/GymRoute2/" />
+        <folder expanded="1" path="object-folder/Characters/GymRoute2/" />
         <folder expanded="1" path="object-folder/Characters/GymRoute3/" />
         <folder expanded="1" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
@@ -137,6 +144,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Pico/" />
         <folder expanded="1" path="animation-folder/rocas/" />
         <folder expanded="1" path="animation-folder/DoorToRoute3/" />
+        <folder expanded="1" path="animation-folder/displayArrow1/" />
+        <folder expanded="1" path="animation-folder/displayArrow2/" />
+        <folder expanded="1" path="animation-folder/displayArrow3/" />
         <folder expanded="1" path="animation-folder/question1npc/" />
         <folder expanded="1" path="animation-folder/question2npc/" />
         <folder expanded="1" path="animation-folder/question3npc/" />
@@ -172,8 +182,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Estatua1/" />
         <folder expanded="1" path="animation-folder/Estatua2/" />
         <folder expanded="1" path="animation-folder/swimer2/" />
+        <folder expanded="1" path="animation-folder/swimer/" />
         <folder expanded="1" path="animation-folder/swimer3/" />
-        <folder expanded="1" path="animation-folder/swimer1/" />
         <folder expanded="1" path="animation-folder/boss/" />
         <folder expanded="1" path="animation-folder/SkeletonOne/" />
         <folder expanded="1" path="animation-folder/SkeletonTwo/" />
