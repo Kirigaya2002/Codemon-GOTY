@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GymRoute2</name>
     <events>
+        <variable constant="0" name="totalAnswers" sid="148897001284704" static="0" type="number">0</variable>
+        <variable constant="0" name="showedText2" sid="627861322996981" static="0" type="number">0</variable>
+        <variable constant="0" name="showedText3" sid="998410449105331" static="0" type="number">0</variable>
         <variable constant="0" name="showedText" sid="295837689709756" static="0" type="number">0</variable>
         <include>Global Events</include>
         <event-group description="" sid="549497818637051" title="InitGym2">
@@ -104,10 +107,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="290190959543470" type="Text">
-                                            <param id="0" name="Text">&quot;Skeler: Como es posible que sepas tanto? Pero lo prometido es deuda.. PUEDES PASAR!!!&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Jorge: Mejor suerte la proxima! Puedes intentarlo de nuevo!&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="310863770370031" type="System">
-                                            <param id="0" name="Seconds">4</param>
+                                            <param id="0" name="Seconds">2</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="101459276245496" type="Player">
                                             <param id="0" name="State">1</param>
@@ -128,9 +131,12 @@
                                         <action id="-15" name="Set visible" sid="345034412402737" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="140668894697667" type="DoorGym" />
                                         <action id="-9" name="Set value" sid="810036746432600" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="923942713012614" type="System">
+                                            <param id="0" name="Variable">showedText</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
@@ -151,10 +157,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="934521839896988" type="Text">
-                                            <param id="0" name="Text">&quot;Skelin: IMPOSIBLE! Es como si hubieras jugado un juego que te enseña a programar.. Esta bien, te dejare pasar.&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Dayron: Justo como creí, fallaste, pero puedes intentar otra vez.&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="456668486958289" type="System">
-                                            <param id="0" name="Seconds">4</param>
+                                            <param id="0" name="Seconds">3</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="877143678789435" type="Player">
                                             <param id="0" name="State">1</param>
@@ -175,9 +181,12 @@
                                         <action id="-15" name="Set visible" sid="239483469714945" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="333701638713422" type="DoorGym2" />
                                         <action id="-9" name="Set value" sid="905329198484435" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="963796451212419" type="System">
+                                            <param id="0" name="Variable">showedText2</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
@@ -198,10 +207,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="510243442445890" type="Text">
-                                            <param id="0" name="Text">&quot;Skato: Que miras bobo? Pensabas que iba ser facil? Ni que me dijeran Python... Responderas de nuevo o te iras?&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Diego: ¿Creíste que seria facil? Puedes responder de nuevo para que aciertes&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="465031720162865" type="System">
-                                            <param id="0" name="Seconds">4</param>
+                                            <param id="0" name="Seconds">3</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="893105292671896" type="Player">
                                             <param id="0" name="State">1</param>
@@ -226,51 +235,8 @@
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="203440267299579">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="671113013302225" type="System">
-                                            <param id="0" name="Variable">CurrentQuestion</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Play" sid="303725454572855" type="MusicPlayer">
-                                            <param id="0" name="Audio file">Success3</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="934576139192926" type="Text">
-                                            <param id="0" name="Text">&quot;Papirus: Parece que alguien es igual de inteligente que los egresados que hicieron este juego. Que como lo se? No te lo dire. Pasa!&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="587350381240796" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action behavior="8Direction" id="8" name="Set enabled" sid="233930901149283" type="Player">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="765239427123974" type="Dialog">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="767202398070117" type="Text">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="603224543924061" type="System">
-                                            <param id="0" name="Variable">DialogReady</param>
-                                            <param id="1" name="Value">&quot;false&quot;</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="558665649521110" type="OpNo">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="294705430958456" type="OpYes">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="354936386537005" type="SkeletonFour" />
-                                        <action id="-9" name="Set value" sid="869298075648926" type="System">
-                                            <param id="0" name="Variable">CurrentText</param>
+                                        <action id="-9" name="Set value" sid="935192981206851" type="System">
+                                            <param id="0" name="Variable">showedText3</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
@@ -280,7 +246,7 @@
                                         <condition id="-14" name="Compare variable" sid="204798421780562" type="System">
                                             <param id="0" name="Variable">CurrentQuestion</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">4</param>
+                                            <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -376,10 +342,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="623614375306261" type="Text">
-                                            <param id="0" name="Text">&quot;Skeler: Sabia que no la podrias responder! Vete por donde viniste o Intetalo de nuevo!&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Jorge: Eres increible, ¿estaba fácil no? Como un easy en Geometry Dash! Puedes continuar&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="397097311773303" type="System">
-                                            <param id="0" name="Seconds">2</param>
+                                            <param id="0" name="Seconds">4</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="319413642231782" type="Player">
                                             <param id="0" name="State">1</param>
@@ -404,6 +370,10 @@
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="875634214109582" type="System">
+                                            <param id="0" name="Variable">totalAnswers</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="897302558054717">
@@ -422,10 +392,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="363649939651199" type="Text">
-                                            <param id="0" name="Text">&quot;Skelin: Parece que alguien le hace competencia en neuronas a Skeler.. Te dejare de molestar hasta que respondas mi pregunta correctamente!&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Dayron: Flipé, si la pegaste, no lo creí posible, ¡puedes continuar!&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="243303389508379" type="System">
-                                            <param id="0" name="Seconds">2</param>
+                                            <param id="0" name="Seconds">3</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="875417582450952" type="Player">
                                             <param id="0" name="State">1</param>
@@ -450,6 +420,10 @@
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="996722936179782" type="System">
+                                            <param id="0" name="Variable">totalAnswers</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="415663787408577">
@@ -468,10 +442,10 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Set text" sid="276108672426791" type="Text">
-                                            <param id="0" name="Text">&quot;Skato: A ver.. Que mas decia la IA? Te dejare pasar pero a mi no me engañas eh&quot;</param>
+                                            <param id="0" name="Text">&quot;Nadador Diego: Puedes avanzar con el jefe, mas no obstante seguro usaste IA&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="982489234996739" type="System">
-                                            <param id="0" name="Seconds">4</param>
+                                            <param id="0" name="Seconds">3</param>
                                         </action>
                                         <action behavior="8Direction" id="8" name="Set enabled" sid="478656992366425" type="Player">
                                             <param id="0" name="State">1</param>
@@ -492,10 +466,13 @@
                                         <action id="-15" name="Set visible" sid="889158284664854" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="535445719142594" type="DoorGym3" />
                                         <action id="-9" name="Set value" sid="520534938274806" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="640426026908013" type="System">
+                                            <param id="0" name="Variable">totalAnswers</param>
+                                            <param id="1" name="Value">3</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -545,85 +522,21 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="262070916347348">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="165600016499461" type="System">
-                                            <param id="0" name="Variable">CurrentQuestion</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">4</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Play" sid="128830053050915" type="MusicPlayer">
-                                            <param id="0" name="Audio file">Success3</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="110216727193241" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="238359659039218" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action behavior="8Direction" id="8" name="Set enabled" sid="702494516545741" type="Player">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="715357335025119" type="Dialog">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="176400940943337" type="Text">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="406418707092158" type="System">
-                                            <param id="0" name="Variable">DialogReady</param>
-                                            <param id="1" name="Value">&quot;false&quot;</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="922071478588715" type="OpNo">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="177226352016525" type="OpYes">
-                                            <param id="0" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="295473676315915" type="Dialog">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="977000995946272" type="Text">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="952815402841103" type="Text">
-                                            <param id="0" name="Text">&quot;Ahora tendremos que batirnos en batalla codemon, si quieres pasar, claro.&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="640472726801792" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="640678840750293" type="System">
-                                            <param id="0" name="Variable">XPosition</param>
-                                            <param id="1" name="Value">Player.X</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="998659962035103" type="System">
-                                            <param id="0" name="Variable">YPosition</param>
-                                            <param id="1" name="Value">Player.Y</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="904936062600117" type="System">
-                                            <param id="0" name="Variable">CurrentText</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="323719626907727" type="System">
-                                            <param id="0" name="Layout">Gym1 Fight Layout</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Dialogos para la primera pregunta del gym" sid="613759546388239" title="Question Swimer1">
+        <event-group description="Dialogos para la primera pregunta del gym" sid="613759546388239" title="Question Swimer Jorge(1)">
             <sub-events>
                 <event-block sid="159629147205394">
                     <conditions>
+                        <condition id="-14" name="Compare variable" sid="976514696720324" type="System">
+                            <param id="0" name="Variable">showedText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                         <condition id="1" name="Is overlapping another object" sid="537666834522711" type="Player">
                             <param id="0" name="Object">displayArrow1</param>
                         </condition>
@@ -637,13 +550,12 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;true&quot;</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="976514696720324" type="System">
-                            <param id="0" name="Variable">showedText</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                     </conditions>
                     <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="955163309177952" type="Player" />
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="614394516939022" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
                         <action id="-9" name="Set value" sid="515685394767223" type="System">
                             <param id="0" name="Variable">CurrentQuestion</param>
                             <param id="1" name="Value">0</param>
@@ -654,9 +566,6 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
-                        <action behavior="8Direction" id="8" name="Set enabled" sid="614394516939022" type="Player">
-                            <param id="0" name="State">0</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="747581483008711" type="Dialog">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -664,7 +573,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="0" name="Set text" sid="607338840393286" type="Text">
-                            <param id="0" name="Text">&quot;Nadador Dixon: &#x0D;&#x0A;Como llegaste aqui? No te dejare pasar hasta que respondas mi pregunta!!&quot;</param>
+                            <param id="0" name="Text">&quot;Nadador Jorge: &#x0D;&#x0A;Hace calor afuera no? Por eso estoy en el agua. Te dejaré pasar si respondes bien mi pregunta&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="137832802302340" type="System">
                             <param id="0" name="Variable">CurrentText</param>
@@ -682,6 +591,14 @@
                 </event-block>
                 <event-block sid="949348177115501">
                     <conditions>
+                        <condition id="3" name="On key released" sid="268638971117153" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="123320466300557" type="System">
+                            <param id="0" name="Variable">showedText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                         <condition id="1" name="Is overlapping another object" sid="357116416967807" type="Player">
                             <param id="0" name="Object">displayArrow1</param>
                         </condition>
@@ -704,7 +621,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="367328526691347" type="Text">
-                            <param id="0" name="Text">&quot;La afirmacion es correcta?:&#x0D;&#x0A;-&gt; Cuando tengo un solo objeto debo de utilizar herencia..&quot;</param>
+                            <param id="0" name="Text">&quot;Responde :&#x0D;&#x0A;-&gt;¿Es necesario usar import en Java para acceder a clases que no están en el mismo paquete?&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="565050184016324" type="System">
                             <param id="0" name="Variable">DialogReady</param>
@@ -720,7 +637,333 @@
                             <param id="0" name="Variable">CurrentText</param>
                             <param id="1" name="Value">2</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="511503256599574" type="displayArrow1" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Dialogos para la segunda pregunta del gym" sid="182944157824020" title="Question Swimer Dayron(2)">
+            <sub-events>
+                <event-block sid="250939986996516">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="403825013601617" type="System">
+                            <param id="0" name="Variable">showedText2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="993573285305610" type="Player">
+                            <param id="0" name="Object">displayArrow2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="930893418595811" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="770246922550907" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="919540755033858" type="Player" />
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="324473925296338" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="505314123474077" type="System">
+                            <param id="0" name="Variable">CurrentQuestion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="175144010212969" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="319038655552720" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="179748733708955" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="659108021194836" type="Text">
+                            <param id="0" name="Text">&quot;Nadador Dayron: &#x0D;&#x0A;Fuaa, superaste la primera prueba, pero la mia es mas dura.&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="765362802500233" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="679732991449836" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="905141931238917" type="System">
+                            <param id="0" name="Variable">showedText2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="411535122617015">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="772002376755412" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="239514101535375" type="System">
+                            <param id="0" name="Variable">showedText2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="525515188667975" type="Player">
+                            <param id="0" name="Object">displayArrow2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="727399245176760" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="136530272591385" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="776042647667624" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="243321356063972" type="Text">
+                            <param id="0" name="Text">&quot;La afirmacion es correcta?:&#x0D;&#x0A;-&gt;Es necesario entender cómo funciona una librería antes de usarla en tu proyecto&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="421396531746264" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="208567296002515" type="OpNo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="681907471497280" type="OpYes">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="679442124285284" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Dialogos para la segunda pregunta del gym" sid="716427500033171" title="Question Swimer Diego(3)">
+            <sub-events>
+                <event-block sid="735972335746301">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="686675735470845" type="System">
+                            <param id="0" name="Variable">showedText3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="770598959350545" type="Player">
+                            <param id="0" name="Object">displayArrow3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="857832545626095" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="762216399974379" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="0" name="Stop" sid="232160120176313" type="Player" />
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="343300396092994" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="792955030181127" type="System">
+                            <param id="0" name="Variable">CurrentQuestion</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Play" sid="920131602096685" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="219799332621272" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="460169545177730" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="983373147285422" type="Text">
+                            <param id="0" name="Text">&quot;Nadador Diego: &#x0D;&#x0A;Hace calor afuera no? Por eso estoy en el agua. Te dejaré pasar si respondes bien mi pregunta&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="331388928157119" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="867482730756669" type="System">
+                            <param id="0" name="Variable">showedText3</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="940567751225333" type="System">
+                            <param id="0" name="Variable">showedText3</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="597761590702185">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="147039321388901" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="747236960558887" type="System">
+                            <param id="0" name="Variable">showedText3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="801373543912896" type="Player">
+                            <param id="0" name="Object">displayArrow3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="559999471573540" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="869799588204899" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="722661934048054" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="142584054568509" type="Text">
+                            <param id="0" name="Text">&quot;La afirmacion es correcta?:&#x0D;&#x0A;-&gt;¿Puede el uso del patrón MVC ayudar a mantener el código más organizado y resistente a errores?&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="958423662849644" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="987743768901968" type="OpNo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="135181508303931" type="OpYes">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="429455912754864" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Dialogos para el boss del gym" sid="677443217368198" title="Boss dialog">
+            <sub-events>
+                <event-block sid="639669378459004">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="563340348149941" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="312625095122625" type="DisplayArrow">
+                            <param id="0" name="Object">boss</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="447114365157154" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="942876103049394" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="778970592704542" type="System">
+                            <param id="0" name="Variable">CurrentQuestion</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Play" sid="507759865463596" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="241967045187624" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="936293698336515" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="120969772645920" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="153438140608160" type="Text">
+                            <param id="0" name="Text">&quot;Bien hecho joven padawan, respondiste bien a mis secuaces, pero no es todo, responde mi pregunta para poder avanzar a la siguiente ruta.&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="803084829702795" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="766988132694425" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="527179645412760">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="408861087846613" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="384333813016813" type="DisplayArrow">
+                            <param id="0" name="Object">boss</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="851418989109647" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="526407843519835" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="290339026775637" type="MusicPlayer">
+                            <param id="0" name="Audio file">Move5</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="659123942900967" type="Text">
+                            <param id="0" name="Text">&quot;[Inserte pregunta de programación acá]&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="378379452475432" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="524049504997112" type="OpNo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="439431973151432" type="OpYes">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="876633105333314" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

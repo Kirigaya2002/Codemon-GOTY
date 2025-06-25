@@ -12,14 +12,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Route-3</layout>
         <layout order="3">GymRoute3</layout>
-        <layout order="4">GymRoute1</layout>
-        <layout order="5">GymRoute2</layout>
+        <layout order="4">GymRoute2</layout>
+        <layout order="10">Gym1 Fight Layout</layout>
+        <layout order="11">Fight Layout</layout>
+        <layout order="12">Route-2</layout>
         <event-sheet order="1">Route-3</event-sheet>
         <event-sheet order="2">Global Events</event-sheet>
-        <event-sheet active="1" order="6">GymRoute2</event-sheet>
-        <event-sheet order="7">TownVillava Sheet</event-sheet>
-        <event-sheet order="8">GymRoute3</event-sheet>
-        <event-sheet order="9">GymRoute1 Sheet</event-sheet>
+        <event-sheet active="1" order="5">GymRoute2</event-sheet>
+        <event-sheet order="6">GymRoute3</event-sheet>
+        <event-sheet order="7">GymRoute1 Sheet</event-sheet>
+        <event-sheet order="8">Route-2</event-sheet>
+        <event-sheet order="9">Gym Route 1 Fight Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -28,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="Interactuables" />
+        <family expanded="0" name="Interactuables" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -56,7 +59,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/World/Routes/Route-3/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-2/" />
         <folder expanded="1" path="object-folder/World/Gyms/" />
-        <folder expanded="0" path="object-folder/World/Gyms/GymRoute2/" />
+        <folder expanded="1" path="object-folder/World/Gyms/GymRoute2/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/" />
         <folder expanded="1" path="object-folder/World/Gyms/GymRoute1/tiles/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/npc/" />
