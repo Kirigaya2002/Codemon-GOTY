@@ -184,6 +184,40 @@
                         </behavior-type>
                     </behaviors>
                 </object-type>
+                <object-type global="1" name="Title" sid="409969241877330">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="373614385757201">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521533875179915" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\Ui\Dialog\DialogueBoxSimple.png">
+                                <collision-poly>
+                                    <point x="0.00632911" y="0.0333333" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.993671" y="0.0333333" />
+                                    <point x="0.993671" y="0.966667" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.00632911" y="0.966667" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type global="1" name="TitleText" sid="974886042919749">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="personaje" sid="614138624189117" type="string" />
+                        <instance-variable name="contador" sid="957467556413717" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="900944400154689">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
             </object-folder>
             <object-folder name="Puzzle">
                 <object-type name="OpYes" sid="853577447989527">
