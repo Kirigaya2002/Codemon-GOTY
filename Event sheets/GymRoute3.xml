@@ -122,13 +122,55 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="0" name="Set text" sid="296273590513840" type="Text">
-                            <param id="0" name="Text">&quot;Skeler: &#x0D;&#x0A;Como llegaste aqui? No te dejare pasar hasta que respondas mi pregunta!!&quot;</param>
+                            <param id="0" name="Text">&quot;Skeler: &#x0D;&#x0A;Como llegaste aqui?&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="305270332314075" type="System">
                             <param id="0" name="Variable">CurrentText</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="706262468957160" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="202970312283637">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="815308698299271" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="160381330107222" type="DisplayArrow">
+                            <param id="0" name="Object">SkeletonOne</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="654639926480995" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="651122941210385" type="System">
+                            <param id="0" name="Variable">DialogReady</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="775017713563798" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="466444531774895" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="655356407167210" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="345784338728695" type="Text">
+                            <param id="0" name="Text">&quot;Skeler:&#x0D;&#x0A;No te dejare pasar hasta que respondas mi pregunta!!&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="739733205297289" type="System">
+                            <param id="0" name="Variable">CurrentText</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="915945501754187" type="System">
                             <param id="0" name="Variable">DialogReady</param>
                             <param id="1" name="Value">&quot;false&quot;</param>
                         </action>
@@ -145,7 +187,7 @@
                         <condition id="-14" name="Compare variable" sid="927966614111282" type="System">
                             <param id="0" name="Variable">CurrentText</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="439484410201575" type="System">
                             <param id="0" name="Variable">DialogReady</param>
