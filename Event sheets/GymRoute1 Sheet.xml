@@ -45,6 +45,10 @@
                         <action id="-16" name="Set opacity" sid="258349433115223" type="Shadows">
                             <param id="0" name="Opacity">30</param>
                         </action>
+                        <action id="-9" name="Set value" sid="565001180047659" type="System">
+                            <param id="0" name="Variable">CurrentObjective</param>
+                            <param id="1" name="Value">&quot;Vence al lider del gym&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="544798719153947">
@@ -109,6 +113,26 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="518569663699725" type="Gym1Leader" />
+                        <action id="-11" name="Add to" sid="968786110929266" type="Codemon">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="590906825655215" type="Codemon">
+                            <param id="0" name="Instance variable">BaseAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="312876355225603" type="Codemon">
+                            <param id="0" name="Instance variable">MaxAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="208671365008325" type="Codemon">
+                            <param id="0" name="Instance variable">MinDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="826664982150511" type="Codemon">
+                            <param id="0" name="Instance variable">MaxDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -194,7 +218,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="796459424090551" type="Text">
-                            <param id="0" name="Text">&quot;[Inserte pregunta de programación acá]&quot;</param>
+                            <param id="0" name="Text">&quot;Responde la siguiente afirmación: En Java, un objeto es una instancia de una clase.&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="763513058849826" type="System">
                             <param id="0" name="Variable">DialogReady</param>
@@ -295,7 +319,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="315668093075118" type="Text">
-                            <param id="0" name="Text">&quot;[Inserte pregunta de programación acá]&quot;</param>
+                            <param id="0" name="Text">&quot;¿La encapsulación permite acceso libre a los atributos de un objeto?&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="243760151227825" type="System">
                             <param id="0" name="Variable">DialogReady</param>
@@ -396,7 +420,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="742849214606792" type="Text">
-                            <param id="0" name="Text">&quot;[Inserte pregunta de programación acá]&quot;</param>
+                            <param id="0" name="Text">&quot;Dime viajero, ¿Puedes usar palabras como class y public como nombres de variables en Java?&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="536818716114960" type="System">
                             <param id="0" name="Variable">DialogReady</param>
@@ -497,7 +521,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="156596570617708" type="Text">
-                            <param id="0" name="Text">&quot;[Inserte pregunta de programación acá]&quot;</param>
+                            <param id="0" name="Text">&quot;¿Puede un método tener el mismo nombre pero diferentes parámetros en Java?&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="154154342420342" type="System">
                             <param id="0" name="Variable">DialogReady</param>
@@ -540,14 +564,8 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="974321772745839" type="MusicPlayer">
-                                            <param id="0" name="Audio file">Success3</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="954703163070873" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
+                                            <param id="0" name="Text">&quot;Lo siento, pero esa no es la respuesta correcta&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="415630340693415" type="System">
                                             <param id="0" name="Seconds">2</param>
@@ -571,7 +589,6 @@
                                         <action id="-15" name="Set visible" sid="714122628574235" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="742251961530245" type="question1npc" />
                                         <action id="-9" name="Set value" sid="379277725679669" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
@@ -672,72 +689,50 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="701699989360105">
+                                <event-block sid="192077416492719">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="525975093197551" type="System">
+                                        <condition id="-14" name="Compare variable" sid="349669427947952" type="System">
                                             <param id="0" name="Variable">CurrentQuestion</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="488238191523038" type="MusicPlayer">
+                                        <action id="0" name="Play" sid="717405056305114" type="MusicPlayer">
                                             <param id="0" name="Audio file">Success3</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="152258448085215" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
+                                        <action id="0" name="Set text" sid="913473966147347" type="Text">
+                                            <param id="0" name="Text">&quot;Vaya vaya... Alguien llegó aquí sin saber nada&quot;</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="269137452285424" type="System">
+                                        <action id="-16" name="Wait" sid="709468716838676" type="System">
                                             <param id="0" name="Seconds">2</param>
                                         </action>
-                                        <action behavior="8Direction" id="8" name="Set enabled" sid="794519097343323" type="Player">
+                                        <action behavior="8Direction" id="8" name="Set enabled" sid="955584464797397" type="Player">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="308301079692738" type="Dialog">
+                                        <action id="-15" name="Set visible" sid="264363385751933" type="Dialog">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="438731678160473" type="Text">
+                                        <action id="-15" name="Set visible" sid="996324188122852" type="Text">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="300312196245778" type="System">
+                                        <action id="-9" name="Set value" sid="928938928050991" type="System">
                                             <param id="0" name="Variable">DialogReady</param>
                                             <param id="1" name="Value">&quot;false&quot;</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="353862802326699" type="OpNo">
+                                        <action id="-15" name="Set visible" sid="157075150462891" type="OpNo">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="858707404273470" type="OpYes">
+                                        <action id="-15" name="Set visible" sid="944801713194810" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="990861306394515" type="Dialog">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="238999894232506" type="Text">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="945245186122839" type="Text">
-                                            <param id="0" name="Text">&quot;Ahora tendremos que batirnos en batalla codemon, si quieres pasar, claro.&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="889619800360234" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="327346914157333" type="System">
-                                            <param id="0" name="Variable">XPosition</param>
-                                            <param id="1" name="Value">Player.X</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="363083865563602" type="System">
-                                            <param id="0" name="Variable">YPosition</param>
-                                            <param id="1" name="Value">Player.Y</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="904052665116863" type="System">
+                                        <action id="-9" name="Destroy" sid="418972404754617" type="question3npc" />
+                                        <action id="-9" name="Set value" sid="472142334287069" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="676843494869333" type="System">
-                                            <param id="0" name="Layout">Gym1 Fight Layout</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -757,47 +752,48 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="798466368704674">
+                                <event-block sid="483169382400030">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="703708517876643" type="System">
+                                        <condition id="-14" name="Compare variable" sid="996372935586307" type="System">
                                             <param id="0" name="Variable">CurrentQuestion</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="585780417880942" type="MusicPlayer">
+                                        <action id="0" name="Play" sid="543515201213235" type="MusicPlayer">
                                             <param id="0" name="Audio file">Success3</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="452170193071364" type="Text">
+                                        <action id="0" name="Set text" sid="495020458906372" type="Text">
                                             <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="325227095702312" type="System">
+                                        <action id="-16" name="Wait" sid="532671004870412" type="System">
                                             <param id="0" name="Seconds">2</param>
                                         </action>
-                                        <action behavior="8Direction" id="8" name="Set enabled" sid="835788384422997" type="Player">
+                                        <action behavior="8Direction" id="8" name="Set enabled" sid="397945354561964" type="Player">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="611795929823738" type="Dialog">
+                                        <action id="-15" name="Set visible" sid="159758861545404" type="Dialog">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="151657472405254" type="Text">
+                                        <action id="-15" name="Set visible" sid="395012645698279" type="Text">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="412736869366700" type="System">
+                                        <action id="-9" name="Set value" sid="531388887920638" type="System">
                                             <param id="0" name="Variable">DialogReady</param>
                                             <param id="1" name="Value">&quot;false&quot;</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="356740619113476" type="OpNo">
+                                        <action id="-15" name="Set visible" sid="725898020082987" type="OpNo">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="925521095024640" type="OpYes">
+                                        <action id="-15" name="Set visible" sid="839963164041929" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="108941792128999" type="System">
+                                        <action id="-9" name="Destroy" sid="860275365990852" type="question1npc" />
+                                        <action id="-9" name="Set value" sid="545198906909648" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -812,14 +808,8 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="140188868867611" type="MusicPlayer">
-                                            <param id="0" name="Audio file">Success3</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="751138021252989" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
+                                            <param id="0" name="Text">&quot;Jaja esa no es&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="459271518268135" type="System">
                                             <param id="0" name="Seconds">2</param>
@@ -858,14 +848,8 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="894268800013810" type="MusicPlayer">
-                                            <param id="0" name="Audio file">Success3</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
                                         <action id="0" name="Set text" sid="444547701116347" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
+                                            <param id="0" name="Text">&quot;Oh vaya, parece que no has entendido la materia&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="807598211262325" type="System">
                                             <param id="0" name="Seconds">2</param>
@@ -895,49 +879,69 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="579614311994409">
+                                <event-block sid="684730871281480">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="917541596007302" type="System">
+                                        <condition id="-14" name="Compare variable" sid="560638087975029" type="System">
                                             <param id="0" name="Variable">CurrentQuestion</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Play" sid="826160138441404" type="MusicPlayer">
+                                        <action id="0" name="Play" sid="606510848489009" type="MusicPlayer">
                                             <param id="0" name="Audio file">Success3</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="287543383405154" type="Text">
-                                            <param id="0" name="Text">&quot;¡Correcto! Eres muy bueno en esto.&quot;</param>
+                                        <action id="0" name="Set text" sid="890684260374065" type="Text">
+                                            <param id="0" name="Text">&quot;Nada mal, veo que si estudiaste.&quot;</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="308124579448902" type="System">
+                                        <action id="-16" name="Wait" sid="440016365831229" type="System">
                                             <param id="0" name="Seconds">2</param>
                                         </action>
-                                        <action behavior="8Direction" id="8" name="Set enabled" sid="416827334486768" type="Player">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="825813651043526" type="Dialog">
+                                        <action id="-15" name="Set visible" sid="261804168482243" type="Dialog">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="427194348121848" type="Text">
+                                        <action id="-15" name="Set visible" sid="240147269917536" type="Text">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="447926396113843" type="System">
+                                        <action id="-9" name="Set value" sid="998679225263468" type="System">
                                             <param id="0" name="Variable">DialogReady</param>
                                             <param id="1" name="Value">&quot;false&quot;</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="832467733851481" type="OpNo">
+                                        <action id="-15" name="Set visible" sid="543087230750818" type="OpNo">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-15" name="Set visible" sid="350397797989898" type="OpYes">
+                                        <action id="-15" name="Set visible" sid="591238933749061" type="OpYes">
                                             <param id="0" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="961358495409138" type="System">
+                                        <action id="-15" name="Set visible" sid="382441153676293" type="Dialog">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="124766176714340" type="Text">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="266140395941119" type="Text">
+                                            <param id="0" name="Text">&quot;Ahora tendremos que batirnos en batalla codemon, si quieres pasar, claro.&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="336911094048050" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="908154195591049" type="System">
+                                            <param id="0" name="Variable">XPosition</param>
+                                            <param id="1" name="Value">Player.X</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="614375928167692" type="System">
+                                            <param id="0" name="Variable">YPosition</param>
+                                            <param id="1" name="Value">Player.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="155634780979182" type="System">
                                             <param id="0" name="Variable">CurrentText</param>
                                             <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="499204129311787" type="System">
+                                            <param id="0" name="Layout">Gym1 Fight Layout</param>
                                         </action>
                                     </actions>
                                 </event-block>

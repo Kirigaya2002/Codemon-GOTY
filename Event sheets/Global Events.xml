@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global Events</name>
     <events>
+        <variable comment="Indica al texto mostar un objetivo actual" constant="0" name="CurrentObjective" sid="759983402516057" static="0" type="text">Habla con tu madre</variable>
         <variable comment="variable que indica si la llave debe ser visible al jugador" constant="0" name="keyRuta2" sid="217243779123375" static="0" type="number">0</variable>
         <variable constant="0" name="puzzleRuta3" sid="546274967612529" static="0" type="number">0</variable>
         <variable comment="variable que indica si el codemon fue elegido" constant="0" name="elegido" sid="265271782898538" static="0" type="number">0</variable>
@@ -231,5 +232,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="507334089974572">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="992117217644434" type="ActualObjective" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="825917250525802" type="ActualObjective">
+                    <param id="0" name="Text">CurrentObjective</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

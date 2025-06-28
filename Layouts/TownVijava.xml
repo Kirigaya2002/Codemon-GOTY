@@ -452,6 +452,44 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ActualObjective" uid="255">
+                    <properties>
+                        <text>Objetivo Actual</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-5,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4</x>
+                        <y>10</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -909,22 +947,22 @@
                 </instance>
                 <instance type="Particles" uid="108">
                     <properties>
-                        <rate>15</rate>
-                        <spray-cone>180</spray-cone>
+                        <rate>16</rate>
+                        <spray-cone>160</spray-cone>
                         <type>Continuous spray</type>
                         <initial-particle-properties></initial-particle-properties>
-                        <speed>12</speed>
-                        <size>25</size>
-                        <opacity>200</opacity>
-                        <grow-rate>-5</grow-rate>
+                        <speed>32</speed>
+                        <size>16</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
                         <x-randomiser>150</x-randomiser>
                         <y-randomiser>50</y-randomiser>
                         <speed-randomiser->100</speed-randomiser->
                         <size-randomiser>0</size-randomiser>
                         <grow-rate-randomiser>2</grow-rate-randomiser>
                         <particle-lifetime-properties></particle-lifetime-properties>
-                        <acceleration>-40</acceleration>
-                        <gravity>12</gravity>
+                        <acceleration>80</acceleration>
+                        <gravity>0</gravity>
                         <angle-randomiser>15</angle-randomiser>
                         <speed-randomiser>200</speed-randomiser>
                         <opacity-randomiser>0</opacity-randomiser>
@@ -937,7 +975,7 @@
                         <x>312.83706665</x>
                         <y>-100.000038147</y>
                         <z>0</z>
-                        <width>422.212615967</width>
+                        <width>585.848754883</width>
                         <height>-675.363830566</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

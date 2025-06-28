@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">GymRoute3</layout>
-        <event-sheet order="1">GymRoute3</event-sheet>
+        <layout active="1" order="0">Fight Layout</layout>
+        <layout order="1">GymRoute1</layout>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -19,11 +19,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="0" name="Interactuables" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="object-folder/System/ UI/" />
         <folder expanded="0" path="object-folder/System/ UI/Sky/" />
         <folder expanded="1" path="object-folder/System/ UI/Sky/FromParts/" />
@@ -32,11 +32,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Font/" />
         <folder expanded="0" path="object-folder/System/ UI/Button/" />
         <folder expanded="0" path="object-folder/System/ UI/Election/" />
-        <folder expanded="1" path="object-folder/System/ UI/Dialog/" />
+        <folder expanded="0" path="object-folder/System/ UI/Dialog/" />
         <folder expanded="0" path="object-folder/System/ UI/Puzzle/" />
         <folder expanded="0" path="object-folder/System/ UI/Logo/" />
         <folder expanded="0" path="object-folder/System/ UI/FX/" />
-        <folder expanded="1" path="object-folder/World/" />
+        <folder expanded="0" path="object-folder/World/" />
         <folder expanded="0" path="object-folder/World/StartHouse/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Sprites/" />
@@ -53,7 +53,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/World/Gyms/GymRoute1/tiles/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/npc/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute3/" />
-        <folder expanded="1" path="object-folder/Characters/" />
+        <folder expanded="0" path="object-folder/Characters/" />
         <folder expanded="0" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
         <folder expanded="0" path="object-folder/Characters/Codemon/" />
@@ -63,37 +63,39 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Characters/Route-3/" />
         <folder expanded="0" path="object-folder/Characters/Route-1/" />
         <folder expanded="0" path="object-folder/Characters/GymRoute2/" />
-        <folder expanded="1" path="object-folder/Characters/GymRoute3/" />
-        <folder expanded="1" path="object-folder/Fight/" />
+        <folder expanded="0" path="object-folder/Characters/GymRoute3/" />
+        <folder expanded="0" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
+        <folder expanded="1" path="object-folder/Introduction/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/Menu/" />
         <folder expanded="1" path="layout-folder/World/" />
         <folder expanded="0" path="layout-folder/World/StartHouse/" />
         <folder expanded="0" path="layout-folder/World/Laboratory/" />
-        <folder expanded="1" path="layout-folder/World/TownVijava/" />
-        <folder expanded="1" path="layout-folder/World/Routes/" />
+        <folder expanded="0" path="layout-folder/World/TownVijava/" />
+        <folder expanded="0" path="layout-folder/World/Routes/" />
         <folder expanded="1" path="layout-folder/World/Gyms/" />
         <folder expanded="1" path="layout-folder/Fights/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Menu/" />
         <folder expanded="1" path="event-folder/World/" />
-        <folder expanded="1" path="event-folder/World/StartHouse/" />
-        <folder expanded="1" path="event-folder/World/Laboratory/" />
-        <folder expanded="1" path="event-folder/World/TownVillava/" />
+        <folder expanded="0" path="event-folder/World/StartHouse/" />
+        <folder expanded="0" path="event-folder/World/Laboratory/" />
+        <folder expanded="0" path="event-folder/World/TownVillava/" />
         <folder expanded="1" path="event-folder/World/Routes/" />
-        <folder expanded="1" path="event-folder/World/Gym/" />
-        <folder expanded="1" path="event-folder/Global/" />
-        <folder expanded="1" path="event-folder/Global/Global Sheets/" />
-        <folder expanded="1" path="event-folder/Fights/" />
+        <folder expanded="0" path="event-folder/World/Gym/" />
+        <folder expanded="0" path="event-folder/Global/" />
+        <folder expanded="0" path="event-folder/Global/Global Sheets/" />
+        <folder expanded="0" path="event-folder/Fights/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="0" path="sound-folder/Fight Sounds/" />
-        <folder expanded="1" path="sound-folder/Answers/" />
-        <folder expanded="1" path="sound-folder/Bonus/" />
+        <folder expanded="0" path="sound-folder/Answers/" />
+        <folder expanded="0" path="sound-folder/Bonus/" />
+        <folder expanded="1" path="sound-folder/Introduction/" />
         <folder expanded="0" path="music-folder/Main Menu/" />
         <folder expanded="0" path="music-folder/House/" />
         <folder expanded="0" path="music-folder/Laboratory/" />
@@ -189,5 +191,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SkillBtn/" />
         <folder expanded="1" path="animation-folder/RunBtn/" />
         <folder expanded="1" path="animation-folder/lifeBox/" />
+        <folder expanded="1" path="animation-folder/BG/" />
+        <folder expanded="1" path="animation-folder/UCRLogo/" />
+        <folder expanded="1" path="animation-folder/ChistinesLogo/" />
     </folders-expanded>
 </c2uistate>

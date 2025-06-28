@@ -221,6 +221,10 @@
                                 <action behavior="8Direction" id="8" name="Set enabled" sid="833032290106157" type="Player">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="795490385821454" type="System">
+                                    <param id="0" name="Variable">CurrentObjective</param>
+                                    <param id="1" name="Value">&quot;Explora el pueblo y habla con tus vecinos&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>

@@ -116,6 +116,10 @@
                                     <param id="0" name="Variable">elegido</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="281849312919278" type="System">
+                                    <param id="0" name="Variable">CurrentObjective</param>
+                                    <param id="1" name="Value">&quot;Sal de Villava&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="532574618093922">

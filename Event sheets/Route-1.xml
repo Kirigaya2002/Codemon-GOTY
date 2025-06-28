@@ -42,6 +42,10 @@
                 <condition id="-2" name="On start of layout" sid="547076377738394" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="399181795878831" type="System">
+                    <param id="0" name="Variable">CurrentObjective</param>
+                    <param id="1" name="Value">&quot;Habla con los viajeros de la ruta y avanza&quot;</param>
+                </action>
                 <action behavior="8Direction" id="8" name="Set enabled" sid="698029499325149" type="Player">
                     <param id="0" name="State">1</param>
                 </action>

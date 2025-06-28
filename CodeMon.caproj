@@ -24,6 +24,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -40,6 +41,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Introduction</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -97,6 +99,14 @@
                 <object-type name="Font" sid="510417563026680">
                     <plugin id="Spritefont2" />
                     <texture />
+                </object-type>
+                <object-type name="ActualObjective" sid="676684183413472">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Anchor" sid="280971838685334">
+                            <behavior id="Anchor" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
             </object-folder>
             <object-folder name="Button">
@@ -3108,6 +3118,77 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-folder name="Introduction">
+            <object-type name="BG" sid="795439310006307">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="799398968073008">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115334263130743" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="UCRLogo" sid="451753721097098">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="303886655834055">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144187135439630" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edrei\Downloads\firma-promocional-con-texto-blanco.png">
+                            <collision-poly>
+                                <point x="0.105839" y="0.19863" />
+                                <point x="0.5" y="0.0273973" />
+                                <point x="0.824818" y="0.328767" />
+                                <point x="0.886861" y="0.5" />
+                                <point x="0.985401" y="0.972603" />
+                                <point x="0.5" y="0.739726" />
+                                <point x="0.0255474" y="0.952055" />
+                                <point x="0.120438" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AuxiliarText" sid="673263657965665">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="248197764834799">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="ChistinesLogo" sid="424493871489317">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="513705713095691">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856450031934639" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edrei\Downloads\ChistinesLogo.png">
+                            <collision-poly>
+                                <point x="0.202148" y="0.202148" />
+                                <point x="0.5" y="0.149414" />
+                                <point x="0.798828" y="0.201172" />
+                                <point x="0.833984" y="0.5" />
+                                <point x="0.758789" y="0.758789" />
+                                <point x="0.5" y="0.949219" />
+                                <point x="0.241211" y="0.758789" />
+                                <point x="0.166992" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Text2" sid="545119796843311">
             <plugin id="Text" />
             <behaviors>
@@ -3167,6 +3248,7 @@
     <layout-folder>
         <layout-folder name="Menu">
             <layout>Main Menu Layout.xml</layout>
+            <layout>Introduction.xml</layout>
         </layout-folder>
         <layout-folder name="World">
             <layout-folder name="StartHouse">
@@ -3198,6 +3280,7 @@
     <event-folder>
         <event-folder name="Menu">
             <event-sheet>Main Menu Sheet.xml</event-sheet>
+            <event-sheet>Introduction Sheet.xml</event-sheet>
         </event-folder>
         <event-folder name="World">
             <event-folder name="StartHouse">
@@ -3269,6 +3352,10 @@
         <sound-folder name="Bonus">
             <file name="Coin2.m4a" />
             <file name="Coin2.ogg" />
+        </sound-folder>
+        <sound-folder name="Introduction">
+            <file name="LevelUp2.m4a" />
+            <file name="LevelUp2.ogg" />
         </sound-folder>
     </sounds-folder>
     <music-folder>

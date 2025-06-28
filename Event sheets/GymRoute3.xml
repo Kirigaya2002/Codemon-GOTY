@@ -42,6 +42,10 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="149164132420845" type="System">
+                            <param id="0" name="Variable">CurrentObjective</param>
+                            <param id="1" name="Value">&quot;Vence al lider del gym&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="453522278172930">
@@ -76,6 +80,26 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="760335198354986" type="SkeletonLeader" />
+                        <action id="-11" name="Add to" sid="828882253709454" type="Codemon">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="926954505809460" type="Codemon">
+                            <param id="0" name="Instance variable">BaseAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="531264434972232" type="Codemon">
+                            <param id="0" name="Instance variable">MaxAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="189757288832599" type="Codemon">
+                            <param id="0" name="Instance variable">MinDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="802014685894679" type="Codemon">
+                            <param id="0" name="Instance variable">MaxDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
