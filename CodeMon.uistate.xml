@@ -11,7 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">GymRoute3</layout>
+        <layout order="2">Fight Layout</layout>
+        <layout order="4">Gym3 Fight Layout</layout>
         <event-sheet active="1" order="1">GymRoute3</event-sheet>
+        <event-sheet order="3">Fight sheet</event-sheet>
+        <event-sheet order="5">Gym Route 3 Fight</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -19,12 +23,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="0" name="Interactuables" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
-        <folder expanded="1" path="object-folder/System/ UI/" />
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/System/ UI/" />
         <folder expanded="0" path="object-folder/System/ UI/Sky/" />
         <folder expanded="1" path="object-folder/System/ UI/Sky/FromParts/" />
         <folder expanded="0" path="object-folder/System/ UI/Music/" />
@@ -36,25 +40,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/System/ UI/Puzzle/" />
         <folder expanded="0" path="object-folder/System/ UI/Logo/" />
         <folder expanded="0" path="object-folder/System/ UI/FX/" />
-        <folder expanded="0" path="object-folder/World/" />
+        <folder expanded="1" path="object-folder/World/" />
         <folder expanded="0" path="object-folder/World/StartHouse/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Tilemaps/" />
         <folder expanded="0" path="object-folder/World/StartHouse/Sprites/" />
         <folder expanded="0" path="object-folder/World/Laboratory/" />
         <folder expanded="1" path="object-folder/World/Laboratory/Tilesets/" />
         <folder expanded="0" path="object-folder/World/TownVijava/" />
-        <folder expanded="1" path="object-folder/World/Routes/" />
+        <folder expanded="0" path="object-folder/World/Routes/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-1/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-3/" />
         <folder expanded="0" path="object-folder/World/Routes/Route-2/" />
         <folder expanded="1" path="object-folder/World/Gyms/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute2/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/" />
-        <folder expanded="1" path="object-folder/World/Gyms/GymRoute1/tiles/" />
+        <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/tiles/" />
         <folder expanded="0" path="object-folder/World/Gyms/GymRoute1/npc/" />
-        <folder expanded="0" path="object-folder/World/Gyms/GymRoute3/" />
-        <folder expanded="0" path="object-folder/Characters/" />
-        <folder expanded="0" path="object-folder/Characters/Protagonist/" />
+        <folder expanded="1" path="object-folder/World/Gyms/GymRoute3/" />
+        <folder expanded="1" path="object-folder/Characters/" />
+        <folder expanded="1" path="object-folder/Characters/Protagonist/" />
         <folder expanded="0" path="object-folder/Characters/Cientificos/" />
         <folder expanded="0" path="object-folder/Characters/Codemon/" />
         <folder expanded="0" path="object-folder/Characters/Enemy/" />
@@ -64,10 +68,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Characters/Route-1/" />
         <folder expanded="0" path="object-folder/Characters/GymRoute2/" />
         <folder expanded="0" path="object-folder/Characters/GymRoute3/" />
-        <folder expanded="0" path="object-folder/Fight/" />
+        <folder expanded="1" path="object-folder/Fight/" />
         <folder expanded="0" path="object-folder/Fight/Buttons/" />
         <folder expanded="0" path="object-folder/Fight/UI/" />
-        <folder expanded="1" path="object-folder/Introduction/" />
+        <folder expanded="0" path="object-folder/Fight/FinalFight/" />
+        <folder expanded="0" path="object-folder/Introduction/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/Menu/" />
         <folder expanded="0" path="layout-folder/World/" />
@@ -84,10 +89,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="event-folder/World/Laboratory/" />
         <folder expanded="0" path="event-folder/World/TownVillava/" />
         <folder expanded="0" path="event-folder/World/Routes/" />
-        <folder expanded="1" path="event-folder/World/Gym/" />
+        <folder expanded="0" path="event-folder/World/Gym/" />
         <folder expanded="0" path="event-folder/Global/" />
         <folder expanded="0" path="event-folder/Global/Global Sheets/" />
-        <folder expanded="0" path="event-folder/Fights/" />
+        <folder expanded="1" path="event-folder/Fights/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
@@ -96,7 +101,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="sound-folder/Answers/" />
         <folder expanded="0" path="sound-folder/Bonus/" />
         <folder expanded="0" path="sound-folder/Introduction/" />
-        <folder expanded="1" path="sound-folder/SANS/" />
+        <folder expanded="0" path="sound-folder/SANS/" />
         <folder expanded="0" path="music-folder/Main Menu/" />
         <folder expanded="0" path="music-folder/House/" />
         <folder expanded="0" path="music-folder/Laboratory/" />

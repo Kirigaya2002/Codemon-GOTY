@@ -1767,6 +1767,67 @@
                             </animation>
                         </animation-folder>
                     </object-type>
+                    <object-type name="Estatuas" sid="812606371814696">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="187580089229462">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetHouse.png" />
+                        <tiles>
+                            <tile id="630">
+                                <collision-poly>
+                                    <point x="0.486328" y="0.384766" />
+                                    <point x="1" y="0.121094" />
+                                    <point x="1" y="1" />
+                                    <point x="0.308594" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="631">
+                                <collision-poly>
+                                    <point x="0" y="0.119141" />
+                                    <point x="0.53125" y="0.369141" />
+                                    <point x="0.6875" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="663">
+                                <collision-poly>
+                                    <point x="0.0625" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.0625" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="664">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.9375" y="0" />
+                                    <point x="0.9375" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="696">
+                                <collision-poly>
+                                    <point x="0.310547" y="0.671875" />
+                                    <point x="0.597656" y="0.375" />
+                                    <point x="1" y="0.375" />
+                                    <point x="1" y="1" />
+                                    <point x="0.00195313" y="1" />
+                                </collision-poly>
+                            </tile>
+                            <tile id="697">
+                                <collision-poly>
+                                    <point x="0" y="0.371094" />
+                                    <point x="0.398438" y="0.371094" />
+                                    <point x="0.814453" y="0.794922" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </tile>
+                        </tiles>
+                    </object-type>
                 </object-folder>
             </object-folder>
         </object-folder>
@@ -3108,6 +3169,13 @@
                     <plugin id="Text" />
                 </object-type>
             </object-folder>
+            <object-folder name="FinalFight">
+                <object-type name="Background" sid="732628179121730">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
+                    <tiles />
+                </object-type>
+            </object-folder>
             <object-type name="Font2" sid="497998190068351">
                 <plugin id="Spritefont2" />
                 <texture />
@@ -3116,6 +3184,10 @@
                 <plugin id="Tilemap" />
                 <texture />
                 <tiles />
+            </object-type>
+            <object-type name="Font3" sid="176076709292523">
+                <plugin id="Spritefont2" />
+                <texture />
             </object-type>
         </object-folder>
         <object-folder name="Introduction">
@@ -3236,6 +3308,7 @@
                 <member>question1npc</member>
                 <member>question2npc</member>
                 <member>question3npc</member>
+                <member>SANS</member>
                 <member>SkeletonFour</member>
                 <member>SkeletonLeader</member>
                 <member>SkeletonOne</member>
@@ -3275,6 +3348,7 @@
         <layout-folder name="Fights">
             <layout>Fight Layout.xml</layout>
             <layout>Gym1 Fight Layout.xml</layout>
+            <layout>Gym3 Fight Layout.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -3312,6 +3386,7 @@
         <event-folder name="Fights">
             <event-sheet>Fight sheet.xml</event-sheet>
             <event-sheet>Gym Route 1 Fight Sheet.xml</event-sheet>
+            <event-sheet>Gym Route 3 Fight.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>
@@ -3342,6 +3417,12 @@
             <file name="Success4.ogg" />
             <file name="Alert6.m4a" />
             <file name="Alert6.ogg" />
+            <file name="Megalovania-Undertale-_Cumbia-Remix_-DJ-ALAN-MENDOZA.m4a" />
+            <file name="Megalovania-Undertale-_Cumbia-Remix_-DJ-ALAN-MENDOZA.ogg" />
+            <file name="Undertale-Sound-Effect-Attack.m4a" />
+            <file name="Undertale-Sound-Effect-Attack.ogg" />
+            <file name="Undertale-Sound-Effect-You-Win_.m4a" />
+            <file name="Undertale-Sound-Effect-You-Win_.ogg" />
         </sound-folder>
         <sound-folder name="Answers">
             <file name="GameOver3.m4a" />
@@ -3360,6 +3441,8 @@
         <sound-folder name="SANS">
             <file name="SANS-UNDERTALE-TALKING-SOUND-EFFECT-EFECTO-DE-SONI-_mp3cut.net_.m4a" />
             <file name="SANS-UNDERTALE-TALKING-SOUND-EFFECT-EFECTO-DE-SONI-_mp3cut.net_.ogg" />
+            <file name="Undertale-Sound-Effect-Battle-Encounter.m4a" />
+            <file name="Undertale-Sound-Effect-Battle-Encounter.ogg" />
         </sound-folder>
     </sounds-folder>
     <music-folder>
