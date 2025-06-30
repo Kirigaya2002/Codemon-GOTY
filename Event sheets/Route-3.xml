@@ -1543,7 +1543,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="210517068044381" type="Text">
-                                    <param id="0" name="Text">&quot;Titulo de cartel 1: Reutiliza código como un maestro Codemon&quot;</param>
+                                    <param id="0" name="Text">&quot;Reutiliza código como un maestro Codemon&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1662,7 +1662,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="489281285112743" type="Text">
-                                    <param id="0" name="Text">&quot;Titulo de cartel 2: Polimorfismo, misma acción, diferentes formas.&quot;</param>
+                                    <param id="0" name="Text">&quot;Polimorfismo, misma acción, diferentes formas.&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1815,7 +1815,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="231322806022703" type="Text">
-                                    <param id="0" name="Text">&quot;Titulo de cartel 2: Ventajas de usar Herencia y Polimorfismo&quot;</param>
+                                    <param id="0" name="Text">&quot;Ventajas de usar Herencia y Polimorfismo&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
