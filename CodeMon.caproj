@@ -2794,6 +2794,18 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Snow1" sid="936730515553661">
+                    <plugin id="Particles" />
+                    <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\FX\Particle\Snow.png" />
+                </object-type>
+                <object-type name="Snow2" sid="387353734840636">
+                    <plugin id="Particles" />
+                    <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\FX\Particle\Snow.png" />
+                </object-type>
+                <object-type name="Snow3" sid="596716632366746">
+                    <plugin id="Particles" />
+                    <texture original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\Ninja Adventure - Asset Pack\FX\Particle\Snow.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Route-1">
                 <object-type name="NPC1" sid="636448202415874">
@@ -3172,6 +3184,11 @@
             <object-folder name="FinalFight">
                 <object-type name="Background" sid="732628179121730">
                     <plugin id="Tilemap" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="269417417206496">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <texture original-source="C:\Users\oscar\OneDrive\Escritorio\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
                     <tiles />
                 </object-type>
@@ -3259,6 +3276,29 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Credits">
+            <object-type name="BackgroudCredits" sid="386341588146240">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="758909081876878">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624060092156744" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\denni\OneDrive\Escritorio\Sprites\Sprites\free-sky-with-clouds-background-pixel-art-set\Clouds\Clouds 7\1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TefCredits" sid="567299275230921">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="791997494916370">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-type name="Text2" sid="545119796843311">
@@ -3355,6 +3395,9 @@
             <layout>Gym2 Fight Layout.xml</layout>
             <layout>Gym3 Fight Layout.xml</layout>
         </layout-folder>
+        <layout-folder name="Credits">
+            <layout>Credits.xml</layout>
+        </layout-folder>
     </layout-folder>
     <event-folder>
         <event-folder name="Menu">
@@ -3381,6 +3424,9 @@
                 <event-sheet>GymRoute1 Sheet.xml</event-sheet>
                 <event-sheet>GymRoute2.xml</event-sheet>
                 <event-sheet>GymRoute3.xml</event-sheet>
+            </event-folder>
+            <event-folder name="Credits">
+                <event-sheet>Credits sheet.xml</event-sheet>
             </event-folder>
         </event-folder>
         <event-folder name="Global">
@@ -3489,6 +3535,9 @@
         </music-folder>
         <music-folder name="Gym2">
             <file name="14 - Curse.ogg" />
+        </music-folder>
+        <music-folder name="Credits">
+            <file name="25 - End Theme 2.ogg" />
         </music-folder>
     </music-folder>
     <files-folder>

@@ -443,8 +443,9 @@
                             <param id="0" name="Variable">LeaderDefeat</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="763545736450523" type="Background" />
                         <action id="-2" name="Go to layout" sid="453460739306641" type="System">
-                            <param id="0" name="Layout">GymRoute1</param>
+                            <param id="0" name="Layout">Credits</param>
                         </action>
                     </actions>
                 </event-block>

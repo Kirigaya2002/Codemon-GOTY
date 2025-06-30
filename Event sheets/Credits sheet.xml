@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Credits sheet</name>
+    <events>
+        <event-block sid="732451172296018">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="386054153942852" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="363754731494661" type="MusicPlayer">
+                    <param id="0" name="Audio file">25 - End Theme 2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="975168728241620" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="837997388514941" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="718919154666765" type="TefCredits" />
+                <action id="0" name="Set text" sid="667679401711561" type="TefCredits">
+                    <param id="0" name="Text">&quot;CODEMON EDICIÓN JAVA&quot;&amp;newline&amp;newline&amp;&quot;Créditos&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="415864755246073" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="103391105345919" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="253416687084173" type="TefCredits" />
+                <action id="0" name="Set text" sid="102303970756133" type="TefCredits">
+                    <param id="0" name="Text">&quot;Desarrolladores:&quot;&amp;newline&amp;newline&amp;&quot;Oscar Calvo Siles&quot;&amp;newline&amp;newline&amp;&quot;Dennis Gómez Alvarado&quot;&amp;newline&amp;newline&amp;&quot;Jallmar Samuels Torres&quot;&amp;newline&amp;newline&amp;&quot;Jeremy Vega Campos&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="703452938012628" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="404710311207305" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="134305474979970" type="TefCredits" />
+                <action id="0" name="Set text" sid="859484549423650" type="TefCredits">
+                    <param id="0" name="Text">&quot;Assets gráficos y sonido:&quot;&amp;newline&amp;newline&amp;&quot;Pixel-boy &amp; AAA (itch.io/ninja-adventure-asset-pack)&quot;&amp;newline&amp;&quot;Licencia: CC0 (Dominio público)&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="366937899005783" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="422020610618330" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="734159193403344" type="TefCredits" />
+                <action id="0" name="Set text" sid="740923514235126" type="TefCredits">
+                    <param id="0" name="Text">&quot;Un proyecto realizado para:&quot;&amp;newline&amp;&quot;MULTIMEDIOS - IF7102 &quot;&amp;newline&amp;newline&amp;&quot;UNIVERSIDAD DE COSTA RICA - RECINTO DE GUÁPILES&quot;&amp;newline&amp;newline&amp;&quot;Profesor:&quot;&amp;newline&amp;&quot;Wilber Rodríguez Recinos&quot;&amp;newline&amp;newline&amp;&quot;I CICLO DEL 2025&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="938241165961273" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="694160490731855" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="277679231602863" type="TefCredits" />
+                <action id="0" name="Set text" sid="453800093569092" type="TefCredits">
+                    <param id="0" name="Text">&quot;Bibliografía:&quot;&amp;newline&amp;&quot;Libro que nunca leí&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="769802245370642" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="544348278849541" type="TefCredits" />
+                <action behavior="Fade" id="1" name="Start fade" sid="172103323918039" type="TefCredits" />
+                <action id="0" name="Set text" sid="952288596922720" type="TefCredits">
+                    <param id="0" name="Text">&quot;GRACIAS POR JUGAR &lt;3&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="905259825500747" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="556023523946551">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="584382523931521" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="998301768475692" type="MusicPlayer" />
+            </actions>
+        </event-block>
+        <event-block sid="550035905664623">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="744254822770384" type="BackgroudCredits" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="988860331664107" type="System">
+                    <param id="0" name="Layout">Introduction</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
