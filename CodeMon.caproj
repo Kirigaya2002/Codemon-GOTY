@@ -3269,6 +3269,10 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="TiledBackground" sid="867764104988684">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Interactuables" plugin-id="Sprite" sid="354451394445731">
@@ -3348,6 +3352,7 @@
         <layout-folder name="Fights">
             <layout>Fight Layout.xml</layout>
             <layout>Gym1 Fight Layout.xml</layout>
+            <layout>Gym2 Fight Layout.xml</layout>
             <layout>Gym3 Fight Layout.xml</layout>
         </layout-folder>
     </layout-folder>
@@ -3387,6 +3392,7 @@
             <event-sheet>Fight sheet.xml</event-sheet>
             <event-sheet>Gym Route 1 Fight Sheet.xml</event-sheet>
             <event-sheet>Gym Route 3 Fight.xml</event-sheet>
+            <event-sheet>Gym Route 2 Fight Sheet.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>

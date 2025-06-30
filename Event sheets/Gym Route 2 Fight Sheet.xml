@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Gym Route 2 Fight Sheet</name>
+    <events>
+        <variable constant="0" name="DefenseValue4" sid="719612858103524" static="0" type="number">0</variable>
+        <variable constant="0" name="attackDamage4" sid="307885102309004" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayerTurn4" sid="559937453949097" static="0" type="number">1</variable>
+        <event-group description="" sid="649755237078866" title="Music4">
+            <sub-events>
+                <event-block sid="713768673296239">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="121606932330068" type="System" />
+                        <condition id="4" inverted="1" name="Is any playing" sid="915982016027728" type="MusicPlayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="834100627365677" type="MusicPlayer">
+                            <param id="0" name="Audio file">24 - Final Area</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="452236601126118" type="Shadows">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="637753648837232">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="576170860716367" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="529985457454722" type="MusicPlayer">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="253737987232738" title="Init variables4">
+            <sub-events>
+                <event-block sid="506890152287444">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="181416453419192" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="730130125140995" type="lifeCodemon">
+                            <param id="0" name="Text">&quot;Vida: &quot; &amp; Codemon.Life</param>
+                        </action>
+                        <action id="0" name="Set text" sid="598710335971520" type="lifeEnemy">
+                            <param id="0" name="Text">&quot;Vida: &quot; &amp; firstEnemy.Life</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="252823520523758" title="Sky movement4">
+            <sub-events>
+                <event-group description="" sid="356414534964374" title="movement4">
+                    <sub-events>
+                        <event-block sid="410138236509823">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="137814791859812" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="199853066537818" type="SkyTiled">
+                                    <param id="0" name="X">SkyTiled.X - (dt*10)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="740506201007585" title="reset position4">
+                    <sub-events>
+                        <event-block sid="535576733601046">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="641758496686172" type="SkyTiled">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">-576</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="995801305063391" type="SkyTiled">
+                                    <param id="0" name="X">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="227345856084273" title="Menu options4">
+            <sub-events>
+                <event-group description="" sid="991232557971279" title="Defense4">
+                    <sub-events>
+                        <event-block sid="524544500896985">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="278571200566410" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">DefendBtn</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="444928416958068" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="288381320566452" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="712552642640230" type="System">
+                                    <param id="0" name="Variable">DefenseValue</param>
+                                    <param id="1" name="Value">int(random(codemon.MinDefense, codemon.MaxDefense))</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="211276281762433" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="247369991748593" type="ActionsText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="124248943850434" type="ActionsText">
+                                    <param id="0" name="Text">&quot;Tu codemon ha adoptado la postura de defensa. Recibirás menos daño&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="794128640011254" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="697493307128309">
+                                    <conditions>
+                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="478814496148183" type="firstEnemy">
+                                            <param id="0" name="Instance variable">Life</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="833298932843254" type="System">
+                                            <param id="0" name="Variable">attackDamage</param>
+                                            <param id="1" name="Value">int(random(codemon.BaseAttack, codemon.MaxAttack)) - DefenseValue</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="314621632860720" type="Dialog">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="426595226556182" type="ActionsText">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="972040864102826" type="ActionsText">
+                                            <param id="0" name="Text">&quot;El enemigo ha atacado y ha hecho &quot; &amp; attackDamage &amp; &quot; puntos de daño&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="281824555014348" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="783908873713621" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Impact2</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="171128120306951" type="firstEnemy">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Codemon</param>
+                                        </action>
+                                        <action id="-4" name="Set position to another object" sid="863500422355517" type="firstEnemy">
+                                            <param id="0" name="Object">Codemon</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="553339465145070" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="528769455548615" type="firstEnemy">
+                                            <param id="0" name="X">firstEnemy.PositionX</param>
+                                            <param id="1" name="Y">firstEnemy.PositionY</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="842757595911596" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="264958779102910" type="System">
+                                            <param id="0" name="Variable">PlayerTurn</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="491007340510869" type="Codemon">
+                                            <param id="0" name="Instance variable">Life</param>
+                                            <param id="1" name="Value">Codemon.Life - attackDamage &gt; 0 ? Codemon.Life - attackDamage : 0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="285373102356725" type="lifeCodemon">
+                                            <param id="0" name="Text">&quot;Vida: &quot; &amp; codemon.Life</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="823076623703253" type="ActionsText">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="791113954340201" type="Dialog">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="263594243276519" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="557153871503753" title="Attack4">
+                    <sub-events>
+                        <event-block sid="811551450458734">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="208713607891201" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">AttackBtn</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="338805180466234" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="943396307957663" type="System">
+                                    <param id="0" name="Variable">PlayerTurn</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="767517611279458" type="System">
+                                    <param id="0" name="Variable">attackDamage</param>
+                                    <param id="1" name="Value">int(random(codemon.BaseAttack, codemon.MaxAttack))</param>
+                                </action>
+                                <action id="0" name="Play" sid="606504286397785" type="MusicPlayer">
+                                    <param id="0" name="Audio file">Alert6</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="523256774982285" type="Dialog">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="878666615252015" type="ActionsText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="527604663047236" type="ActionsText">
+                                    <param id="0" name="Text">&quot;Tu codemon ha atacado y ha hecho &quot; &amp; attackDamage &amp; &quot; puntos de daño&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="705413828015276" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Play" sid="774816658784932" type="MusicPlayer">
+                                    <param id="0" name="Audio file">Impact2</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-29" name="Move to object" sid="338576906124764" type="Codemon">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Object">firstEnemy</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="326456889663835" type="Codemon">
+                                    <param id="0" name="Object">firstEnemy</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="675098262719354" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="835894213132538" type="Codemon">
+                                    <param id="0" name="X">Codemon.PositionX</param>
+                                    <param id="1" name="Y">Codemon.PositionY</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="251640911283754" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="147674048745076" type="ActionsText">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="710631400118253" type="Dialog">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="351952634348469" type="firstEnemy">
+                                    <param id="0" name="Instance variable">Life</param>
+                                    <param id="1" name="Value">firstEnemy.Life - attackDamage &gt; 0 ? firstEnemy.Life - attackDamage : 0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="183362145565188" type="lifeEnemy">
+                                    <param id="0" name="Text">&quot;Vida: &quot; &amp; (firstEnemy.Life &gt; 0 ? firstEnemy.Life : 0)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="234772869365886" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="497229348020845">
+                                    <conditions>
+                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="188296754725331" type="firstEnemy">
+                                            <param id="0" name="Instance variable">Life</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="348338311086170" type="System">
+                                            <param id="0" name="Variable">attackDamage</param>
+                                            <param id="1" name="Value">int(random(codemon.BaseAttack, codemon.MaxAttack))</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="874226073457598" type="Dialog">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="615086952782215" type="ActionsText">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="324826707929947" type="ActionsText">
+                                            <param id="0" name="Text">&quot;El enemigo ha atacado y ha hecho &quot; &amp; attackDamage &amp; &quot; puntos de daño&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="864769804850224" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="867516496993013" type="MusicPlayer">
+                                            <param id="0" name="Audio file">Impact2</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-29" name="Move to object" sid="868282325087112" type="firstEnemy">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Object">Codemon</param>
+                                        </action>
+                                        <action id="-4" name="Set position to another object" sid="424887381156680" type="firstEnemy">
+                                            <param id="0" name="Object">Codemon</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="343865056940843" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="407790239660875" type="firstEnemy">
+                                            <param id="0" name="X">firstEnemy.PositionX</param>
+                                            <param id="1" name="Y">firstEnemy.PositionY</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="647624800996200" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="727215835566706" type="System">
+                                            <param id="0" name="Variable">PlayerTurn</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="847395646411377" type="Codemon">
+                                            <param id="0" name="Instance variable">Life</param>
+                                            <param id="1" name="Value">Codemon.Life - attackDamage &gt; 0 ? Codemon.Life - attackDamage : 0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="822066932832996" type="lifeCodemon">
+                                            <param id="0" name="Text">&quot;Vida: &quot; &amp; codemon.Life</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="400265191894929" type="ActionsText">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="303997311805590" type="Dialog">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="749124412885106" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="976732311721606" title="Win/Defeat4">
+            <sub-events>
+                <event-block sid="241539716150675">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="502104494301163" type="System">
+                            <param id="0" name="First value">Codemon.Life</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="399311483255413" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="118208786569330" type="Codemon">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="705088159396466" type="System">
+                            <param id="0" name="Variable">PlayerTurn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="152603472797102" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="540212341853997" type="ActionsText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="295218703856240" type="ActionsText">
+                            <param id="0" name="Text">&quot;Oh no, tu codemon se ha debilitado, mejor suerte a la próxima&quot;</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="891399268974196" type="MusicPlayer" />
+                        <action id="-16" name="Wait" sid="893309929192211" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="766742915116249" type="MusicPlayer">
+                            <param id="0" name="Audio file">Success4</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="225872990527976" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="831649589004270" type="System">
+                            <param id="0" name="Variable">PlayerTurn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="622286846154459" type="System">
+                            <param id="0" name="Layout">Gym2 Fight Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="480944757598164">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="424959536603058" type="System">
+                            <param id="0" name="First value">firstEnemy.Life</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="801178469764097" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="792113966280115" type="firstEnemy">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="603578686907299" type="System">
+                            <param id="0" name="Variable">PlayerTurn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="376870745355676" type="Dialog">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="348267314478616" type="ActionsText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="739967198527723" type="ActionsText">
+                            <param id="0" name="Text">&quot;Enemigo debilitado, has ganado&quot;</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="643785261513031" type="MusicPlayer" />
+                        <action id="-16" name="Wait" sid="269852429058127" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="520025448015382" type="MusicPlayer">
+                            <param id="0" name="Audio file">Success4</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="160366798330866" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="135138039514175" type="System">
+                            <param id="0" name="Variable">PlayerTurn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="834495350235495" type="System">
+                            <param id="0" name="Variable">LeaderDefeat</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="426704674461823" type="System">
+                            <param id="0" name="Layout">Gym2 Fight Layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
