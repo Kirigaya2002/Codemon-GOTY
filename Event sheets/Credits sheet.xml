@@ -28,7 +28,7 @@
                 <action behavior="Fade" id="0" name="Restart fade" sid="103391105345919" type="TefCredits" />
                 <action behavior="Fade" id="1" name="Start fade" sid="253416687084173" type="TefCredits" />
                 <action id="0" name="Set text" sid="102303970756133" type="TefCredits">
-                    <param id="0" name="Text">&quot;Desarrolladores:&quot;&amp;newline&amp;newline&amp;&quot;Oscar Calvo Siles&quot;&amp;newline&amp;newline&amp;&quot;Dennis Gómez Alvarado&quot;&amp;newline&amp;newline&amp;&quot;Jallmar Samuels Torres&quot;&amp;newline&amp;newline&amp;&quot;Jeremy Vega Campos&quot;</param>
+                    <param id="0" name="Text">&quot;Desarrolladores:&quot;&amp;newline&amp;newline&amp;&quot;Oscar Calvo Siles&quot;&amp;newline&amp;newline&amp;&quot;Dennis Gómez Alvarado&quot;&amp;newline&amp;newline&amp;&quot;Jallmar Samuels Torres&quot;&amp;newline&amp;newline&amp;&quot;Jeremy Vega Campos&quot;&amp;newline&amp;newline&amp;&quot;Jorge Lopez Gonzalez&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="703452938012628" type="System">
                     <param id="0" name="Seconds">7</param>

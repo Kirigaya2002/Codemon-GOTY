@@ -965,7 +965,7 @@
                     <properties>
                         <text>Objetivo Actual</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-5,400,0</font>
+                        <font>Impact,-5,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

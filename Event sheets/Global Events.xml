@@ -15,6 +15,16 @@
         <variable comment="Opción elegida para responder cada pregunta" constant="0" name="SelectedOption" sid="554504251288538" static="0" type="number">0</variable>
         <variable comment="Almacena que linea de texto desplegar" constant="0" name="CurrentText" sid="493980065916854" static="0" type="number">0</variable>
         <variable comment="Almacena a cuantos NPC le responde bien" constant="0" name="correctAnswers" sid="551243507093215" static="0" type="number">0</variable>
+        <event-block sid="507334089974572">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="992117217644434" type="ActualObjective" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="825917250525802" type="ActualObjective">
+                    <param id="0" name="Text">CurrentObjective</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="217230387909117">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="481738878372486" type="System" />
@@ -232,15 +242,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="507334089974572">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="992117217644434" type="ActualObjective" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="825917250525802" type="ActualObjective">
-                    <param id="0" name="Text">CurrentObjective</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

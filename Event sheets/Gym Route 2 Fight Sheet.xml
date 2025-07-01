@@ -391,7 +391,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="0" name="Set text" sid="295218703856240" type="ActionsText">
-                            <param id="0" name="Text">&quot;Oh no, tu codemon se ha debilitado, mejor suerte a la próxima&quot;</param>
+                            <param id="0" name="Text">&quot;Oh no, tu codemon se ha debilitado, intentémoslo de nuevo&quot;</param>
                         </action>
                         <action id="33" name="Stop all" sid="891399268974196" type="MusicPlayer" />
                         <action id="-16" name="Wait" sid="893309929192211" type="System">
@@ -410,7 +410,7 @@
                             <param id="0" name="Variable">PlayerTurn</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="622286846154459" type="System">
+                        <action id="-2" name="Go to layout" sid="834135577479381" type="System">
                             <param id="0" name="Layout">Gym2 Fight Layout</param>
                         </action>
                     </actions>
@@ -439,7 +439,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="0" name="Set text" sid="739967198527723" type="ActionsText">
-                            <param id="0" name="Text">&quot;Enemigo debilitado, has ganado&quot;</param>
+                            <param id="0" name="Text">&quot;Enemigo debilitado, has ganado, puedes avanzar&quot;</param>
                         </action>
                         <action id="33" name="Stop all" sid="643785261513031" type="MusicPlayer" />
                         <action id="-16" name="Wait" sid="269852429058127" type="System">
@@ -452,7 +452,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="160366798330866" type="System">
-                            <param id="0" name="Seconds">1.5</param>
+                            <param id="0" name="Seconds">2.5</param>
                         </action>
                         <action id="-9" name="Set value" sid="135138039514175" type="System">
                             <param id="0" name="Variable">PlayerTurn</param>
@@ -462,8 +462,8 @@
                             <param id="0" name="Variable">LeaderDefeat</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="426704674461823" type="System">
-                            <param id="0" name="Layout">Gym2 Fight Layout</param>
+                        <action id="-2" name="Go to layout" sid="833709806789150" type="System">
+                            <param id="0" name="Layout">GymRoute2</param>
                         </action>
                     </actions>
                 </event-block>

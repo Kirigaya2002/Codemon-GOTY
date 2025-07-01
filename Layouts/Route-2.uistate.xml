@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>336.296</position-x>
-        <position-y>242.226</position-y>
+        <position-y>86.996</position-y>
         <position-z>62.092</position-z>
         <lookat-x>336.296</lookat-x>
-        <lookat-y>242.226</lookat-y>
+        <lookat-y>86.996</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,12 +23,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Pico" />
+    <active-layer name="Dialog" />
     <layers>
-        <layer locked="1" name="BG" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Pico" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="FG" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Npc" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Dialog" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="BG" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Pico" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="FG" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Npc" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Dialog" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

@@ -285,7 +285,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>54</width>
+                        <width>40</width>
                         <height>30</height>
                         <max-width>54</max-width>
                         <max-height>30</max-height>
@@ -542,7 +542,7 @@
                     <properties>
                         <text>Objetivo Actual</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-5,400,0</font>
+                        <font>Impact,-5,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

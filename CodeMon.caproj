@@ -1483,6 +1483,16 @@
                             </animation>
                         </animation-folder>
                     </object-type>
+                    <object-type name="decoGym2" sid="839271712743473">
+                        <plugin id="Tilemap" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="242088660325246">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetReliefDetail.png" />
+                        <tiles />
+                    </object-type>
                 </object-folder>
                 <object-folder name="GymRoute1">
                     <object-folder name="tiles">
@@ -3299,6 +3309,23 @@
                         <behavior id="Fade" />
                     </behavior-type>
                 </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="Gym 2 Fight">
+            <object-type name="floorGym2Fight" sid="858880033300891">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetFloor.png" />
+                <tiles />
+            </object-type>
+            <object-type name="deco" sid="191420502902835">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\TilesetReliefDetail.png" />
+                <tiles />
+            </object-type>
+            <object-type name="walls" sid="533789401199802">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\jastj\Downloads\Sprites proy\Sprites\Ninja Adventure - Asset Pack\Backgrounds\Tilesets\Interior\TilesetWallSimple.png" />
+                <tiles />
             </object-type>
         </object-folder>
         <object-type name="Text2" sid="545119796843311">
