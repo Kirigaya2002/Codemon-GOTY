@@ -34,14 +34,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="522400983791969">
-                    <conditions>
-                        <condition id="-3" name="On end of layout" sid="140210937744760" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="33" name="Stop all" sid="895719816802505" type="MusicPlayer" />
-                    </actions>
-                </event-block>
                 <event-block sid="195860689833210">
                     <conditions>
                         <condition id="2" inverted="1" name="Key is down" sid="227649077315033" type="Keyboard">
@@ -55,53 +47,61 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="456953538671892">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="655641423868795" type="System">
+                            <param id="0" name="Variable">LeaderDefeat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="709489540132032" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="176953753884706" type="boss" />
+                        <action id="-11" name="Add to" sid="939138431228522" type="Codemon">
+                            <param id="0" name="Instance variable">Life</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="873505173664216" type="Codemon">
+                            <param id="0" name="Instance variable">BaseAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="496358530210153" type="Codemon">
+                            <param id="0" name="Instance variable">MaxAttack</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="924381224473766" type="Codemon">
+                            <param id="0" name="Instance variable">MinDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="785539507088911" type="Codemon">
+                            <param id="0" name="Instance variable">MaxDefense</param>
+                            <param id="1" name="Value">25</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522400983791969">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="140210937744760" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="895719816802505" type="MusicPlayer" />
+                    </actions>
+                </event-block>
+                <event-block sid="774603031744810">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="328710341644583" type="Player">
+                            <param id="0" name="Object">DoorToRoute3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="262556903005748" type="System">
+                            <param id="0" name="Layout">Route-3</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="774603031744810">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="328710341644583" type="Player">
-                    <param id="0" name="Object">DoorToRoute3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="262556903005748" type="System">
-                    <param id="0" name="Layout">Route-3</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="456953538671892">
-            <conditions>
-                <condition id="-14" inverted="1" name="Compare variable" sid="655641423868795" type="System">
-                    <param id="0" name="Variable">LeaderDefeat</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-4" name="Trigger once while true" sid="709489540132032" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="176953753884706" type="boss" />
-                <action id="-11" name="Add to" sid="939138431228522" type="Codemon">
-                    <param id="0" name="Instance variable">Life</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-11" name="Add to" sid="873505173664216" type="Codemon">
-                    <param id="0" name="Instance variable">BaseAttack</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-11" name="Add to" sid="496358530210153" type="Codemon">
-                    <param id="0" name="Instance variable">MaxAttack</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-11" name="Add to" sid="924381224473766" type="Codemon">
-                    <param id="0" name="Instance variable">MinDefense</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-                <action id="-11" name="Add to" sid="785539507088911" type="Codemon">
-                    <param id="0" name="Instance variable">MaxDefense</param>
-                    <param id="1" name="Value">25</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="472378067266006" title="Questions Logic Gym 2">
             <sub-events>
                 <event-group description="" sid="418901968229540" title="No option3">
