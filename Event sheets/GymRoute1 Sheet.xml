@@ -552,6 +552,7 @@
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">OpNo</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="676191837426917" type="OpNo" />
                             </conditions>
                             <actions />
                             <sub-events>
@@ -749,6 +750,7 @@
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">OpYes</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="980659843053385" type="OpYes" />
                             </conditions>
                             <actions />
                             <sub-events>

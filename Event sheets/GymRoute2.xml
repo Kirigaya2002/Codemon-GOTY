@@ -10,27 +10,6 @@
         <include>Global Events</include>
         <event-group description="" sid="549497818637051" title="InitGym2">
             <sub-events>
-                <event-block sid="790571896834581">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="654473692802503" type="System">
-                            <param id="0" name="Variable">XPosition</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="996917636326257" type="System">
-                            <param id="0" name="Variable">YPosition</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-4" name="Trigger once while true" sid="827482052484266" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="820334189005656" type="Player">
-                            <param id="0" name="X">XPosition</param>
-                            <param id="1" name="Y">YPosition</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="636004123348288">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="366128821600792" type="System" />
@@ -134,6 +113,7 @@
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">OpNo</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="878633003115123" type="OpNo" />
                             </conditions>
                             <actions />
                             <sub-events>
@@ -346,6 +326,7 @@
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">OpYes</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="369543434362464" type="OpYes" />
                             </conditions>
                             <actions />
                             <sub-events>
@@ -915,6 +896,27 @@
         </event-group>
         <event-group description="Dialogos para el boss del gym" sid="677443217368198" title="Boss dialog">
             <sub-events>
+                <event-block sid="151110865092684">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326774210962510" type="System">
+                            <param id="0" name="Variable">XPosition</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="468048547596727" type="System">
+                            <param id="0" name="Variable">YPosition</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="264169131384031" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="264444196796279" type="Player">
+                            <param id="0" name="X">XPosition</param>
+                            <param id="1" name="Y">YPosition</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="639669378459004">
                     <conditions>
                         <condition id="3" name="On key released" sid="563340348149941" type="Keyboard">

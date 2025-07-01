@@ -70,11 +70,16 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="347911531725786">
+                    <conditions />
+                    <actions />
+                </event-block>
                 <event-block sid="906971582161859">
                     <conditions>
                         <condition id="3" name="On key released" sid="101846182083269" type="Keyboard">
                             <param id="0" name="Key">90</param>
                         </condition>
+                        <condition id="-9" name="Is visible" sid="670235265516809" type="Dialog" />
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="571896899617017" type="MusicPlayer">

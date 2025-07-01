@@ -381,7 +381,7 @@
                     <properties>
                         <text>Objetivo Actual</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-5,400,0</font>
+                        <font>Impact,-5.6,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -897,8 +897,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>314.033843994</x>
-                        <y>-90.185050964</y>
+                        <x>314.716125488</x>
+                        <y>-85.403900146</y>
                         <z>0</z>
                         <width>585.848754883</width>
                         <height>-675.363830566</height>
@@ -955,11 +955,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>168.780303955</x>
-                        <y>165.710159302</y>
+                        <x>156.611190796</x>
+                        <y>187.938827515</y>
                         <z>0</z>
-                        <width>229.86505127</width>
-                        <height>69.074653625</height>
+                        <width>225.890411377</width>
+                        <height>75.283805847</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -997,8 +997,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>59.801376343</x>
-                        <y>138.613128662</y>
+                        <x>50.735855103</x>
+                        <y>161.897659302</y>
                         <z>0</z>
                         <width>218.061920166</width>
                         <height>54.898788452</height>

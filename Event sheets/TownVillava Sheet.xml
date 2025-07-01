@@ -457,6 +457,25 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="941688264075947">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="277052814669531" type="Text">
+                                    <param id="0" name="Instance variable">personaje</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Dennis&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="357280301955832" type="Text">
+                                    <param id="0" name="Instance variable">contador</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="321452880190428" type="Text">
+                                    <param id="0" name="Text">&quot;Dennis: &#x0D;&#x0A;Tendras encuentros aleatorios por el camino, ten cuidado!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="517291514208078">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="456673010854534" type="Text">
@@ -467,7 +486,7 @@
                                 <condition id="-7" name="Compare instance variable" sid="466100951138838" type="Text">
                                     <param id="0" name="Instance variable">contador</param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">4</param>
+                                    <param id="2" name="Value">5</param>
                                 </condition>
                             </conditions>
                             <actions>
