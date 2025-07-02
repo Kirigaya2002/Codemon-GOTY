@@ -47,6 +47,26 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="522400983791969">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="140210937744760" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="895719816802505" type="MusicPlayer" />
+                    </actions>
+                </event-block>
+                <event-block sid="774603031744810">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="328710341644583" type="Player">
+                            <param id="0" name="Object">DoorToRoute3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="262556903005748" type="System">
+                            <param id="0" name="Layout">Route-3</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="456953538671892">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="655641423868795" type="System">
@@ -77,26 +97,6 @@
                         <action id="-11" name="Add to" sid="785539507088911" type="Codemon">
                             <param id="0" name="Instance variable">MaxDefense</param>
                             <param id="1" name="Value">25</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="522400983791969">
-                    <conditions>
-                        <condition id="-3" name="On end of layout" sid="140210937744760" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="33" name="Stop all" sid="895719816802505" type="MusicPlayer" />
-                    </actions>
-                </event-block>
-                <event-block sid="774603031744810">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="328710341644583" type="Player">
-                            <param id="0" name="Object">DoorToRoute3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="262556903005748" type="System">
-                            <param id="0" name="Layout">Route-3</param>
                         </action>
                     </actions>
                 </event-block>
